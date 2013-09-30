@@ -1,4 +1,5 @@
 #encoding: UTF-8
+require 'yaml'
 def random_false_column
   postgresql_false_column_name = YAML::load(open('words/false_column_name.yaml'))
   postgresql_false_column_name = postgresql_false_column_name.strip.split(',')
@@ -7,20 +8,25 @@ def random_false_column
    puts "Генерация неверного случайного названия колонки - #{postgresql_false_column_name_one}"
 end
 
- def false_data_type
-  postgresql_false_data_type = YAML::load(open('words/falsedatatype.yaml'))
-  postgresql_false_data_type = postgresql_false_data_type.strip.split(',')
-  postgresql_false_data_type = postgresql_false_data_type.compact.shuffle.first
-  puts "Генерация неверного случайного типа данных - #{postgresql_false_data_type}"
+def random_data_type
+  hash = YAML::load(open('qq.yaml'))
+  data_type = hash.keys.shuffle.first
+  method = hash[data_type]
+  send method
 end
+
+def random_nubmer; 10; end
+def random_boolean_keys; true; end
+def randomDate; Date.new('10.10.10'); end
 
 #Случайный тип данных
 def random_data_type
-  postgresql_data_type = YAML::load(open('words/questions.yaml'))
-  postgresql_data_type = postgresql_data_type.strip.split(',')
-  postgresql_data_type = postgresql_data_type.compact.shuffle.first
-  puts "Генерация случайного типа данных - #{postgresql_data_type}"
+  postgresql_data_type_hash = YAML::load(open('qq.yaml'))
+  postgresql_data_type = postgresql_data_type_hash.keys
+  postgresql_data_type = postgresql_data_type.shuffle.first
+  p postgresql_data_type
 end
+
 
 #Случайное название колонки
  
@@ -49,4 +55,5 @@ puts "Генерация рандомного значения для ключа
 end 
 
 
- 
+
+ #случайный выбор в зависимости от типа данных одного из случайных модификаторов

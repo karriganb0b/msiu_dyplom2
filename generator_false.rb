@@ -2,28 +2,19 @@
 require 'rubygems'
 require 'yaml'
 require './uniibrut'
-
+require './genereator'
 
  #Проверка совмещения ключа и аргумента 
-def check_keys
-  keys = YAML::load(open('words/keys.yaml'))
-  keys = keys.strip.split(',')
-  keys = keys.compact.shuffle.first
-  if keys == "default"
-  random_default_keys
-  elsif keys == "null"
-  random_boolean_keys
-  end 
+
+def random_data_type2
+  hash = YAML::load(open('qq.yaml'))
+  data_type = hash.keys.shuffle.first
+  method = hash[data_type]
+  send method
+  p data_type
 end
-check_keys
-random_false_column
-false_data_type
-random_column_name
-random_boolean_keys
-random_default_keys
- 
- 
- 
+random_data_type2
+
 
 
 
