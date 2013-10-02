@@ -2,17 +2,17 @@ require 'faker'
 
 def random_str(l=8)
 str = ["a".."z", "A".."Z"].map{ |range| range.to_a }.flatten
-puts (0...l).map{ str[rand(str.size)] }.join
+strk = (0...l).map{ str[rand(str.size)] }.join
 end
 #Интервал: множество значений, заданных с начальным и конечным элементами.
 def random_nubmer(n=255)
 rnd = Random.new
-p rnd.rand(0 .. n)
+float_number = rnd.rand(0 .. n)
 end
 #Специальный класс Random ( ускоряем получение рандомного вещественного числа)
 def random_float_number(a = 0.0, b = 9.0)
 rnd = Random.new
-p rnd.rand(a .. b)
+number = rnd.rand(a .. b)
 end
 def random_date(params={})
         years_back = params[:year_range] || 5
@@ -21,7 +21,7 @@ def random_date(params={})
         month = (rand * 12)
         day = (rand * 31)
         date = Time.local(year, month, day)
-       p date.strftime("%m/%d/%Y")
+       date_r = date.strftime("%m/%d/%Y")
       end
 
 
@@ -30,7 +30,7 @@ hour = (rand(24))
 min = (rand(60))
 sec = (rand(60))
 time = Time.local(2000,1,1,hour,min,sec)
-p time.strftime("%I:%M:%S%p") 
+time_r = time.strftime("%I:%M:%S%p") 
 
 end
 
@@ -44,7 +44,7 @@ year = rand(1999 .. 2014)
 month = (rand * 12)
 day = (rand * 31)
 time = Time.local(year,month,day,hour,min,sec)
-p time
+data_t = time
 rescue
 ensure
 	return time

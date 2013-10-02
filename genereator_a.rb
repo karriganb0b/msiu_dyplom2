@@ -2,17 +2,17 @@ require 'faker'
 
 def random_str(l=8)
 str = ["a".."z", "A".."Z"].map{ |range| range.to_a }.flatten
-puts (0...l).map{ str[rand(str.size)] }.join
+strk = (0...l).map{ str[rand(str.size)] }.join
 end
 #Интервал: множество значений, заданных с начальным и конечным элементами.
 def random_nubmer(n=255)
 rnd = Random.new
-p rnd.rand(0 .. n)
+float_number = rnd.rand(0 .. n)
 end
 #Специальный класс Random ( ускоряем получение рандомного вещественного числа)
 def random_float_number(a = 0.0, b = 9.0)
 rnd = Random.new
-p rnd.rand(a .. b)
+number = rnd.rand(a .. b)
 end
 def randomDate(params={})
         years_back = params[:year_range] || 5
