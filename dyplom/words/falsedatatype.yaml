@@ -1,0 +1,7 @@
+---
+:datetimeoffset: random_date
+:blob: random_nubmer
+:tinyint(1): random_boolean_keys
+:int(11): random_nubmer
+:datetime: randomTimeAndDate
+:char: random_str
