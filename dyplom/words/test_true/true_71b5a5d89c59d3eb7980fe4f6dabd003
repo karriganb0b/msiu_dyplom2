@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table firstname_country do |t| 
+      t.date :71b5a5d89c59d3eb7980fe4f6dabd003, :default=>Date.new(2007,4,9), null: false
+    
+    end 
+  end 
+end
+\end{verbatim}

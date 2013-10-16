@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table email_firstname do |t| 
+      t.float :58fa247413eeccee28a3b80ddf08fa1c, :default=>8.029054510737325, array: false
+    
+    end 
+  end 
+end
+\end{verbatim}

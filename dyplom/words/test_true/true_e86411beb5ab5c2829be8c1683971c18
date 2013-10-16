@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table country_artist do |t| 
+      t.boolean :e86411beb5ab5c2829be8c1683971c18, :default=>false, limit: 2
+    
+    end 
+  end 
+end
+\end{verbatim}

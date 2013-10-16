@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table description_firstname do |t| 
+      t.decimal :201236a00c963b61b1d381ee94eff245, :default=>2.2187773203495906, array: true
+    
+    end 
+  end 
+end
+\end{verbatim}

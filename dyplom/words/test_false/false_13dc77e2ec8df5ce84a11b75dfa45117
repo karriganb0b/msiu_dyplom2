@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table yield do |t| 
+      t.tinyint(1) :13dc77e2ec8df5ce84a11b75dfa45117, :default=>true, limit: 199
+    
+    end 
+  end 
+end
+\end{verbatim}

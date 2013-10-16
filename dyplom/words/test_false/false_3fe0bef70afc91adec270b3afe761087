@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table rescue do |t| 
+      t.int(11) :3fe0bef70afc91adec270b3afe761087, :default=>222, limit: 91
+    
+    end 
+  end 
+end
+\end{verbatim}

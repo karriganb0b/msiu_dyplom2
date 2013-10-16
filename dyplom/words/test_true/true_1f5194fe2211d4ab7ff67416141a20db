@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table adress_email do |t| 
+      t.text :1f5194fe2211d4ab7ff67416141a20db, :default=>role_email, array: true
+    
+    end 
+  end 
+end
+\end{verbatim}

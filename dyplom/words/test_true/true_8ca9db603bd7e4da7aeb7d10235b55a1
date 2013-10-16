@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table adress_length do |t| 
+      t.decimal :8ca9db603bd7e4da7aeb7d10235b55a1, :default=>5.967356509096179, array: true
+    
+    end 
+  end 
+end
+\end{verbatim}

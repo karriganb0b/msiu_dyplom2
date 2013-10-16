@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table name_artist do |t| 
+      t.string :adf9fcf6324f0d1025670f7ae27e96b5, :default=>"gYJkcGot", limit: 1
+    
+    end 
+  end 
+end
+\end{verbatim}

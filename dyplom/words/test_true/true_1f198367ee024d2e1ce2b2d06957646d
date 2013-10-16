@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table name_music do |t| 
+      t.timestamp :1f198367ee024d2e1ce2b2d06957646d, :default=>DateTime.new(2013,10,25,20,1,39), null: true
+    
+    end 
+  end 
+end
+\end{verbatim}

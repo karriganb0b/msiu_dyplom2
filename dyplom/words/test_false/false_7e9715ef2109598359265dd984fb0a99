@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table redo do |t| 
+      t.int(11) :7e9715ef2109598359265dd984fb0a99, :default=>160, precision: 1
+    
+    end 
+  end 
+end
+\end{verbatim}

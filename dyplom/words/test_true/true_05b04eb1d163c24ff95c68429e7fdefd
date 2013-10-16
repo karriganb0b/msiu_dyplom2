@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table length_length do |t| 
+      t.float :05b04eb1d163c24ff95c68429e7fdefd, :default=>3.4680093414807778, array: true
+    
+    end 
+  end 
+end
+\end{verbatim}

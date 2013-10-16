@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table music_firstname do |t| 
+      t.bytea :156773f352ed230316f905fc3a42433c, :default=>93, limit: 172
+    
+    end 
+  end 
+end
+\end{verbatim}

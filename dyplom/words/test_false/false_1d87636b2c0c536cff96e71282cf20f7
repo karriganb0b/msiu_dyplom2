@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table break do |t| 
+      t.char :1d87636b2c0c536cff96e71282cf20f7, :default=>"qchmRuhu", scale: 3
+    
+    end 
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table password_length do |t| 
+      t.float :34017a092a3b09c9efa5352a57f0cd29, :default=>2.883295845808785, null: false
+    
+    end 
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table rescue do |t| 
+      t.tinyint(1) :b0e5adf3ffa8878e1d7a24e2b9205f49, :default=>true, limit: 6
+    
+    end 
+  end 
+end
+\end{verbatim}

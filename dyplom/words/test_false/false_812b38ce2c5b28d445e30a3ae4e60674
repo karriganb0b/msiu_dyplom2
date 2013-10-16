@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table def do |t| 
+      t.char :812b38ce2c5b28d445e30a3ae4e60674, :default=>"NbXNCXuw", limit: 34
+    
+    end 
+  end 
+end
+\end{verbatim}

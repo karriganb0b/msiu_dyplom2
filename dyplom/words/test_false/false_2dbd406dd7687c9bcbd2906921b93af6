@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table alias do |t| 
+      t.tinyint(1) :2dbd406dd7687c9bcbd2906921b93af6, :default=>false, limit: 22
+    
+    end 
+  end 
+end
+\end{verbatim}

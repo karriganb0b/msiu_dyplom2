@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table return do |t| 
+      t.datetimeoffset :a59c3e6a224239898c0d120ff3faf865, :default=>Date.new(2003,2,15), precision: 3
+    
+    end 
+  end 
+end
+\end{verbatim}

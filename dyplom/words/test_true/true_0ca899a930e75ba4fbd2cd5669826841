@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table name_music do |t| 
+      t.boolean :0ca899a930e75ba4fbd2cd5669826841, :default=>false, limit: 225
+    
+    end 
+  end 
+end
+\end{verbatim}

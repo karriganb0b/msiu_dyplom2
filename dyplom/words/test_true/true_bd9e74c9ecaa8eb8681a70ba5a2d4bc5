@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table name_email do |t| 
+      t.time :bd9e74c9ecaa8eb8681a70ba5a2d4bc5, :default=>Time.new(21,41,29), array: false
+    
+    end 
+  end 
+end
+\end{verbatim}

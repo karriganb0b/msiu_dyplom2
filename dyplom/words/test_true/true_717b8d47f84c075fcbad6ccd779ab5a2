@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table firstname_music do |t| 
+      t.date :717b8d47f84c075fcbad6ccd779ab5a2, :default=>Date.new(1999,5,9), array: false
+    
+    end 
+  end 
+end
+\end{verbatim}

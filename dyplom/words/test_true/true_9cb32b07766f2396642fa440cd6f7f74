@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table description_role do |t| 
+      t.text :9cb32b07766f2396642fa440cd6f7f74, :default=>country_length, array: false
+    
+    end 
+  end 
+end
+\end{verbatim}

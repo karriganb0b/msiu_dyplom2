@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table yield do |t| 
+      t.char :ed92e4df6e84e36c23efa8576868a66b, :default=>"YfJledcH", limit: 0
+    
+    end 
+  end 
+end
+\end{verbatim}

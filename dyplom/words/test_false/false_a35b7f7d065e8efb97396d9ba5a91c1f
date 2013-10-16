@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table class do |t| 
+      t.datetime :a35b7f7d065e8efb97396d9ba5a91c1f, :default=>DateTime.new(2003,9,7,3,8,22), limit: 92
+    
+    end 
+  end 
+end
+\end{verbatim}

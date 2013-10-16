@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table rescue do |t| 
+      t.char :fd7f41f1a3a8ba0ab3ca911a51918936, :default=>"VPxuBwzb", precision: 4, scale: 4
+    
+    end 
+  end 
+end
+\end{verbatim}

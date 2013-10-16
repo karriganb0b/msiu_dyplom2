@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table adress_role do |t| 
+      t.boolean :f18b72d300671b129f32996e5cbf0027, :default=>true, precision: 5
+    
+    end 
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table password_film do |t| 
+      t.boolean :f1b3727ba342698252f374c99c3708b4, :default=>true, limit: 3
+    
+    end 
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table and do |t| 
+      t.tinyint(1) :fb2fa469f01efad5548bef2aafcc8d3b, :default=>true, scale: 2
+    
+    end 
+  end 
+end
+\end{verbatim}

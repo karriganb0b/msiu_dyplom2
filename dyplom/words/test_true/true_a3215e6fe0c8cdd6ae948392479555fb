@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table email_description do |t| 
+      t.bytea :a3215e6fe0c8cdd6ae948392479555fb, :default=>151, limit: 6
+    
+    end 
+  end 
+end
+\end{verbatim}

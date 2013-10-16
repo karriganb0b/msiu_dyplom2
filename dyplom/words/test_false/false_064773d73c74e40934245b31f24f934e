@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table nil do |t| 
+      t.tinyint(1) :064773d73c74e40934245b31f24f934e, :default=>false, precision: 4
+    
+    end 
+  end 
+end
+\end{verbatim}

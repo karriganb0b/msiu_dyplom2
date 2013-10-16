@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table length_country do |t| 
+      t.date :9eda10cbb527a18350ba953e627ae6f1, :default=>Date.new(2005,4,10), array: true
+    
+    end 
+  end 
+end
+\end{verbatim}

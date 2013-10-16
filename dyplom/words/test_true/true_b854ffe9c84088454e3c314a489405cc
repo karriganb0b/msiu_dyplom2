@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table artist_adress do |t| 
+      t.decimal :b854ffe9c84088454e3c314a489405cc, :default=>0.8574189956558008, null: true
+    
+    end 
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table description_role do |t| 
+      t.timestamp :6edb6385dae00f463aa79a6a66918171, :default=>DateTime.new(2014,11,8,18,40,10), array: false
+    
+    end 
+  end 
+end
+\end{verbatim}

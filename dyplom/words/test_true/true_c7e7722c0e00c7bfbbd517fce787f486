@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table length_artist do |t| 
+      t.text :c7e7722c0e00c7bfbbd517fce787f486, :default=>role_name, array: true
+    
+    end 
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table film_name do |t| 
+      t.time :856e7556c374ca9211ee950df6245601, :default=>Time.new(3,10,30), null: false
+    
+    end 
+  end 
+end
+\end{verbatim}

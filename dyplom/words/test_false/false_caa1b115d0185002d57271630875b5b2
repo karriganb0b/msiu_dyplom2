@@ -1,0 +1,10 @@
+\begin{verbatim}
+ class CreateUsers < ActiveRecord::Migration 
+  def change 
+    create_table ensure do |t| 
+      t.datetimeoffset :caa1b115d0185002d57271630875b5b2, :default=>Date.new(2014,11,19), scale: 4
+    
+    end 
+  end 
+end
+\end{verbatim}
