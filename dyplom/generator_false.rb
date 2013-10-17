@@ -23,17 +23,16 @@ def index(table, name, correct=true)
   select_full = correct ?  select_true : (symbol_function).to_s
   select_scob = correct ?  select_cor : (symbol_function).to_s
   select_scob2 = correct ? select_cor2 : (symbol_function).to_s 
-  
-  "\t\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}_id#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
+  indicator = correct ? "T" : "F"
+
+  "#{indicator}\t\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}_id#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
 end
 
-def random_migration(correct=false , correct_index=true)
-  table_name = correct ? (random_false_column).to_s : (random_column_name).to_s
-  indicator = correct ? "T" : "F"
-  
+def random_migration(table, name,correct=false , correct_index=true)
+  table_name = correct ? (random_column_name).to_s : (random_false_column).to_s
+ 
   # beginning of migration
   str = <<-END
-	#{indicator}
 	\\begin{verbatim}
    	 class CreateUsers < ActiveRecord::Migration
 	   def change
@@ -56,6 +55,7 @@ def random_migration(correct=false , correct_index=true)
   # add indexes
   rand(1..number_columns).times do
 	column_name = column_names.shuffle.pop
+  
 	str << index(table_name, column_name, correct_index)
   end	
 	
@@ -90,6 +90,7 @@ def add_index(correct=true)
   hash = YAML::load(open(files_with_types))
   app = correct ? (random_false_column).to_s : (random_column_name).to_s
   indicator = correct ? "F" : "T"
+
   "\n#{indicator}\n\\begin{verbatim}\n class CreateUsers < ActiveRecord::Migration \n  def change \n    create_table #{app} do |t| \n      "+
 	(0..rand(4..6)).map do |x|
 	  data_type = hash.keys.shuffle.first
