@@ -23,16 +23,17 @@ def index(table, name, correct=true)
   select_full = correct ?  select_true : (symbol_function).to_s
   select_scob = correct ?  select_cor : (symbol_function).to_s
   select_scob2 = correct ? select_cor2 : (symbol_function).to_s 
-  indicator = correct ? "T" : "F"
+  
 
-  "#{indicator}\t\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}_id#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
+  "\t\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}_id#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
 end
 
 def random_migration(table, name,correct=false , correct_index=true)
   table_name = correct ? (random_column_name).to_s : (random_false_column).to_s
- 
+  indicator = correct_index ? "T" : "F"
   # beginning of migration
   str = <<-END
+  "#{indicator}"
 	\\begin{verbatim}
    	 class CreateUsers < ActiveRecord::Migration
 	   def change
