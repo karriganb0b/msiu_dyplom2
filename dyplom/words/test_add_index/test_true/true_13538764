@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_film do |t|
+		t.int(11) :case, :default=>174, limit: 59
+   		t.tinyint(1) :super, :default=>true, scale: 1
+   		t.blob :not, :default=>139, limit: 2
+   		t.tinyint(1) :class, :default=>false, precision: 1
+   		t.char :unless, :default=>"PNlCeLZr", limit: 4
+   		add_index(:description_film, $*super, not, case, class, unless_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

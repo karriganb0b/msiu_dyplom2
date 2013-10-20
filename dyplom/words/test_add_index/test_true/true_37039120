@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table film_password do |t|
+		t.char :when, :default=>"oGdUkinJ", precision: 6
+   		t.blob :do, :default=>156, limit: 73
+   		t.int(11) :case, :default=>32, limit: 8
+   		t.datetime :next, :default=>DateTime.new(2003,11,21,22,50,46), precision: 1
+   		add_index(:film_password, %*do, case, when_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

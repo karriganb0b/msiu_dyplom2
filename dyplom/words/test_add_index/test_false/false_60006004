@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table class do |t|
+		t.boolean :length_password, :default=>false, limit: 0
+   		t.boolean :description_email, :default=>false, precision: 5, scale: 1
+   		t.string :name_name, :default=>"ZVTOTtYc", null: true
+   		t.boolean :country_music, :default=>true, precision: 2
+   		t.decimal :name_role, :default=>4.978058379105749, null: false
+   		t.time :description_email, :default=>Time.new(20,13,1), null: true
+   		add_index(:class, ^%description_email, country_music_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

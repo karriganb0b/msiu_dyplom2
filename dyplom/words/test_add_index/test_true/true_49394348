@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table country_adress do |t|
+		t.datetimeoffset :until, :default=>Date.new(2007,5,11), scale: 1
+   		t.datetime :then, :default=>DateTime.new(2006,5,20,8,37,31), precision: 4, scale: 4
+   		t.blob :yield, :default=>151, limit: 0
+   		t.datetimeoffset :true, :default=>Date.new(2004,5,30), precision: 0, scale: 0
+   		t.blob :false, :default=>84, limit: 1
+   		t.datetimeoffset :self, :default=>Date.new(2004,6,8), precision: 3, scale: 1
+   		add_index(:country_adress, ;#self_id#, :unique => true)
+ 		add_index(:country_adress, [$false_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

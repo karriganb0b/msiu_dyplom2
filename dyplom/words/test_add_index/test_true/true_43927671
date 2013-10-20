@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_music do |t|
+		t.char :defined?, :default=>"miclnRBs", scale: 2
+   		t.tinyint(1) :module, :default=>false, limit: 247
+   		t.datetime :END, :default=>DateTime.new(2001,4,17,1,11,3), limit: 2
+   		t.datetimeoffset :alias, :default=>Date.new(1999,0,8), precision: 0, scale: 0
+   		add_index(:description_music, #^module_id[, :unique => false)
+ 		add_index(:description_music, %#defined?_id%, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

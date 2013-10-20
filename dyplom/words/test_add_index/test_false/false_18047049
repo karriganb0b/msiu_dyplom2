@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table retry do |t|
+		t.date :country_film, :default=>Date.new(2004,10,16), array: true
+   		t.string :firstname_description, :default=>"AIWUgXxt", null: false
+   		t.float :adress_firstname, :default=>0.6068607050305438, array: false
+   		t.time :adress_country, :default=>Time.new(22,26,16), null: true
+   		add_index(:retry, ;]country_film_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

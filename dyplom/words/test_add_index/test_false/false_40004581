@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table BEGIN do |t|
+		t.decimal :length_adress, :default=>5.032588023408179, null: false
+   		t.timestamp :length_length, :default=>DateTime.new(2000,6,17,6,40,5), array: true
+   		t.integer :email_country, :default=>246, limit: 4
+   		t.boolean :password_length, :default=>false, limit: 1
+   		t.decimal :firstname_country, :default=>8.025605558639459, null: false
+   		t.float :song_firstname, :default=>6.714020554161935, array: false
+   		add_index(:BEGIN, *;email_country, length_length_id[, :unique => false)
+ 		add_index(:BEGIN, ]*song_firstname_id], :unique => false)
+ 		add_index(:BEGIN, ^*length_adress_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

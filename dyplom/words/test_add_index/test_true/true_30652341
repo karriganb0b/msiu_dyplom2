@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table length_length do |t|
+		t.char :while, :default=>"twzUfSOz", limit: 1
+   		t.tinyint(1) :end, :default=>false, scale: 3
+   		t.tinyint(1) :not, :default=>true, limit: 3
+   		t.tinyint(1) :or, :default=>true, precision: 1
+   		t.datetime :alias, :default=>DateTime.new(2014,4,13,5,51,36), limit: 2
+   		add_index(:length_length, ^#or, alias_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

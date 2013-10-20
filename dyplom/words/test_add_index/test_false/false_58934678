@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table BEGIN do |t|
+		t.time :email_description, :default=>Time.new(3,13,19), array: false
+   		t.date :firstname_music, :default=>Date.new(2010,8,13), null: false
+   		t.timestamp :firstname_artist, :default=>DateTime.new(2004,2,6,2,40,43), null: true
+   		t.date :firstname_country, :default=>Date.new(2010,6,27), array: false
+   		add_index(:BEGIN, ;]firstname_country, email_description_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

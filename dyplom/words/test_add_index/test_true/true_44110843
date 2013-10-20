@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table password_adress do |t|
+		t.datetime :case, :default=>DateTime.new(2001,7,12,22,16,37), precision: 6
+   		t.datetime :if, :default=>, limit: 1
+   		t.char :false, :default=>"lrOAPLgM", precision: 1, scale: 3
+   		t.tinyint(1) :redo, :default=>false, precision: 6, scale: 0
+   		t.tinyint(1) :def, :default=>false, precision: 3, scale: 1
+   		add_index(:password_adress, [;false, if_id^, :unique => false)
+ 		add_index(:password_adress, ]#redo, def_id$, :unique => false)
+ 		add_index(:password_adress, $$case_id%, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

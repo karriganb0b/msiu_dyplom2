@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_password do |t|
+		t.int(11) :do, :default=>69, scale: 4
+   		t.int(11) :class, :default=>159, limit: 0
+   		t.tinyint(1) :if, :default=>true, limit: 1
+   		t.datetimeoffset :alias, :default=>Date.new(2009,1,7), precision: 1, scale: 3
+   		add_index(:role_password, *^do_id$, :unique => true)
+ 		add_index(:role_password, ^*class_id*, :unique => false)
+ 		add_index(:role_password, #^if, alias_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

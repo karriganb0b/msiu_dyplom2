@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table film_artist do |t|
+		t.datetimeoffset :next, :default=>Date.new(2012,1,16), precision: 0, scale: 0
+   		t.tinyint(1) :module, :default=>false, limit: 0
+   		t.datetime :next, :default=>DateTime.new(2011,8,4,15,41,19), precision: 1, scale: 2
+   		t.char :def, :default=>"iYxzQDbW", scale: 0
+   		add_index(:film_artist, ]#next_id;, :unique => false)
+ 		add_index(:film_artist, $]next_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table country_role do |t|
+		t.datetime :undef, :default=>DateTime.new(2011,6,2,14,11,30), precision: 2
+   		t.tinyint(1) :self, :default=>true, limit: 0
+   		t.int(11) :not, :default=>134, scale: 4
+   		t.datetime :END, :default=>DateTime.new(2008,4,6,18,15,43), limit: 207
+   		t.char :return, :default=>"BqXufNcZ", scale: 0
+   		t.tinyint(1) :redo, :default=>true, limit: 73
+   		add_index(:country_role, [*END, redo_id*, :unique => false)
+ 		add_index(:country_role, %#self_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table song_role do |t|
+		t.char :yield, :default=>"JTlhsWTU", scale: 2
+   		t.tinyint(1) :defined?, :default=>true, limit: 5
+   		t.tinyint(1) :for, :default=>false, scale: 0
+   		t.datetime :defined?, :default=>DateTime.new(2006,9,27,12,57,11), limit: 8
+   		t.blob :then, :default=>194, limit: 1
+   		t.tinyint(1) :until, :default=>false, limit: 4
+   		add_index(:song_role, ]]yield, for, until_id], :unique => false)
+ 		add_index(:song_role, ^[defined?, defined?_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

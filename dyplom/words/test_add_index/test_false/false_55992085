@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table ensure do |t|
+		t.integer :film_firstname, :default=>47, array: true
+   		t.date :firstname_role, :default=>Date.new(2007,4,15), array: true
+   		t.timestamp :email_length, :default=>DateTime.new(2001,5,15,16,0,37), null: false
+   		t.string :description_country, :default=>"OfvVcqFI", array: false
+   		t.time :description_name, :default=>Time.new(5,38,21), null: true
+   		add_index(:ensure, [#description_country_id[, :unique => false)
+ 		add_index(:ensure, [[description_name_id[, :unique => true)
+ 		add_index(:ensure, ^#email_length_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

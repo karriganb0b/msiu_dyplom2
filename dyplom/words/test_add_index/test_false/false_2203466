@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table rescue do |t|
+		t.timestamp :country_description, :default=>DateTime.new(2006,8,27,20,38,7), null: false
+   		t.date :description_name, :default=>Date.new(2000,11,20), null: true
+   		t.bytea :firstname_artist, :default=>237, precision: 6
+   		t.text :role_song, :default=>password_artist, limit: 232
+   		add_index(:rescue, ^#description_name, country_description_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

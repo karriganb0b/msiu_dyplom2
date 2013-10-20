@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table music_music do |t|
+		t.char :else, :default=>"qJSyrpHE", precision: 2, scale: 2
+   		t.blob :not, :default=>94, precision: 4, scale: 0
+   		t.datetimeoffset :redo, :default=>Date.new(2008,3,4), limit: 0
+   		t.datetime :end, :default=>DateTime.new(2011,1,9,6,8,31), limit: 9
+   		add_index(:music_music, $^redo_id%, :unique => true)
+ 		add_index(:music_music, ##else_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table unless do |t|
+		t.timestamp :firstname_role, :default=>DateTime.new(2000,8,15,10,14,44), array: true
+   		t.string :adress_song, :default=>"wBDOkixX", array: true
+   		t.bytea :length_name, :default=>111, precision: 2
+   		t.integer :role_artist, :default=>231, array: true
+   		t.time :length_country, :default=>Time.new(7,26,5), array: false
+   		t.date :firstname_adress, :default=>Date.new(2011,7,20), null: true
+   		add_index(:unless, [%firstname_role_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

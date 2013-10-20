@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table adress_role do |t|
+		t.blob :for, :default=>252, limit: 1
+   		t.blob :end, :default=>166, limit: 8
+   		t.int(11) :true, :default=>138, limit: 0
+   		t.char :then, :default=>"aWOeWZMi", precision: 5, scale: 0
+   		t.tinyint(1) :elsif, :default=>false, scale: 3
+   		t.datetime :alias, :default=>DateTime.new(2004,10,25,14,39,10), precision: 3
+   		add_index(:adress_role, #^true, then_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

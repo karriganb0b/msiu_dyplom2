@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_song do |t|
+		t.blob :break, :default=>54, scale: 2
+   		t.blob :redo, :default=>194, limit: 0
+   		t.int(11) :for, :default=>43, scale: 0
+   		t.datetimeoffset :rescue, :default=>Date.new(2008,4,22), limit: 7
+   		add_index(:role_song, *#redo_id^, :unique => true)
+ 		add_index(:role_song, [$for_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

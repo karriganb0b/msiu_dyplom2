@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table or do |t|
+		t.text :adress_role, :default=>country_role, limit: 0
+   		t.timestamp :film_role, :default=>DateTime.new(2001,9,29,22,40,25), null: false
+   		t.bytea :length_password, :default=>244, precision: 5, scale: 1
+   		t.timestamp :password_adress, :default=>DateTime.new(2006,2,5,5,31,43), array: true
+   		t.date :password_length, :default=>Date.new(2010,0,16), array: false
+   		add_index(:or, %;adress_role_id^, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

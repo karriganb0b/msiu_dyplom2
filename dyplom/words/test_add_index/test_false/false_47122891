@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table defined? do |t|
+		t.boolean :adress_country, :default=>false, scale: 1
+   		t.bytea :artist_password, :default=>105, precision: 4, scale: 3
+   		t.integer :film_email, :default=>84, null: true
+   		t.timestamp :description_country, :default=>, array: false
+   		t.bytea :song_music, :default=>156, limit: 4
+   		t.boolean :length_country, :default=>true, limit: 7
+   		add_index(:defined?, [%song_music, adress_country, artist_password, length_country, description_country, film_email_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table not do |t|
+		t.float :artist_password, :default=>3.4766708044323185, null: true
+   		t.bytea :role_email, :default=>246, precision: 4
+   		t.time :song_name, :default=>Time.new(15,18,11), null: true
+   		t.float :film_adress, :default=>6.660161971050429, null: true
+   		t.boolean :adress_email, :default=>false, limit: 1
+   		add_index(:not, ;[song_name_id^, :unique => false)
+ 		add_index(:not, %#adress_email_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

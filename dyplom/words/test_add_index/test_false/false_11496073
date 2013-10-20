@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table return do |t|
+		t.integer :song_firstname, :default=>47, array: false
+   		t.boolean :length_film, :default=>false, limit: 1
+   		t.float :firstname_description, :default=>8.730580294267059, array: false
+   		t.string :firstname_password, :default=>"lzPWBnNM", null: false
+   		t.string :password_adress, :default=>"VwwvfzwM", limit: 5
+   		t.boolean :length_firstname, :default=>false, scale: 2
+   		add_index(:return, ^]length_film_id[, :unique => true)
+ 		add_index(:return, %$firstname_password_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

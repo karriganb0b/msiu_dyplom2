@@ -1,0 +1,16 @@
+  
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table END do |t|
+		t.bytea :firstname_role, :default=>247, limit: 51
+   		t.boolean :film_firstname, :default=>false, limit: 58
+   		t.date :adress_music, :default=>Date.new(2012,11,16), null: false
+   		t.float :firstname_country, :default=>0.009598026597773313, array: false
+   		add_index(:END, ]^firstname_role_id#, :unique => true)
+ 		add_index(:END, ^*film_firstname, firstname_country, adress_music_id^, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

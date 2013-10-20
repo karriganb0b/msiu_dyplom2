@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table nil do |t|
+		t.float :name_music, :default=>8.783137251759749, null: true
+   		t.timestamp :music_password, :default=>DateTime.new(1999,9,28,9,45,35), array: false
+   		t.timestamp :length_length, :default=>DateTime.new(2011,1,14,2,43,1), null: false
+   		t.float :description_firstname, :default=>5.599543184593565, null: true
+   		t.text :description_name, :default=>artist_music, limit: 7
+   		t.date :password_music, :default=>Date.new(2012,2,14), array: false
+   		add_index(:nil, #;name_music_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

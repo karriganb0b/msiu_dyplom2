@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table for do |t|
+		t.integer :music_adress, :default=>244, null: false
+   		t.timestamp :description_music, :default=>DateTime.new(2014,9,11,3,48,59), array: true
+   		t.boolean :firstname_firstname, :default=>false, scale: 2
+   		t.time :firstname_country, :default=>Time.new(10,47,27), null: false
+   		t.decimal :name_adress, :default=>5.382843393275066, array: false
+   		add_index(:for, $;music_adress, firstname_firstname_id], :unique => false)
+ 		add_index(:for, ;%description_music_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table length_name do |t|
+		t.tinyint(1) :yield, :default=>false, limit: 12
+   		t.datetime :nil, :default=>, limit: 2
+   		t.datetimeoffset :undef, :default=>Date.new(2001,6,8), scale: 0
+   		t.tinyint(1) :case, :default=>true, limit: 1
+   		t.tinyint(1) :yield, :default=>true, precision: 5, scale: 0
+   		t.datetimeoffset :alias, :default=>Date.new(2002,8,10), limit: 0
+   		add_index(:length_name, *^case, alias_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

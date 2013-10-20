@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table next do |t|
+		t.text :film_artist, :default=>music_email, array: true
+   		t.time :length_name, :default=>Time.new(19,14,21), array: false
+   		t.boolean :firstname_role, :default=>false, limit: 1
+   		t.decimal :artist_song, :default=>5.957846137952499, precision: 6
+   		add_index(:next, ^#artist_song, firstname_role_id%, :unique => true)
+ 		add_index(:next, ;#length_name_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

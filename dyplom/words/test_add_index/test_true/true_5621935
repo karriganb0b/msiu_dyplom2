@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_description do |t|
+		t.char :for, :default=>"eHOHJfbH", limit: 76
+   		t.int(11) :defined?, :default=>253, precision: 1, scale: 3
+   		t.datetimeoffset :in, :default=>Date.new(2008,10,19), precision: 6, scale: 0
+   		t.datetimeoffset :nil, :default=>Date.new(2010,2,17), scale: 0
+   		t.char :retry, :default=>"GSBFnatR", limit: 95
+   		t.tinyint(1) :for, :default=>true, precision: 2, scale: 2
+   		add_index(:description_description, #;retry, for, in, for, defined?, nil_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

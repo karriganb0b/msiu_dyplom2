@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_email do |t|
+		t.char :class, :default=>"LKTeDNjc", limit: 7
+   		t.tinyint(1) :self, :default=>true, limit: 92
+   		t.blob :false, :default=>173, limit: 7
+   		t.tinyint(1) :class, :default=>false, scale: 2
+   		t.char :do, :default=>"AGQtdsgB", limit: 0
+   		t.char :defined?, :default=>"QfBwwaXQ", precision: 1, scale: 0
+   		add_index(:role_email, *]self, defined?, class_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

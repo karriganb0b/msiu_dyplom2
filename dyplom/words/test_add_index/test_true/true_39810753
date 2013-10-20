@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table password_email do |t|
+		t.datetimeoffset :class, :default=>Date.new(2008,10,28), limit: 1
+   		t.tinyint(1) :next, :default=>false, limit: 1
+   		t.tinyint(1) :super, :default=>false, scale: 2
+   		t.int(11) :begin, :default=>54, precision: 2, scale: 2
+   		t.char :not, :default=>"wQkoVKiE", limit: 2
+   		t.datetime :yield, :default=>DateTime.new(2003,3,2,14,58,44), limit: 8
+   		add_index(:password_email, ^#begin, super, yield_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

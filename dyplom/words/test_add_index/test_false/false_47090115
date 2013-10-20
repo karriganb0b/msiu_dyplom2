@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table not do |t|
+		t.text :film_role, :default=>description_music, limit: 4
+   		t.float :adress_name, :default=>1.0227553495664385, null: false
+   		t.text :name_length, :default=>film_adress, array: true
+   		t.text :song_music, :default=>artist_firstname, null: true
+   		t.timestamp :artist_description, :default=>DateTime.new(2003,5,4,0,42,10), array: true
+   		t.time :music_song, :default=>Time.new(4,36,12), array: false
+   		add_index(:not, ##music_song_id#, :unique => true)
+ 		add_index(:not, #%artist_description, name_length, film_role, song_music, adress_name_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

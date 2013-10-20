@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table module do |t|
+		t.string :email_adress, :default=>"CdJpIonq", array: false
+   		t.timestamp :music_password, :default=>DateTime.new(2012,9,28,5,51,45), null: false
+   		t.boolean :length_description, :default=>true, limit: 4
+   		t.float :film_adress, :default=>1.226466161110626, array: false
+   		t.time :description_firstname, :default=>Time.new(19,25,11), array: false
+   		add_index(:module, $*film_adress, email_adress, description_firstname, length_description_id;, :unique => true)
+ 		add_index(:module, #*music_password_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

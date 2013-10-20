@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table false do |t|
+		t.integer :role_country, :default=>41, array: true
+   		t.string :length_description, :default=>"hadlTMJw", array: false
+   		t.decimal :music_film, :default=>3.8417600238987144, null: true
+   		t.text :song_email, :default=>firstname_role, limit: 1
+   		t.date :firstname_music, :default=>Date.new(2002,10,24), null: false
+   		add_index(:false, ]$length_description_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

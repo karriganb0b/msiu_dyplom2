@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table until do |t|
+		t.integer :music_artist, :default=>79, array: false
+   		t.float :artist_artist, :default=>7.454788637503891, null: true
+   		t.string :artist_password, :default=>"YPSvPTPA", array: false
+   		t.float :password_artist, :default=>0.9786352431220678, null: true
+   		t.timestamp :artist_description, :default=>DateTime.new(2001,10,2,17,1,47), array: true
+   		add_index(:until, ;^artist_artist, artist_password, artist_description_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

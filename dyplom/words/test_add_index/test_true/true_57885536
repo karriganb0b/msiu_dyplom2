@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table password_name do |t|
+		t.blob :or, :default=>197, limit: 3
+   		t.int(11) :in, :default=>22, limit: 5
+   		t.datetimeoffset :unless, :default=>Date.new(2004,11,13), precision: 3, scale: 1
+   		t.datetime :false, :default=>DateTime.new(2002,3,13,4,3,10), precision: 3, scale: 2
+   		t.int(11) :ensure, :default=>33, scale: 4
+   		add_index(:password_name, ^]or_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

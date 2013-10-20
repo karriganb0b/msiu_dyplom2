@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table undef do |t|
+		t.float :adress_length, :default=>7.073105549539346, null: true
+   		t.boolean :firstname_song, :default=>true, limit: 219
+   		t.float :password_country, :default=>4.379362045589408, array: true
+   		t.bytea :song_film, :default=>239, limit: 5
+   		t.string :adress_music, :default=>"SLulGluT", array: true
+   		add_index(:undef, %]song_film_id%, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

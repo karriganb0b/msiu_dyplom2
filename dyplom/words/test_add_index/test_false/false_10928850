@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table yield do |t|
+		t.boolean :artist_film, :default=>true, limit: 0
+   		t.bytea :film_firstname, :default=>181, limit: 0
+   		t.bytea :song_artist, :default=>143, limit: 23
+   		t.time :name_song, :default=>Time.new(6,43,9), null: true
+   		add_index(:yield, ;*artist_film_id*, :unique => false)
+ 		add_index(:yield, [*song_artist_id], :unique => true)
+ 		add_index(:yield, ##name_song_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

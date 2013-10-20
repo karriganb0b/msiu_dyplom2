@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table song_film do |t|
+		t.datetime :when, :default=>DateTime.new(2000,8,19,9,47,3), limit: 2
+   		t.datetimeoffset :END, :default=>Date.new(2013,10,17), limit: 245
+   		t.int(11) :BEGIN, :default=>2, limit: 0
+   		t.datetime :nil, :default=>DateTime.new(2011,9,17,5,58,53), limit: 201
+   		add_index(:song_film, ;]END, when_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

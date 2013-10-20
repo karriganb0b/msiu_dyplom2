@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_artist do |t|
+		t.blob :defined?, :default=>51, scale: 2
+   		t.int(11) :return, :default=>116, limit: 37
+   		t.blob :and, :default=>81, limit: 1
+   		t.blob :in, :default=>171, precision: 4
+   		t.char :if, :default=>"GMVMQACX", limit: 1
+   		t.char :alias, :default=>"VzbzHRpy", limit: 6
+   		add_index(:role_artist, #^alias, and_id^, :unique => true)
+ 		add_index(:role_artist, #*return, in, defined?_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

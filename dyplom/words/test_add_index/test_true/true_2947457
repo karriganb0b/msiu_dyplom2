@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table firstname_country do |t|
+		t.datetime :return, :default=>DateTime.new(2013,3,17,4,34,19), scale: 1
+   		t.datetimeoffset :or, :default=>Date.new(2001,6,3), limit: 8
+   		t.datetimeoffset :BEGIN, :default=>Date.new(2005,6,18), limit: 4
+   		t.datetimeoffset :or, :default=>Date.new(2000,1,25), limit: 86
+   		add_index(:firstname_country, ;$or_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

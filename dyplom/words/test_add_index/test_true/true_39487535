@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table password_firstname do |t|
+		t.blob :if, :default=>35, scale: 0
+   		t.char :or, :default=>"Omjdhfwl", limit: 6
+   		t.datetime :module, :default=>DateTime.new(2004,1,18,7,10,10), limit: 4
+   		t.int(11) :return, :default=>195, limit: 9
+   		t.int(11) :if, :default=>188, limit: 40
+   		add_index(:password_firstname, *]if, or, module, if, return_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

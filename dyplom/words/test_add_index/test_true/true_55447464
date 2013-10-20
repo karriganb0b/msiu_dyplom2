@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table song_role do |t|
+		t.int(11) :unless, :default=>230, precision: 5
+   		t.int(11) :redo, :default=>255, scale: 1
+   		t.int(11) :else, :default=>217, precision: 0
+   		t.int(11) :until, :default=>28, limit: 0
+   		t.datetimeoffset :else, :default=>Date.new(2007,10,9), precision: 0
+   		add_index(:song_role, ]%unless_id%, :unique => true)
+ 		add_index(:song_role, #$else_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

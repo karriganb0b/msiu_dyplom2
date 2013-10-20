@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table end do |t|
+		t.string :film_firstname, :default=>"QysxwBCX", array: true
+   		t.date :country_film, :default=>Date.new(1999,8,12), array: true
+   		t.time :country_email, :default=>Time.new(14,23,42), null: false
+   		t.text :description_email, :default=>artist_adress, limit: 8
+   		t.integer :description_song, :default=>235, array: false
+   		t.boolean :length_adress, :default=>true, precision: 0, scale: 0
+   		add_index(:end, #^description_email, country_email_id[, :unique => false)
+ 		add_index(:end, ]^film_firstname_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

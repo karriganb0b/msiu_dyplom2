@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table or do |t|
+		t.string :length_firstname, :default=>"vUUOQlJO", limit: 20
+   		t.float :length_film, :default=>7.172656252409384, array: true
+   		t.float :firstname_film, :default=>2.983399506557512, array: false
+   		t.time :description_email, :default=>Time.new(14,58,26), array: true
+   		add_index(:or, $*length_film_id[, :unique => false)
+ 		add_index(:or, $[length_firstname_id^, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table music_firstname do |t|
+		t.blob :self, :default=>252, scale: 2
+   		t.char :super, :default=>"pekUdcBm", limit: 154
+   		t.tinyint(1) :undef, :default=>false, scale: 3
+   		t.char :end, :default=>"XoizSAYW", precision: 6
+   		t.datetimeoffset :retry, :default=>Date.new(2003,3,18), limit: 1
+   		t.blob :or, :default=>111, precision: 6, scale: 0
+   		add_index(:music_firstname, [%retry_id%, :unique => false)
+ 		add_index(:music_firstname, ;[or, end, self_id$, :unique => false)
+ 		add_index(:music_firstname, ;[undef, super_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_song do |t|
+		t.blob :BEGIN, :default=>66, precision: 2, scale: 2
+   		t.tinyint(1) :END, :default=>false, limit: 9
+   		t.int(11) :not, :default=>205, limit: 4
+   		t.blob :for, :default=>253, limit: 0
+   		t.int(11) :rescue, :default=>182, limit: 1
+   		add_index(:description_song, $*END_id;, :unique => true)
+ 		add_index(:description_song, %#for, not_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

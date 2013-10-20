@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table adress_name do |t|
+		t.datetime :true, :default=>DateTime.new(2009,10,10,10,13,0), limit: 5
+   		t.tinyint(1) :else, :default=>true, scale: 4
+   		t.int(11) :END, :default=>169, limit: 5
+   		t.tinyint(1) :else, :default=>false, precision: 6
+   		t.datetime :rescue, :default=>DateTime.new(2004,11,15,13,8,56), limit: 1
+   		t.datetimeoffset :next, :default=>Date.new(2013,10,8), scale: 3
+   		add_index(:adress_name, $*else, rescue, else, true, END_id[, :unique => true)
+ 		add_index(:adress_name, *#next_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

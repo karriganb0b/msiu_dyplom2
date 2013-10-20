@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table in do |t|
+		t.bytea :film_adress, :default=>249, limit: 0
+   		t.boolean :password_description, :default=>true, scale: 1
+   		t.string :name_firstname, :default=>"CylGTJna", array: true
+   		t.integer :song_password, :default=>142, null: false
+   		t.date :film_role, :default=>Date.new(2013,10,14), null: false
+   		add_index(:in, ;]film_role, name_firstname_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

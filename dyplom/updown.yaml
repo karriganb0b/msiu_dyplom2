@@ -1,0 +1,7 @@
+---
+create_table: drop_table
+add_column: remove_column
+rename_column: rename_column
+rename_table: rename_table
+add_reference: remove_reference
+add_timestamps: remove_timestamps

@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table artist_film do |t|
+		t.datetime :for, :default=>DateTime.new(2002,11,30,13,14,28), limit: 213
+   		t.blob :class, :default=>89, limit: 15
+   		t.char :return, :default=>"KvZyYNdC", limit: 3
+   		t.blob :defined?, :default=>156, limit: 4
+   		t.datetime :retry, :default=>DateTime.new(2003,5,14,14,11,16), limit: 1
+   		add_index(:artist_film, ;%for_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

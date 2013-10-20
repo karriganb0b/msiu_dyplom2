@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table country_description do |t|
+		t.datetime :defined?, :default=>DateTime.new(2012,4,15,12,54,33), limit: 2
+   		t.blob :do, :default=>244, precision: 2, scale: 1
+   		t.int(11) :super, :default=>169, limit: 0
+   		t.char :in, :default=>"qSFRmNAQ", limit: 2
+   		t.datetimeoffset :self, :default=>Date.new(2005,2,8), scale: 0
+   		t.datetime :when, :default=>DateTime.new(2013,5,4,1,2,54), limit: 0
+   		add_index(:country_description, *#in, self_id%, :unique => false)
+ 		add_index(:country_description, $*defined?, do, when, super_id], :unique => true)
+    end
+  end 
+end
+\end{verbatim}

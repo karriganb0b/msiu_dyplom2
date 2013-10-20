@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_film do |t|
+		t.datetimeoffset :if, :default=>Date.new(2012,3,13), precision: 6
+   		t.char :undef, :default=>"kGHRSnft", limit: 0
+   		t.datetimeoffset :super, :default=>Date.new(2004,9,21), limit: 1
+   		t.char :return, :default=>"NhOyNcHU", limit: 1
+   		t.datetimeoffset :next, :default=>Date.new(1999,7,5), precision: 2, scale: 3
+   		t.tinyint(1) :if, :default=>false, limit: 1
+   		add_index(:description_film, #$return_id*, :unique => true)
+ 		add_index(:description_film, $#undef_id$, :unique => false)
+ 		add_index(:description_film, *]if, next_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

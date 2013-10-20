@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table super do |t|
+		t.string :song_artist, :default=>"jTgGVRBF", null: false
+   		t.text :email_film, :default=>length_description, array: false
+   		t.date :firstname_country, :default=>Date.new(2009,4,18), null: true
+   		t.bytea :music_email, :default=>188, precision: 6
+   		add_index(:super, *;music_email_id[, :unique => true)
+ 		add_index(:super, ]%song_artist_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

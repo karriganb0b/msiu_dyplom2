@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table email_song do |t|
+		t.datetimeoffset :rescue, :default=>Date.new(2008,9,17), precision: 3
+   		t.datetimeoffset :alias, :default=>Date.new(2008,8,28), precision: 0
+   		t.tinyint(1) :in, :default=>false, scale: 0
+   		t.blob :def, :default=>101, limit: 2
+   		add_index(:email_song, ]*alias, def_id%, :unique => true)
+ 		add_index(:email_song, ];in_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

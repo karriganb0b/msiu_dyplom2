@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table country_music do |t|
+		t.char :while, :default=>"xGkdYlDZ", precision: 5, scale: 0
+   		t.int(11) :for, :default=>65, limit: 0
+   		t.blob :and, :default=>50, limit: 1
+   		t.datetime :BEGIN, :default=>DateTime.new(2006,4,22,19,25,32), limit: 183
+   		add_index(:country_music, #^for, while, BEGIN_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

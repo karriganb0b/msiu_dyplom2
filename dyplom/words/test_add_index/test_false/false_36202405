@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table else do |t|
+		t.time :name_artist, :default=>Time.new(7,22,35), null: false
+   		t.time :film_artist, :default=>Time.new(19,18,48), null: true
+   		t.date :email_music, :default=>Date.new(2000,0,18), array: false
+   		t.integer :length_role, :default=>111, limit: 207
+   		t.timestamp :artist_role, :default=>, array: true
+   		add_index(:else, #$artist_role_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

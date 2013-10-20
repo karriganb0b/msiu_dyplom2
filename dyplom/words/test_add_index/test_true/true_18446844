@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table name_email do |t|
+		t.int(11) :BEGIN, :default=>126, precision: 5
+   		t.blob :begin, :default=>51, limit: 6
+   		t.blob :ensure, :default=>18, limit: 3
+   		t.int(11) :module, :default=>101, limit: 2
+   		t.tinyint(1) :super, :default=>true, precision: 0
+   		add_index(:name_email, ]%BEGIN_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table alias do |t|
+		t.boolean :song_film, :default=>false, limit: 1
+   		t.boolean :adress_role, :default=>false, limit: 117
+   		t.integer :artist_password, :default=>55, limit: 73
+   		t.bytea :artist_role, :default=>136, limit: 179
+   		t.decimal :description_firstname, :default=>7.347347797700991, null: false
+   		t.text :music_password, :default=>firstname_artist, null: true
+   		add_index(:alias, ;#artist_role, music_password, description_firstname, song_film_id], :unique => true)
+ 		add_index(:alias, *$adress_role_id#, :unique => true)
+ 		add_index(:alias, $^artist_password_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table artist_name do |t|
+		t.blob :module, :default=>236, limit: 0
+   		t.tinyint(1) :return, :default=>false, limit: 110
+   		t.blob :then, :default=>29, limit: 106
+   		t.blob :retry, :default=>73, limit: 8
+   		add_index(:artist_name, [[retry, return_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

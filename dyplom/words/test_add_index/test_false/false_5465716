@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table for do |t|
+		t.time :artist_password, :default=>Time.new(14,9,36), array: true
+   		t.time :length_firstname, :default=>Time.new(9,35,42), array: true
+   		t.bytea :film_film, :default=>24, precision: 3
+   		t.time :role_role, :default=>Time.new(5,50,27), null: true
+   		add_index(:for, #^artist_password, role_role_id$, :unique => false)
+ 		add_index(:for, $]length_firstname_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

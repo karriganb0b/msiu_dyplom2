@@ -6,7 +6,7 @@ def random_false_column
   postgresql_false_column_name_one = postgresql_false_column_name.compact.shuffle.first
 end
 def data_type_f
-  postgresql_data_type_hash = YAML::load(open('.yaml'))
+  postgresql_data_type_hash = YAML::load(open('words/falsedatatype.yaml'))
   postgresql_data_type = postgresql_data_type_hash.keys
   postgresql_data_type = postgresql_data_type.shuffle.first
 

@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table name_music do |t|
+		t.blob :self, :default=>73, limit: 2
+   		t.datetimeoffset :next, :default=>Date.new(2010,3,9), limit: 1
+   		t.datetimeoffset :retry, :default=>Date.new(2002,8,10), scale: 2
+   		t.datetimeoffset :until, :default=>Date.new(2008,11,1), scale: 0
+   		t.datetime :yield, :default=>DateTime.new(2003,5,3,19,6,15), limit: 0
+   		add_index(:name_music, ##self, next_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

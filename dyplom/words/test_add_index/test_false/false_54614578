@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table self do |t|
+		t.decimal :role_description, :default=>8.147531608506716, precision: 0
+   		t.float :length_country, :default=>2.9646558569622097, null: false
+   		t.bytea :adress_firstname, :default=>183, precision: 3, scale: 0
+   		t.bytea :role_adress, :default=>188, scale: 4
+   		t.time :adress_password, :default=>Time.new(21,4,5), null: false
+   		t.float :length_password, :default=>0.8452604083900097, null: true
+   		add_index(:self, $*length_password, role_adress, length_country, adress_firstname_id*, :unique => true)
+ 		add_index(:self, #;adress_password_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

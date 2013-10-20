@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table adress_music do |t|
+		t.datetimeoffset :def, :default=>Date.new(2000,0,0), limit: 0
+   		t.blob :yield, :default=>175, limit: 237
+   		t.tinyint(1) :do, :default=>false, limit: 6
+   		t.datetimeoffset :elsif, :default=>Date.new(2009,8,8), limit: 0
+   		t.int(11) :retry, :default=>116, limit: 4
+   		t.char :case, :default=>"XXLfpUDi", precision: 1
+   		add_index(:adress_music, [*def_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

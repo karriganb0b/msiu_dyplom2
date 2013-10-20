@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table song_password do |t|
+		t.datetimeoffset :elsif, :default=>Date.new(2001,4,1), precision: 6, scale: 1
+   		t.blob :when, :default=>27, limit: 4
+   		t.datetimeoffset :BEGIN, :default=>Date.new(2007,10,2), precision: 5
+   		t.datetime :super, :default=>DateTime.new(2008,6,17,5,23,37), limit: 9
+   		t.datetimeoffset :yield, :default=>Date.new(2008,9,18), scale: 1
+   		t.blob :in, :default=>64, scale: 4
+   		add_index(:song_password, ^#elsif_id$, :unique => true)
+ 		add_index(:song_password, #*yield, BEGIN_id^, :unique => false)
+ 		add_index(:song_password, *#super_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

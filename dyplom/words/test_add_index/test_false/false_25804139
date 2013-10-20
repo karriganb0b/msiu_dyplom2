@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table case do |t|
+		t.float :description_password, :default=>8.439631854123325, array: false
+   		t.timestamp :adress_adress, :default=>DateTime.new(2011,3,11,2,14,54), null: false
+   		t.text :artist_music, :default=>music_password, null: true
+   		t.boolean :description_name, :default=>false, precision: 5
+   		t.integer :artist_adress, :default=>71, limit: 84
+   		t.boolean :music_email, :default=>true, limit: 0
+   		add_index(:case, $[description_name_id^, :unique => false)
+ 		add_index(:case, ]^artist_adress, artist_music, adress_adress_id#, :unique => true)
+ 		add_index(:case, %;music_email, description_password_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

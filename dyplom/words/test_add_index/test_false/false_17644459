@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table and do |t|
+		t.integer :film_film, :default=>90, null: true
+   		t.integer :name_artist, :default=>205, array: true
+   		t.time :firstname_music, :default=>Time.new(11,22,6), null: false
+   		t.string :music_password, :default=>"DXnKyBNx", limit: 9
+   		t.timestamp :adress_music, :default=>DateTime.new(2011,10,2,4,15,0), array: false
+   		t.time :song_country, :default=>Time.new(6,20,5), null: false
+   		add_index(:and, [^music_password_id%, :unique => true)
+ 		add_index(:and, **firstname_music_id^, :unique => false)
+ 		add_index(:and, ^*film_film, song_country_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

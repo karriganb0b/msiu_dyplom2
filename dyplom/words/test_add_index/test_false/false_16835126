@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table class do |t|
+		t.timestamp :film_film, :default=>DateTime.new(2014,5,11,2,24,29), array: true
+   		t.float :film_password, :default=>3.043159132692719, null: true
+   		t.integer :adress_adress, :default=>65, null: false
+   		t.float :country_film, :default=>0.09042475297018326, array: false
+   		t.text :length_description, :default=>role_adress, limit: 8
+   		t.integer :password_song, :default=>137, null: false
+   		add_index(:class, *$film_film_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

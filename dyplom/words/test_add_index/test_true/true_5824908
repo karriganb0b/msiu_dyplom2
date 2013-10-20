@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table email_adress do |t|
+		t.char :class, :default=>"oaePWxdX", precision: 6
+   		t.char :rescue, :default=>"bsdTbXDh", limit: 3
+   		t.char :then, :default=>"IzixTPJF", precision: 2
+   		t.datetimeoffset :redo, :default=>Date.new(2005,8,27), limit: 1
+   		t.blob :else, :default=>238, precision: 6, scale: 3
+   		t.int(11) :true, :default=>155, limit: 6
+   		add_index(:email_adress, ;$true, else_id#, :unique => false)
+ 		add_index(:email_adress, *]class, then_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

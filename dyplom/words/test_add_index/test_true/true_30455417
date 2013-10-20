@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_firstname do |t|
+		t.int(11) :super, :default=>69, limit: 3
+   		t.blob :super, :default=>168, limit: 5
+   		t.tinyint(1) :case, :default=>true, scale: 1
+   		t.tinyint(1) :BEGIN, :default=>true, limit: 7
+   		t.char :undef, :default=>"rVEkxKZm", limit: 80
+   		t.blob :alias, :default=>181, precision: 4, scale: 2
+   		add_index(:role_firstname, %#alias, super_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

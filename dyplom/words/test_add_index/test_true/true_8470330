@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_role do |t|
+		t.datetime :ensure, :default=>DateTime.new(2005,4,5,18,51,46), precision: 1, scale: 1
+   		t.char :begin, :default=>"XhvlTsDH", precision: 4
+   		t.char :and, :default=>"HJJHADIj", limit: 9
+   		t.int(11) :yield, :default=>75, precision: 3
+   		t.char :self, :default=>"weQPuiPU", precision: 4, scale: 3
+   		add_index(:description_role, $*ensure, and_id[, :unique => false)
+ 		add_index(:description_role, ;*self, yield_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

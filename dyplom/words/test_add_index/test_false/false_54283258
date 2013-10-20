@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table case do |t|
+		t.time :description_description, :default=>Time.new(21,28,3), array: false
+   		t.date :adress_length, :default=>Date.new(2011,6,25), array: false
+   		t.decimal :name_song, :default=>8.73529840363792, array: true
+   		t.float :song_description, :default=>7.991583059402254, array: true
+   		t.text :country_artist, :default=>film_description, null: true
+   		add_index(:case, %;song_description, description_description, name_song, adress_length_id[, :unique => false)
+ 		add_index(:case, ]*country_artist_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

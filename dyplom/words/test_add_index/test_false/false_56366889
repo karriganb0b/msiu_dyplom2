@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table when do |t|
+		t.time :password_email, :default=>Time.new(14,0,26), null: true
+   		t.float :name_country, :default=>4.854657747851522, null: false
+   		t.time :country_song, :default=>Time.new(6,16,9), array: true
+   		t.float :email_artist, :default=>3.574743313851139, null: true
+   		t.integer :adress_artist, :default=>223, null: true
+   		add_index(:when, $#country_song_id], :unique => true)
+ 		add_index(:when, ;;email_artist_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table if do |t|
+		t.timestamp :role_firstname, :default=>DateTime.new(2011,3,1,2,12,57), null: false
+   		t.string :name_song, :default=>"tcgOYKSM", array: false
+   		t.bytea :firstname_role, :default=>167, limit: 8
+   		t.integer :name_password, :default=>16, limit: 0
+   		add_index(:if, ^[role_firstname, firstname_role_id$, :unique => false)
+ 		add_index(:if, ^#name_password_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

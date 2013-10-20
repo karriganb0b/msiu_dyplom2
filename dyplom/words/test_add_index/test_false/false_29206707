@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table while do |t|
+		t.float :email_film, :default=>6.418226304800065, array: false
+   		t.date :music_description, :default=>Date.new(2001,8,7), array: false
+   		t.boolean :song_name, :default=>false, scale: 3
+   		t.time :description_song, :default=>Time.new(5,26,7), array: true
+   		t.bytea :song_film, :default=>190, limit: 1
+   		add_index(:while, %]email_film, description_song_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table ensure do |t|
+		t.timestamp :firstname_email, :default=>DateTime.new(2003,3,18,18,28,57), null: true
+   		t.timestamp :email_film, :default=>DateTime.new(2004,2,12,22,42,59), null: true
+   		t.float :firstname_song, :default=>0.2567814420782004, array: false
+   		t.date :firstname_email, :default=>Date.new(2001,1,29), null: false
+   		add_index(:ensure, *]firstname_song, email_film, firstname_email, firstname_email_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

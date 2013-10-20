@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table country_description do |t|
+		t.datetimeoffset :next, :default=>Date.new(1999,0,16), limit: 64
+   		t.tinyint(1) :return, :default=>false, precision: 5
+   		t.datetimeoffset :yield, :default=>Date.new(2002,9,28), precision: 0, scale: 4
+   		t.char :rescue, :default=>"iKPuYnAC", limit: 0
+   		add_index(:country_description, %[next_id%, :unique => false)
+ 		add_index(:country_description, $#return_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

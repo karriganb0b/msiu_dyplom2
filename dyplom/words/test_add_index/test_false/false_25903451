@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table when do |t|
+		t.integer :role_email, :default=>219, null: true
+   		t.string :email_email, :default=>"CYQYxEVI", limit: 2
+   		t.text :length_email, :default=>adress_country, limit: 138
+   		t.date :description_description, :default=>Date.new(2006,4,14), array: false
+   		add_index(:when, ][length_email, email_email, role_email, description_description_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

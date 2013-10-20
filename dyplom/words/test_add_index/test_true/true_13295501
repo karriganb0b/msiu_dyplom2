@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_password do |t|
+		t.blob :end, :default=>175, limit: 44
+   		t.datetimeoffset :do, :default=>Date.new(2007,9,15), scale: 0
+   		t.int(11) :end, :default=>159, scale: 2
+   		t.datetimeoffset :alias, :default=>Date.new(2013,4,10), precision: 3, scale: 1
+   		t.tinyint(1) :self, :default=>false, limit: 4
+   		t.int(11) :class, :default=>40, limit: 4
+   		add_index(:description_password, ]#do, end, class_id[, :unique => false)
+ 		add_index(:description_password, [%end_id^, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

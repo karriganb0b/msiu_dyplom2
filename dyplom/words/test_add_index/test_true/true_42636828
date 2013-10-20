@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_email do |t|
+		t.char :BEGIN, :default=>"VBTXaDkG", precision: 3, scale: 2
+   		t.int(11) :when, :default=>44, limit: 107
+   		t.datetimeoffset :undef, :default=>Date.new(2012,8,21), scale: 0
+   		t.int(11) :nil, :default=>83, precision: 2
+   		t.blob :false, :default=>34, limit: 0
+   		add_index(:description_email, ^]nil, undef_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

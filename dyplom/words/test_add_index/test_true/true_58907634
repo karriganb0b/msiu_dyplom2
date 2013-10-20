@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table length_role do |t|
+		t.int(11) :nil, :default=>19, limit: 0
+   		t.tinyint(1) :case, :default=>true, scale: 3
+   		t.char :defined?, :default=>"loVixjQM", precision: 6
+   		t.int(11) :module, :default=>107, limit: 0
+   		t.blob :false, :default=>209, limit: 171
+   		t.blob :elsif, :default=>124, precision: 5
+   		add_index(:length_role, ^]nil, false_id;, :unique => true)
+ 		add_index(:length_role, $[case_id], :unique => true)
+ 		add_index(:length_role, *[elsif_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

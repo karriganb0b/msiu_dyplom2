@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table firstname_adress do |t|
+		t.int(11) :or, :default=>195, scale: 4
+   		t.blob :break, :default=>0, scale: 1
+   		t.int(11) :for, :default=>101, limit: 4
+   		t.datetime :elsif, :default=>DateTime.new(1999,7,11,5,8,15), limit: 232
+   		t.char :class, :default=>"ozXTbiEE", precision: 1, scale: 4
+   		t.blob :while, :default=>218, scale: 2
+   		add_index(:firstname_adress, $*break, or_id], :unique => false)
+ 		add_index(:firstname_adress, ^^for_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

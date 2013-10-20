@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table module do |t|
+		t.bytea :film_music, :default=>137, limit: 5
+   		t.string :artist_role, :default=>"VzZukVlF", null: false
+   		t.integer :length_description, :default=>118, array: true
+   		t.bytea :film_country, :default=>101, limit: 5
+   		t.decimal :country_music, :default=>0.09807767163133319, array: true
+   		t.decimal :music_name, :default=>7.810134251941987, null: false
+   		add_index(:module, ;]length_description, artist_role, film_country, music_name, film_music_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

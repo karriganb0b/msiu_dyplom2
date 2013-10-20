@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table artist_music do |t|
+		t.tinyint(1) :next, :default=>false, limit: 0
+   		t.char :module, :default=>"FQesgmWO", limit: 3
+   		t.datetimeoffset :alias, :default=>Date.new(2001,5,17), limit: 34
+   		t.blob :begin, :default=>136, precision: 1
+   		t.blob :while, :default=>80, precision: 6, scale: 4
+   		add_index(:artist_music, $%next, alias, while, module, begin_id;, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

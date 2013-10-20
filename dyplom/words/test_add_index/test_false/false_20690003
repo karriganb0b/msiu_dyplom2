@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table in do |t|
+		t.date :description_name, :default=>Date.new(2003,2,3), array: false
+   		t.date :email_name, :default=>Date.new(2013,11,29), null: false
+   		t.date :length_email, :default=>Date.new(2006,11,19), null: true
+   		t.date :length_song, :default=>Date.new(2008,3,27), null: true
+   		t.float :song_adress, :default=>4.571878192972986, null: true
+   		add_index(:in, #*length_email, length_song, description_name, song_adress_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

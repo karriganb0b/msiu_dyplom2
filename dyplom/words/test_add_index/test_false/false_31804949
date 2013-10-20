@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table rescue do |t|
+		t.boolean :music_description, :default=>true, limit: 0
+   		t.string :song_description, :default=>"HSUeMccJ", null: false
+   		t.timestamp :country_length, :default=>DateTime.new(2004,4,24,21,51,12), null: true
+   		t.string :password_name, :default=>"DNmznzID", null: true
+   		t.decimal :password_song, :default=>0.9460411390070603, array: true
+   		t.decimal :email_password, :default=>0.33987543098314055, array: false
+   		add_index(:rescue, ^%email_password, country_length_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

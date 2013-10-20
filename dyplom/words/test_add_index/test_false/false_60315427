@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table yield do |t|
+		t.bytea :artist_country, :default=>231, scale: 1
+   		t.string :description_length, :default=>"LlINeTSY", null: true
+   		t.integer :song_description, :default=>179, limit: 152
+   		t.integer :description_name, :default=>141, null: false
+   		t.time :name_artist, :default=>Time.new(3,19,29), null: true
+   		add_index(:yield, ;%description_name_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table defined? do |t|
+		t.bytea :role_country, :default=>140, limit: 4
+   		t.timestamp :music_name, :default=>DateTime.new(2009,3,25,9,37,41), array: false
+   		t.boolean :description_film, :default=>false, limit: 78
+   		t.timestamp :password_artist, :default=>, array: true
+   		add_index(:defined?, [*description_film_id#, :unique => true)
+ 		add_index(:defined?, ;^role_country_id;, :unique => true)
+ 		add_index(:defined?, ^^password_artist_id;, :unique => false)
+ 		add_index(:defined?, ^[music_name_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

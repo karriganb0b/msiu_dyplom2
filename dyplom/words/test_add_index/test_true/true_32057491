@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table adress_role do |t|
+		t.datetime :redo, :default=>DateTime.new(1999,5,2,8,9,22), limit: 1
+   		t.datetimeoffset :for, :default=>Date.new(2006,5,16), precision: 0
+   		t.datetimeoffset :case, :default=>Date.new(2007,8,28), limit: 1
+   		t.char :unless, :default=>"DKsQgpJy", limit: 9
+   		t.tinyint(1) :or, :default=>false, limit: 55
+   		add_index(:adress_role, %$or_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

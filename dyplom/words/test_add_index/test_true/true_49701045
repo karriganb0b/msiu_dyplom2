@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table email_email do |t|
+		t.datetime :or, :default=>, limit: 0
+   		t.blob :unless, :default=>223, scale: 4
+   		t.char :def, :default=>"tBTwZuLm", limit: 0
+   		t.blob :end, :default=>96, limit: 1
+   		t.datetime :true, :default=>DateTime.new(2014,2,7,10,35,47), limit: 231
+   		add_index(:email_email, $#unless_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

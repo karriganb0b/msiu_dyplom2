@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table begin do |t|
+		t.date :role_artist, :default=>Date.new(2002,6,21), array: false
+   		t.integer :country_adress, :default=>235, null: true
+   		t.decimal :password_film, :default=>1.9307246718602034, null: true
+   		t.boolean :email_description, :default=>true, limit: 121
+   		add_index(:begin, %%email_description, country_adress_id[, :unique => true)
+ 		add_index(:begin, [*password_film_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

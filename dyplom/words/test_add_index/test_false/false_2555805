@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table undef do |t|
+		t.decimal :name_film, :default=>8.058445100922622, precision: 3, scale: 0
+   		t.boolean :adress_song, :default=>true, limit: 3
+   		t.boolean :length_description, :default=>true, limit: 0
+   		t.boolean :artist_password, :default=>true, limit: 115
+   		t.integer :role_length, :default=>96, null: true
+   		t.text :firstname_film, :default=>email_country, limit: 1
+   		add_index(:undef, *;artist_password_id%, :unique => false)
+ 		add_index(:undef, ]]firstname_film, name_film_id], :unique => false)
+ 		add_index(:undef, %[length_description, adress_song_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

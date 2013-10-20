@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table nil do |t|
+		t.bytea :song_description, :default=>127, limit: 2
+   		t.time :country_role, :default=>Time.new(14,0,9), null: true
+   		t.boolean :country_firstname, :default=>false, scale: 0
+   		t.boolean :film_song, :default=>true, limit: 199
+   		add_index(:nil, #%country_role, song_description_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

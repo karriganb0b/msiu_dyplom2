@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table email_password do |t|
+		t.blob :do, :default=>192, limit: 1
+   		t.int(11) :false, :default=>182, limit: 2
+   		t.blob :then, :default=>101, precision: 0
+   		t.blob :or, :default=>43, limit: 8
+   		t.tinyint(1) :until, :default=>true, scale: 3
+   		add_index(:email_password, #*do_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

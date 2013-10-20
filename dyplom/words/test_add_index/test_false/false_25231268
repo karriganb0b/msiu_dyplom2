@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table defined? do |t|
+		t.date :role_role, :default=>Date.new(2010,4,5), null: false
+   		t.bytea :length_film, :default=>121, precision: 5
+   		t.text :song_name, :default=>artist_adress, array: true
+   		t.decimal :song_artist, :default=>3.996445580402968, null: true
+   		add_index(:defined?, %]length_film, role_role, song_artist_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

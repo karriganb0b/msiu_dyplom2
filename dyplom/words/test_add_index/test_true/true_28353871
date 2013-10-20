@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table name_password do |t|
+		t.tinyint(1) :do, :default=>false, limit: 3
+   		t.datetime :in, :default=>DateTime.new(2011,10,14,1,50,37), limit: 9
+   		t.datetimeoffset :while, :default=>Date.new(2004,9,3), limit: 181
+   		t.tinyint(1) :super, :default=>false, precision: 6, scale: 1
+   		t.int(11) :or, :default=>180, precision: 6, scale: 2
+   		t.datetime :class, :default=>DateTime.new(2011,10,20,21,0,41), limit: 0
+   		add_index(:name_password, ;;in_id], :unique => true)
+ 		add_index(:name_password, ^^super, while, do_id], :unique => false)
+ 		add_index(:name_password, ;*class_id], :unique => true)
+    end
+  end 
+end
+\end{verbatim}

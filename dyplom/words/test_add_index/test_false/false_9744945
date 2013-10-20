@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table break do |t|
+		t.bytea :music_name, :default=>89, limit: 230
+   		t.boolean :role_film, :default=>false, precision: 1, scale: 1
+   		t.text :film_music, :default=>artist_song, limit: 6
+   		t.date :password_length, :default=>Date.new(1999,6,22), null: false
+   		t.date :description_song, :default=>Date.new(2004,4,19), null: true
+   		t.decimal :film_country, :default=>4.267020170054768, array: true
+   		add_index(:break, $*password_length_id^, :unique => false)
+ 		add_index(:break, ];role_film_id;, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

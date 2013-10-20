@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table case do |t|
+		t.float :adress_firstname, :default=>4.212284291813307, null: false
+   		t.integer :length_firstname, :default=>123, limit: 8
+   		t.float :music_role, :default=>6.961798079629605, null: false
+   		t.float :music_name, :default=>2.7026268086811527, null: false
+   		t.bytea :country_artist, :default=>97, limit: 0
+   		add_index(:case, %[length_firstname_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

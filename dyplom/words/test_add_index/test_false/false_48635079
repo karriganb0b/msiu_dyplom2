@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table retry do |t|
+		t.time :artist_role, :default=>Time.new(13,52,38), null: false
+   		t.date :length_description, :default=>Date.new(2010,1,11), array: false
+   		t.timestamp :artist_film, :default=>DateTime.new(2006,9,14,13,46,7), null: true
+   		t.bytea :email_artist, :default=>83, limit: 3
+   		t.bytea :adress_song, :default=>29, limit: 148
+   		t.decimal :artist_name, :default=>2.986562623481076, array: false
+   		add_index(:retry, ^%email_artist_id%, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

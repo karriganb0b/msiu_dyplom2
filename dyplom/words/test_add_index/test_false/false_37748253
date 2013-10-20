@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table break do |t|
+		t.string :email_length, :default=>"ldkHQcEC", null: false
+   		t.text :email_password, :default=>name_adress, array: true
+   		t.time :length_description, :default=>Time.new(14,49,23), null: true
+   		t.string :music_role, :default=>"hPiNhxQy", array: true
+   		t.text :adress_artist, :default=>email_name, null: true
+   		t.boolean :email_email, :default=>false, scale: 0
+   		add_index(:break, ;]music_role, email_length, email_email, email_password_id^, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

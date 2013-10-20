@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table END do |t|
+		t.timestamp :film_adress, :default=>DateTime.new(2001,9,20,1,28,41), array: false
+   		t.string :artist_description, :default=>"ftoLpIMI", limit: 47
+   		t.timestamp :artist_name, :default=>DateTime.new(2014,2,26,18,26,13), array: false
+   		t.float :password_name, :default=>7.25738065171859, array: false
+   		add_index(:END, []password_name, film_adress, artist_description_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

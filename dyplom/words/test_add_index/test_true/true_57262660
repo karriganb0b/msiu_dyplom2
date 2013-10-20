@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table email_artist do |t|
+		t.tinyint(1) :for, :default=>false, scale: 3
+   		t.datetimeoffset :rescue, :default=>Date.new(2007,7,3), precision: 6, scale: 3
+   		t.blob :true, :default=>131, precision: 0
+   		t.tinyint(1) :module, :default=>false, limit: 2
+   		t.blob :BEGIN, :default=>253, limit: 7
+   		add_index(:email_artist, ^$module_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

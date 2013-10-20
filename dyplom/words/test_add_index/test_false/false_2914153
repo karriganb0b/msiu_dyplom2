@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table redo do |t|
+		t.bytea :artist_email, :default=>240, limit: 9
+   		t.decimal :role_music, :default=>6.028741154381374, null: false
+   		t.string :length_email, :default=>"xrbiUWDw", array: false
+   		t.decimal :firstname_song, :default=>0.5795281383474855, array: false
+   		add_index(:redo, %#length_email_id^, :unique => false)
+ 		add_index(:redo, ^[artist_email_id[, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

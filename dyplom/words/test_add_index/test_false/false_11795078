@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table when do |t|
+		t.string :firstname_artist, :default=>"wvkBwwnu", limit: 8
+   		t.text :song_password, :default=>song_film, limit: 8
+   		t.time :artist_film, :default=>Time.new(16,39,54), null: true
+   		t.integer :song_music, :default=>124, limit: 0
+   		t.float :role_name, :default=>1.4363017583720898, array: false
+   		t.boolean :length_adress, :default=>false, precision: 5
+   		add_index(:when, ^*firstname_artist, song_password, artist_film, role_name_id^, :unique => false)
+ 		add_index(:when, $;length_adress_id*, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

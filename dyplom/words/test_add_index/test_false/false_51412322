@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table when do |t|
+		t.text :role_artist, :default=>firstname_length, null: true
+   		t.date :firstname_length, :default=>Date.new(2012,9,27), array: false
+   		t.bytea :password_description, :default=>117, precision: 3
+   		t.time :length_film, :default=>Time.new(8,37,38), null: true
+   		t.string :length_name, :default=>"hjQXmLcB", limit: 139
+   		add_index(:when, []password_description_id], :unique => false)
+ 		add_index(:when, #;role_artist_id], :unique => true)
+ 		add_index(:when, ;$length_film_id^, :unique => false)
+ 		add_index(:when, ^;firstname_length_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

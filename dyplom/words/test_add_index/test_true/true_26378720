@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_role do |t|
+		t.datetime :and, :default=>DateTime.new(2005,2,15,4,26,19), limit: 8
+   		t.char :begin, :default=>"YaLTEmtg", limit: 3
+   		t.datetimeoffset :super, :default=>Date.new(2014,3,11), precision: 2, scale: 1
+   		t.datetime :if, :default=>DateTime.new(2013,11,23,20,35,56), scale: 4
+   		t.blob :in, :default=>22, scale: 0
+   		add_index(:role_role, [[and, if, in, super_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

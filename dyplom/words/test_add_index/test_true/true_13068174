@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table password_adress do |t|
+		t.char :module, :default=>"kcHwZgbv", limit: 0
+   		t.tinyint(1) :defined?, :default=>false, precision: 5
+   		t.blob :begin, :default=>12, precision: 6, scale: 1
+   		t.char :retry, :default=>"jRjPLOeu", limit: 58
+   		add_index(:password_adress, ]$module_id*, :unique => false)
+ 		add_index(:password_adress, ;*retry_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table ensure do |t|
+		t.integer :name_artist, :default=>250, null: false
+   		t.timestamp :adress_role, :default=>DateTime.new(2007,9,6,20,2,11), array: true
+   		t.string :description_music, :default=>"CImrMNkh", null: true
+   		t.timestamp :film_song, :default=>DateTime.new(2006,11,7,9,21,36), array: false
+   		add_index(:ensure, %%description_music, name_artist, film_song_id^, :unique => true)
+ 		add_index(:ensure, []adress_role_id;, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

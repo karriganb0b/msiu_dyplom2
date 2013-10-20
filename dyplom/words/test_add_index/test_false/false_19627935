@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table defined? do |t|
+		t.integer :firstname_password, :default=>144, limit: 5
+   		t.boolean :name_length, :default=>false, limit: 0
+   		t.text :firstname_password, :default=>music_length, array: false
+   		t.string :artist_email, :default=>"PhJEgxEE", array: true
+   		t.float :music_music, :default=>4.232176648315048, null: false
+   		add_index(:defined?, *;firstname_password, firstname_password_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

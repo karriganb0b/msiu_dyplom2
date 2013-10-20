@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table film_firstname do |t|
+		t.datetimeoffset :not, :default=>Date.new(2011,11,0), limit: 9
+   		t.blob :nil, :default=>175, precision: 0
+   		t.tinyint(1) :elsif, :default=>false, limit: 4
+   		t.int(11) :yield, :default=>109, limit: 43
+   		t.char :redo, :default=>"UhmBntIg", limit: 0
+   		t.blob :else, :default=>125, scale: 1
+   		add_index(:film_firstname, [;not, else_id;, :unique => true)
+ 		add_index(:film_firstname, *^redo_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

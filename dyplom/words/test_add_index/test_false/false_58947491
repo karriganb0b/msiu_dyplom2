@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table end do |t|
+		t.text :artist_description, :default=>song_length, limit: 241
+   		t.boolean :song_country, :default=>false, precision: 2
+   		t.decimal :artist_film, :default=>8.277294769957475, array: true
+   		t.float :length_song, :default=>4.522984421043524, array: false
+   		add_index(:end, $^song_country, length_song_id*, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

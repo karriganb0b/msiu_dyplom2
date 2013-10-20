@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table name_name do |t|
+		t.int(11) :redo, :default=>41, limit: 9
+   		t.blob :for, :default=>241, limit: 164
+   		t.datetimeoffset :rescue, :default=>Date.new(2006,9,25), precision: 5
+   		t.datetimeoffset :false, :default=>Date.new(2003,1,12), precision: 4
+   		t.datetime :not, :default=>DateTime.new(2012,1,18,7,59,31), precision: 4
+   		add_index(:name_name, *[for, rescue, false_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

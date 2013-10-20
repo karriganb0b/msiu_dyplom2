@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table role_film do |t|
+		t.blob :self, :default=>76, precision: 5
+   		t.char :module, :default=>"iGaHDShr", limit: 0
+   		t.blob :if, :default=>237, limit: 6
+   		t.datetimeoffset :true, :default=>Date.new(2014,8,20), limit: 0
+   		add_index(:role_film, [^module_id], :unique => true)
+ 		add_index(:role_film, %#true_id], :unique => true)
+ 		add_index(:role_film, ^[self_id[, :unique => true)
+ 		add_index(:role_film, ^^if_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

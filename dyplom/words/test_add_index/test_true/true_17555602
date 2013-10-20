@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_song do |t|
+		t.blob :next, :default=>66, precision: 0
+   		t.int(11) :undef, :default=>238, precision: 3, scale: 3
+   		t.datetimeoffset :when, :default=>Date.new(2013,9,3), precision: 3
+   		t.datetimeoffset :begin, :default=>Date.new(2012,1,20), limit: 5
+   		t.datetimeoffset :not, :default=>Date.new(2008,7,14), scale: 4
+   		t.int(11) :undef, :default=>102, scale: 4
+   		add_index(:description_song, $]begin_id*, :unique => true)
+ 		add_index(:description_song, ^*undef_id], :unique => false)
+ 		add_index(:description_song, #]when, next_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table true do |t|
+		t.boolean :song_role, :default=>false, scale: 3
+   		t.time :firstname_length, :default=>Time.new(17,39,3), null: true
+   		t.string :length_artist, :default=>"RLtQPaKG", limit: 3
+   		t.time :song_role, :default=>Time.new(17,46,56), null: false
+   		t.timestamp :description_country, :default=>DateTime.new(2004,4,16,0,41,13), array: true
+   		add_index(:true, ;*description_country, length_artist_id^, :unique => false)
+ 		add_index(:true, $;song_role_id*, :unique => true)
+ 		add_index(:true, []song_role_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

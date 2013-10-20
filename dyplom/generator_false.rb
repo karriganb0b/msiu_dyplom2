@@ -13,7 +13,7 @@ def column(hash, name)
   data_type = hash.keys.shuffle.first
   method = hash[data_type]
   rand_field = rand_mod(data_type) 
-  "\t\t\tt.#{data_type} :#{name}, :default"  + "=>" +(send method).to_s + ", #{rand_field}\n   "
+  "\t\tt.#{data_type} :#{name}, :default"  + "=>" +(send method).to_s + ", #{rand_field}\n   "
 end
 
 def index(table, name, correct=true)
@@ -25,20 +25,22 @@ def index(table, name, correct=true)
   select_scob2 = correct ? select_cor2 : (symbol_function).to_s 
   
 
-  "\t\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}_id#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
+  "\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}_id#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
 end
 
-def random_migration(table, name,correct=false , correct_index=true)
+
+def random_migration(correct=false , correct_index=true)
   table_name = correct ? (random_column_name).to_s : (random_false_column).to_s
+  
   indicator = correct_index ? "T" : "F"
   # beginning of migration
   str = <<-END
-  "#{indicator}"
-	\\begin{verbatim}
-   	 class CreateUsers < ActiveRecord::Migration
-	   def change
-	     create_table #{table_name} do |t|
-  END
+#{indicator}
+\\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table #{table_name} do |t|
+END
 
   # add columns
   files_with_types = correct ? 'words/falsedatatype.yaml' : 'qq.yaml'
@@ -54,23 +56,32 @@ def random_migration(table, name,correct=false , correct_index=true)
   end
   
   # add indexes
-  rand(1..number_columns).times do
-	column_name = column_names.shuffle.pop
+  array = []
+  column_names = column_names.shuffle
+  indnum = rand(number_columns) + 1
+  i = 0
+  while i < indnum
+    puts column_names.inspect 
+	x = rand(indnum - i) + 1
+	i += x
+	column_name = column_names[0...x].join(', ')
+	column_names = column_names[x..-1]
+	array << index(table_name, column_name, correct_index)
+  end
+  str << array.uniq.join(" ")
   
-	str << index(table_name, column_name, correct_index)
-  end	
-	
   # end of migration
   str << <<-END
-	     end
-	  end 
     end
-    \\end{verbatim}
+  end 
+end
+\\end{verbatim}
   END
 end
-
+def add_sbor
 tema = "N\nActiveRecord Migration!!!"
-text = "Q\nSelect true migration"
+text = "\nQ\nSelect true migration"
+srt = "\n"
 res = []
 correct_indexes = ([false] * 3 + [true]).shuffle
 res << random_migration(false, correct_indexes.pop)
@@ -79,8 +90,11 @@ res << random_migration(false, correct_indexes.pop)
 File.open('migration.tex', 'a') do |file| 
 	file.puts tema 
 	file.puts text
+	file.puts srt
 	file.puts res.shuffle.join("\n")
 end
+end
+add_sbor
 
   tema = "N\nadd_index for search!!!
   "
@@ -121,3 +135,4 @@ res << add_index(false)
 
 file = File.open('migration2.tex', 'a'){ |file| file.puts res.shuffle.join("\n") }
 }
+

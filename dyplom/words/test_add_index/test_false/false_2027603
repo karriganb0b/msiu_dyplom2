@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table END do |t|
+		t.text :password_password, :default=>role_password, array: false
+   		t.boolean :role_role, :default=>false, limit: 5
+   		t.string :firstname_email, :default=>"BwxLSBFN", array: false
+   		t.string :description_password, :default=>"cxOLoOKq", null: false
+   		add_index(:END, ]*firstname_email_id#, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

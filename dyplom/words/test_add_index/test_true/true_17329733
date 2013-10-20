@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table song_song do |t|
+		t.tinyint(1) :case, :default=>false, limit: 0
+   		t.blob :break, :default=>180, limit: 9
+   		t.tinyint(1) :return, :default=>false, limit: 9
+   		t.datetimeoffset :begin, :default=>Date.new(2007,2,14), scale: 2
+   		add_index(:song_song, ]]begin, break_id%, :unique => false)
+ 		add_index(:song_song, $%return_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,19 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table artist_music do |t|
+		t.blob :module, :default=>202, limit: 2
+   		t.tinyint(1) :do, :default=>false, limit: 6
+   		t.datetimeoffset :while, :default=>Date.new(2013,6,23), limit: 54
+   		t.int(11) :elsif, :default=>231, precision: 4, scale: 4
+   		t.int(11) :module, :default=>207, precision: 1
+   		t.datetime :else, :default=>DateTime.new(2002,2,13,16,57,26), limit: 1
+   		add_index(:artist_music, ;#do, else_id[, :unique => false)
+ 		add_index(:artist_music, ^;module, while, module_id[, :unique => false)
+ 		add_index(:artist_music, ;]elsif_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

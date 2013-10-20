@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table while do |t|
+		t.decimal :email_firstname, :default=>4.661787436512181, null: false
+   		t.text :email_song, :default=>description_music, array: false
+   		t.boolean :artist_role, :default=>false, scale: 1
+   		t.float :description_song, :default=>2.4101287059380105, array: true
+   		t.time :password_email, :default=>Time.new(10,53,56), null: true
+   		t.text :firstname_length, :default=>description_song, array: true
+   		add_index(:while, $#description_song, firstname_length, password_email, email_firstname, artist_role_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

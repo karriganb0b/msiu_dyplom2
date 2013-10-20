@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table rescue do |t|
+		t.boolean :name_music, :default=>true, limit: 4
+   		t.bytea :film_role, :default=>104, limit: 44
+   		t.boolean :film_description, :default=>false, limit: 1
+   		t.timestamp :password_song, :default=>DateTime.new(2005,10,16,23,45,36), array: true
+   		t.text :firstname_film, :default=>country_email, array: true
+   		add_index(:rescue, ]%password_song_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

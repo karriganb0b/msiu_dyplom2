@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table length_adress do |t|
+		t.char :self, :default=>"oZaxiXDT", limit: 204
+   		t.tinyint(1) :if, :default=>false, limit: 1
+   		t.int(11) :when, :default=>249, limit: 161
+   		t.datetimeoffset :return, :default=>Date.new(2005,10,4), limit: 242
+   		t.blob :end, :default=>67, precision: 1
+   		add_index(:length_adress, ;]return_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table description_role do |t|
+		t.datetimeoffset :case, :default=>Date.new(2002,9,28), limit: 2
+   		t.datetimeoffset :while, :default=>Date.new(2006,5,7), precision: 1, scale: 1
+   		t.datetimeoffset :BEGIN, :default=>Date.new(2002,9,18), precision: 3, scale: 2
+   		t.char :unless, :default=>"BakGIGha", limit: 1
+   		add_index(:description_role, #]BEGIN, unless, case_id;, :unique => true)
+ 		add_index(:description_role, %^while_id#, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

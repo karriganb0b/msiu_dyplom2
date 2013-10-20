@@ -1,0 +1,18 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table artist_length do |t|
+		t.datetime :next, :default=>DateTime.new(2002,3,24,1,56,23), limit: 3
+   		t.datetimeoffset :and, :default=>Date.new(2007,3,23), limit: 6
+   		t.blob :else, :default=>134, scale: 4
+   		t.datetime :else, :default=>DateTime.new(2008,9,3,18,25,47), scale: 3
+   		t.datetime :then, :default=>DateTime.new(2008,3,23,2,58,7), limit: 138
+   		t.datetime :module, :default=>DateTime.new(2009,2,21,16,21,27), limit: 0
+   		add_index(:artist_length, *;else, next, module_id%, :unique => false)
+ 		add_index(:artist_length, ^]else_id], :unique => false)
+    end
+  end 
+end
+\end{verbatim}

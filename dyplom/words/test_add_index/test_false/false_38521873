@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table case do |t|
+		t.timestamp :role_role, :default=>, null: true
+   		t.time :password_film, :default=>Time.new(23,38,35), array: true
+   		t.integer :role_email, :default=>112, null: false
+   		t.float :description_film, :default=>8.80557632876527, null: false
+   		add_index(:case, [$password_film, role_email, description_film, role_role_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

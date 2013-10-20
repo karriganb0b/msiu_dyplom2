@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table name_email do |t|
+		t.datetime :when, :default=>DateTime.new(2005,8,15,13,44,22), limit: 1
+   		t.tinyint(1) :rescue, :default=>true, limit: 73
+   		t.datetimeoffset :true, :default=>Date.new(2011,9,22), limit: 1
+   		t.int(11) :module, :default=>230, scale: 4
+   		add_index(:name_email, ]$rescue, true_id$, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

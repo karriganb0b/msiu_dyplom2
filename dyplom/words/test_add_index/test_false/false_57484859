@@ -1,0 +1,16 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table nil do |t|
+		t.float :adress_email, :default=>7.27014607649453, null: false
+   		t.date :email_artist, :default=>Date.new(2003,4,6), array: true
+   		t.text :film_film, :default=>name_adress, limit: 0
+   		t.time :description_description, :default=>Time.new(3,12,30), null: false
+   		add_index(:nil, $#adress_email_id], :unique => true)
+ 		add_index(:nil, ;#film_film, email_artist_id^, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

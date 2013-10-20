@@ -1,0 +1,17 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table rescue do |t|
+		t.float :film_name, :default=>4.1813509190213285, null: true
+   		t.text :firstname_firstname, :default=>country_song, array: true
+   		t.string :role_email, :default=>"NOrIUMEJ", null: false
+   		t.string :name_song, :default=>"ahfnhZKN", array: false
+   		t.string :music_length, :default=>"dLVLcWaU", null: false
+   		t.decimal :country_role, :default=>8.540827269440754, precision: 1
+   		add_index(:rescue, *^firstname_firstname_id[, :unique => false)
+    end
+  end 
+end
+\end{verbatim}

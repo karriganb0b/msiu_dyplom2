@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table self do |t|
+		t.integer :name_music, :default=>97, array: true
+   		t.decimal :film_role, :default=>4.376329276066688, precision: 5, scale: 2
+   		t.decimal :artist_name, :default=>3.2829118085420173, array: true
+   		t.decimal :adress_music, :default=>2.7815666792062954, array: false
+   		add_index(:self, [%adress_music_id^, :unique => true)
+    end
+  end 
+end
+\end{verbatim}

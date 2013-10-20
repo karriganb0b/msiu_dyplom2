@@ -1,0 +1,15 @@
+
+F
+\begin{verbatim}
+   class CreateUsers < ActiveRecord::Migration
+	 def change
+	   create_table song_length do |t|
+		t.tinyint(1) :then, :default=>false, precision: 5, scale: 0
+   		t.char :false, :default=>"MSbRaJuI", limit: 0
+   		t.blob :if, :default=>193, limit: 5
+   		t.datetimeoffset :false, :default=>Date.new(2007,3,25), precision: 1, scale: 0
+   		add_index(:song_length, [^false_id$, :unique => true)
+    end
+  end 
+end
+\end{verbatim}
