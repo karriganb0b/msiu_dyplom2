@@ -9,9 +9,9 @@ def mod_limit
   method = Hash[*array.flatten].keys.shuffle.first
   p send method
 =end
-string_lim = rand(10)
-binary_lim = rand(0 .. 1)
-text_lim = rand(10)
+string_lim = rand(1..10) 
+binary_lim = rand(1 .. 1)
+text_lim = rand(1..10)
 integer = random_nubmer
 array = ["limit: #{string_lim}", "limit: #{binary_lim}", "limit: #{text_lim}", "limit: #{integer}"].shuffle.first
 

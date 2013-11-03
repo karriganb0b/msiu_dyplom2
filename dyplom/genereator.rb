@@ -40,7 +40,7 @@ def randomTime
   hour = (rand(24)).ceil
   min = (rand(60)).ceil
   sec = (rand(60)).ceil
-  time_r = "Time.new(#{hour.to_i},#{min.to_i},#{sec.to_i})"
+  time_r = "Time.new(2010, 10, 10, #{hour.to_i},#{min.to_i},#{sec.to_i})"
 end
 
 def randomTimeAndDate

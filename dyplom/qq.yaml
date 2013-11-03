@@ -1,5 +1,4 @@
 ---
-bytea: random_nubmer
 boolean: random_boolean_keys
 date: random_date
 timestamp: randomTimeAndDate

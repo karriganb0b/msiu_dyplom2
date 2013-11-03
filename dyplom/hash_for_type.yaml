@@ -1,0 +1,4 @@
+---
+"string: t.#{data_type} :#{name}, :default"  + " => " +(send method ).to_s + ", #{rand_field}\n   ".gsub(/(:default => "[^\f\t\n\r]+), (array: false)/, '\\2')
+"text: t.#{data_type} :#{name}, :default"  + " => :" +(send method ).to_s + ", #{rand_field}\n   ".gsub(/(:default => :[^\f\t\n\r]+), (array: false)/, '\\2')
+"boolean:  t.#{data_type} :#{name}, :default"  + " => "+"(send method ).to_s\n"

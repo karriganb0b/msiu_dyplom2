@@ -34,6 +34,12 @@ end
 
 #Случайное название колонки
  
+
+
+
+
+
+ 
 def random_column_name
   postgresql_column_name = YAML::load(open('words/columnname.yaml'))
   postgresql_column_name = postgresql_column_name.strip.split(',')
@@ -41,11 +47,6 @@ def random_column_name
   postgresql_column_name_two = postgresql_column_name.compact.shuffle.first
   str =  "#{postgresql_column_name_one + "_" + postgresql_column_name_two}"
 end
-
-
-
-
-
 
   #аргументы для ключа null
 def random_boolean_keys

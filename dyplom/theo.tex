@@ -1,0 +1,40 @@
+T
+	 
+class AddHashToLengthAdresss < ActiveRecord::Migration
+  	def up
+	     create_table :length_adressss do |t|
+       		add_column :length_adresss, :pariatur, :string, :null => false
+		rename_column :length_adresss, :saepe, :sit
+		add_column :length_adresss, :qui, :string, :null => false
+       		add_reference :length_adresss, :pariatur
+    	end
+
+  	def down
+
+    		remove_reference :length_adresss, :pariatur
+    		remove_column :length_adresss, :qui
+		rename_column :length_adresss, :sit, :saepe
+		remove_column :length_adresss, :pariatur
+    	drop_table :length_adressss
+    
+	end
+F
+	 
+class AddHashToLengthAdresss < ActiveRecord::Migration
+  	def up
+	     create_table :length_adressss do |t|
+       		add_column :length_adresss, :pariatur, :string, :null => false
+		rename_column :length_adresss, :saepe, :sit
+		add_column :length_adresss, :qui, :string, :null => false
+       		add_timestamps :qui
+    	end
+
+  	def down
+
+    		remove_timestamps :qui
+    		remove_column :length_adresss, :qui
+		rename_column :length_adresss, :sit, :saepe
+		remove_column :length_adresss, :pariatur
+    	rename_column :length_adressss
+    
+	end
