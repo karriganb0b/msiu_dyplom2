@@ -44,7 +44,7 @@ def random_column_name
   postgresql_column_name = YAML::load(open('words/columnname.yaml'))
   postgresql_column_name = postgresql_column_name.strip.split(',')
   postgresql_column_name_one = postgresql_column_name.compact.shuffle.first
-  postgresql_column_name_two = postgresql_column_name.compact.shuffle.first
+  postgresql_column_name_two = postgresql_column_name.compact.shuffle.first.pluralize
   str =  "#{postgresql_column_name_one + "_" + postgresql_column_name_two}"
 end
 

@@ -18,18 +18,18 @@ def column(hash, name)
   data_type = hash.keys.shuffle.first
   method = hash[data_type]
   rand_field = rand_mod(data_type) 
-  if data_type == "string"
-  t = "t.#{data_type} :#{name}, :default"  + " => " +(send method ).to_s + ", #{rand_field}\n   "
-	t.gsub(/(:default => "[^\f\t\n\r]+), (array: false)/, '\\2')
-	elsif data_type == "text"
-	t = "t.#{data_type} :#{name}, :default"  + " => :" +(send method ).to_s + ", #{rand_field}\n   "
-	t.gsub(/(:default => :[^\f\t\n\r]+), (array: false)/, '\\2')
+	if data_type == "string"+
+    t = "t.#{data_type} :#{name}, :default"  + " => " +(send method ).to_s + ", #{rand_field}\n   "
+    t.gsub(/(:default => "[^\f\t\n\r]+), (array: true)/, '\\2')
+  elsif data_type == "text"
+    t = "t.#{data_type} :#{name}, :default"  + " => :" +(send method ).to_s + ", #{rand_field}\n   "
+    t.gsub(/(:default => :[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "boolean"
-  t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + "\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + "\n   "
   else
-  t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + ", #{rand_field}\n   "
-	t.gsub(/(:default => [^\f\t\n\r]+), (array: false)/, '\\2')
-	end
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + ", #{rand_field}\n   "
+  	t.gsub(/(:default => [^\f\t\n\r]+), (array: true)/, '\\2')
+  end
 end
 
 def index(table, name, correct=true)
@@ -46,13 +46,7 @@ end
 
 
 def random_migration(correct=false , correct_index=true)
-  postgresql_column_name = YAML::load(open('words/columnname.yaml'))
-  postgresql_column_name = postgresql_column_name.strip.split(',')
-  postgresql_column_name_one = postgresql_column_name.compact.shuffle.first
-  postgresql_column_name_two = "#{postgresql_column_name.compact.shuffle.first}s"
-   app =  "#{postgresql_column_name_one + "_" + postgresql_column_name_two}"
-
- 
+app = random_column_name
   # beginning of migration
   str = <<-END
 class Create#{app.camelize} < ActiveRecord::Migration
@@ -73,7 +67,9 @@ END
 	str << column(hash, column_name)
 	column_names << column_name
   end
-  
+  str << <<-END
+	end
+	END
   # add indexes
   array = []
   column_names = column_names.shuffle
@@ -91,7 +87,6 @@ END
   
   # end of migration
   str << <<-END
-    end
   end 
 end
   END
@@ -99,22 +94,16 @@ end
 def add_sbor
 
 res = []
-correct_indexes = ([true]).shuffle
+correct_indexes = ([false]).shuffle
 res << random_migration(false, correct_indexes.pop)
 0.times { res << random_migration(false, correct_indexes.pop) }
 
-file = File.open("words/index_test/test_true/#{number(10)}_create_users.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+file = File.open("words/index_test/test_false/#{number(10)}_create_users.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
 
 
-
 def add_index(correct=true)
-  postgresql_column_name = YAML::load(open('words/columnname.yaml'))
-  postgresql_column_name = postgresql_column_name.strip.split(',')
-  postgresql_column_name_one = postgresql_column_name.compact.shuffle.first
-  postgresql_column_name_two = postgresql_column_name.compact.shuffle.first.pluralize 
-
-  app =  "#{postgresql_column_name_one + "_" + postgresql_column_name_two}"
+app = random_column_name
   files_with_types = correct ? 'words/falsedatatype.yaml' : 'qq.yaml'
   hash = YAML::load(open(files_with_types))
   indicator = correct ? "F" : "T"
@@ -125,17 +114,17 @@ def add_index(correct=true)
 	  rand_field = rand_mod(data_type)
 
 	  name = correct ? (random_false_column).to_s : (random_column_name).to_s
-	if data_type == "string"
+	if data_type == "string"+
     t = "t.#{data_type} :#{name}, :default"  + " => " +(send method ).to_s + ", #{rand_field}\n   "
-    t.gsub(/(:default => "[^\f\t\n\r]+), (array: false)/, '\\2')
+    t.gsub(/(:default => "[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "text"
     t = "t.#{data_type} :#{name}, :default"  + " => :" +(send method ).to_s + ", #{rand_field}\n   "
-    t.gsub(/(:default => :[^\f\t\n\r]+), (array: false)/, '\\2')
+    t.gsub(/(:default => :[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "boolean"
     t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + "\n   "
   else
     t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + ", #{rand_field}\n   "
-  	t.gsub(/(:default => [^\f\t\n\r]+), (array: false)/, '\\2')
+  	t.gsub(/(:default => [^\f\t\n\r]+), (array: true)/, '\\2')
   end
   end.join("   ") + 
   "end\nend\nend"
@@ -150,6 +139,8 @@ res << add_index(false)
   res 
   
 
-file = File.open("words/test_migration/test_false/2_create_users.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
-end
-migration
+	file = File.open("words/test_migration/test_true/#{number(10)}_create_users.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+	
+	end
+	50.times{
+migration}
