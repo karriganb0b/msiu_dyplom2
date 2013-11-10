@@ -19,9 +19,9 @@ end
 
 
 def mod_decimal
-  precision = rand(7)
-  scale = rand(5)
-  array = ["precision: #{precision}","scale: #{scale}", "precision: #{precision}, scale: #{scale}"].shuffle.first
+  scale = rand(1..5)
+	precision = rand(1..7) + scale
+  array = ["precision: #{precision}, scale: #{scale}"].shuffle.first
 end
 
 
@@ -29,7 +29,9 @@ end
 def mod_array
   array = ["array: true","array: false"].shuffle.first
 end
-mod_array
+def mod_array2
+  array = ["array: false"].shuffle.first
+end
 def boolean_f
 array_boolean = ["null: true", "null: false"].shuffle.first
 
@@ -38,6 +40,33 @@ end
 
 def rand_mod(type)
   xew = YAML::load(open('rand_mod.yaml'))
+  if type == "time" or type == "timestamp" or type == "date" 
+	mod = (xew.keys - [:decimal, :limit]).shuffle.first
+	method = xew[mod]
+	mod = send method
+
+  elsif type == "integer" or  type ==  "string" or type ==  "binary"  or type == "text"
+    mod = (xew.keys - [:decimal]).shuffle.first
+    method = xew[mod]
+	mod = send method
+
+  elsif type == "decimal"
+    mod = (xew.keys - [:limit]).shuffle.first
+    method = xew[mod]
+	mod = send method
+  elsif type == "float"
+	mod = (xew.keys - [:decimal, :limit]).shuffle.first
+	method = xew[mod]
+	mod = send method
+  else
+    mod = (xew.keys - [:array, :null]).shuffle.first
+    method = xew[mod]
+	mod = send method
+  end 
+end
+
+def rand_mod2(type)
+  xew = YAML::load(open('rand_mod2.yaml'))
   if type == "time" or type == "timestamp" or type == "date" 
 	mod = (xew.keys - [:decimal, :limit]).shuffle.first
 	method = xew[mod]

@@ -44,7 +44,7 @@ def randomTime
 end
 
 def randomTimeAndDate
-  while true
+  while true 
     begin
      hour = (rand(24))
      min = (rand(60))
@@ -54,14 +54,20 @@ def randomTimeAndDate
      day = (rand * 31)
      time = Time.local(year,month,day,hour,min,sec)
      date_t = "DateTime.new(#{year.to_i},#{month.to_i},#{day.to_i},#{hour.to_i},#{min.to_i},#{sec.to_i})"
-   rescue
+	 rescue
   ensure
 return date_t
 end
 end
-
 end
-
+def datatime
+  a = nil
+    while a == nil
+     a = randomTimeAndDate
+    end
+		p a
+end
+datatime
 #p randomTime
 #random_str
 #random_nubmer
