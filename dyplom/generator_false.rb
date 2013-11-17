@@ -54,7 +54,7 @@ class Create#{app.camelize} < ActiveRecord::Migration
 END
 
   # add columns
-  files_with_types = correct ? 'words/falsedatatype.yaml' : 'qq.yaml'
+  files_with_types = correct ?  'qq.yaml' : 'words/falsedatatype.yaml'
   hash = YAML::load(open(files_with_types))
   
   column_names = []
@@ -62,7 +62,7 @@ END
   number_columns = rand(4..6) 
   
   number_columns.times do
-    column_name = correct ? (random_false_column).to_s : (random_column_name).to_s
+    column_name = correct ?  (random_column_name).to_s : (random_false_column).to_s
 	str << column(hash, column_name)
 	column_names << column_name
   end

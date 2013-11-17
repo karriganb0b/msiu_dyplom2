@@ -1,4 +1,5 @@
 require 'faker'
+require 'active_support/all'
 class MigrationMethod
   def initialize(args)
     @table_name = args[:table_name]
@@ -182,32 +183,29 @@ class Migration
 		@classname = "#{@ins.capitalize}" +"#{@ins2.capitalize}"
   end
   
-  def methods
+  def methods(correct = true)
    @migrations ||= @column_names.map do |column_name|
    type = METHOD_TYPES.shuffle.first
 		
       args = case type
       when :add
         # TODO: random data type
-        {table_name: @table_name, type: type, column_name: column_name, data_type: "string", rest: "null => false"}
+      correct ? {table_name: @table_name, type: type, column_name: column_name, data_type: type, rest: "null => false"} : {table_name: "asdf", type: type, column_name: "asdf", data_type: "string", rest: "null => false"}
       when :remove
-        {table_name: @table_name, type: type, column_name: column_name}
+      correct ?  {table_name: @table_name, type: type, column_name: column_name} : {table_name: "228", type: type, column_name: "228"}
       when :rename
-        {table_name: @table_name, type: type, column_name: column_name, old_column_name: Faker::Lorem.word}
+       correct ? {table_name: @table_name, type: type, column_name: column_name, old_column_name: Faker::Lorem.word} : {table_name: @table_name, type: type, column_name: "falssssse", old_column_name: Faker::Lorem.word}
       end
     
       Object.const_get("#{type.to_s.capitalize}Method").new(args)
     end
   end
     
-
-  
-
- 
   def up_methods(correct = true)
+	k = Faker::Lorem.words.first.pluralize
 	column_name = @column_names.shuffle.first
-	  hash = correct ? {"create_table :#{@table_name}s do |t|" => "drop_table :#{@table_name}s",
-	  "rename_table :#{Faker::Lorem.words.first}s, :#{@table_name}" => "rename_table :#{@table_name}, :#{Faker::Lorem.words.first}s" } : 
+	  hash = correct ? {"create_table :#{@table_name.pluralize} do |t|" => "drop_table :#{@table_name.pluralize}",
+	  "rename_table :#{k}, :#{@table_name.pluralize}" => "rename_table :#{@table_name.pluralize}, :#{k}" } : 
 	  {"create_table :#{@table_name}s do |t|" => "drop_column :#{@table_name}s", 
 	  "create_table :#{@table_name}s do |t|" => "rename_column :#{@table_name}s"	}	
 	  indicatore = correct ? "T" : "F"
@@ -235,7 +233,7 @@ class Migration
 class AddHashTo#{@classname} < ActiveRecord::Migration
   \tdef up
 	     #{method_up_table}
-       #{methods.map {|m| "\t\t#{m}"}.join("\n")}
+       #{correct ? methods(true).map {|m| "\t\t#{m}"}.join("\n") : methods(false).map {|m| "\t\t#{m}"}.join("\n")}
        #{test_array.map {|m| "\t\t#{m}"}.join("\n")}
     \tend
 
@@ -252,7 +250,7 @@ end
 migration = Migration.new()
 res = []
 res << migration.up_methods(true)
-1.times {res << migration.up_methods(false)}
+2.times {res << migration.up_methods(false)}
 file = File.open('theo.tex', 'w'){ |file| file.puts res.shuffle.join("\n").strip }
 
 

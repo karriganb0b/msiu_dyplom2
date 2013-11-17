@@ -81,27 +81,29 @@ END
 	change_column = []
 	1.times do
 	new_type = hash.keys.shuffle.first
-	column_name = column_names.pop
 	data_type = data_types.pop
+	column_name = column_names.pop
+	column_names = column_names
+	column_name2 = column_names.pop
 	defaulte = defaultes.pop
 	methode = methodes.pop
 	array << index(column_name, column_name, defaulte)
-	change_default << change_default(column_name, column_name, methode)
-	change_default << change_column_down(app, column_name, new_type)
-	array << change_column_up(app, column_name, data_type)
+	change_default << change_default(column_name, column_name2, methode)
+	change_default << change_column_down(app, column_name2, new_type)
+	array << change_column_up(app, column_name2, data_type)
   end
 	str << <<-END
 		reversible do |dir|
       			dir.up do
 				change_table :role_descriptions do |t|
 	END
-  str << array.shuffle.join(" ")
+  str << array.join(" ")
 
   str << <<-END
 			dir.down do
 				change_table :role_descriptions do |t|
   END
-	str << change_default.shuffle.join(" ")
+	str << change_default.join(" ")
   
   # end of migration
   str << <<-END
@@ -115,7 +117,7 @@ app = random_column_name
 res = []
 correct_indexes = ([true]).shuffle
 res << random_migration(false, correct_indexes.pop, app)
-0.times { res << random_migration(false, correct_indexes.pop) }
+0.times {res << random_migration(false, correct_indexes.pop) }
 
 file = File.open("words/index_test/revers_m.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
