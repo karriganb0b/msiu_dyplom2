@@ -119,6 +119,7 @@ correct_indexes = ([true]).shuffle
 res << random_migration(false, correct_indexes.pop, app)
 0.times {res << random_migration(false, correct_indexes.pop) }
 
-file = File.open("words/index_test/revers_m.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+file = File.open("words/test_migration/test_true/#{number(10)}_#{app}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
-add_sbor
+30.times{
+add_sbor}

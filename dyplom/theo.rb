@@ -1,5 +1,9 @@
 require 'faker'
 require 'active_support/all'
+
+def number(digits)
+  rand(digits ** 10 - 1).to_s.center(digits, rand(9).to_s)
+ end
 class MigrationMethod
   def initialize(args)
     @table_name = args[:table_name]
@@ -247,11 +251,13 @@ str = str.strip
   end
 end
 
+def gene
 migration = Migration.new()
 res = []
 res << migration.up_methods(true)
-2.times {res << migration.up_methods(false)}
-file = File.open('theo.tex', 'w'){ |file| file.puts res.shuffle.join("\n").strip }
+file = File.open("words/test_migration/test_up_down_true/#{number(10)}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+end
+30.times{gene}
 
 
 #убрать  дефаулт если есть аррэй фолс

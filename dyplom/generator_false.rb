@@ -141,5 +141,3 @@ res << add_index(false, app)
 res
 file = File.open("words/test_migration/test_true/#{number(10)}_#{app}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
-50.times{
-migration}

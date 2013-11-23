@@ -33,13 +33,6 @@ end
 
 
 #Случайное название колонки
- 
-
-
-
-
-
- 
 def random_column_name
   postgresql_column_name = YAML::load(open('words/columnname.yaml'))
   postgresql_column_name = postgresql_column_name.strip.split(',')
