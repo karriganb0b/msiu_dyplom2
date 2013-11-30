@@ -43,6 +43,10 @@ end
 def change_column_down(table, name, data_type)
 "\t\t\t\tt.change_column :#{table}, #{name}, #{data_type}\n       end\n"
 end
+def change_column_null(table, name, rand_field)
+"t\t\t\t\tchange_column_null :#{table},#{name},#{rand_field} \n      end\n"
+end
+
 def random_migration(correct=false , correct_index=true, app) 
   # beginning of migration
   str = <<-END
@@ -58,6 +62,7 @@ END
   defaultes = []
 	methodes = []
 	data_types = []
+	rand_fields = []
   number_columns = rand(4..6) 
   
   number_columns.times do
@@ -65,6 +70,7 @@ END
   method = hash[data_type]
   rand_field = rand_mod2(data_type) 
 	ins = send method
+
   column_name = correct ? (random_false_column).to_s : (random_column_name).to_s
 	defaultes << ins
 	str << column(column_name, ins, rand_field, data_type)
@@ -91,16 +97,33 @@ END
 	change_default << change_default(column_name, column_name2, methode)
 	change_default << change_column_down(app, column_name2, new_type)
 	array << change_column_up(app, column_name2, data_type)
+	
   end
+	c_name = column_names.pop
+	p_name = c_name.pluralize
+	tab = app
+	execute_hash = [" execute <<-SQL
+          ALTER TABLE #{tab}
+            ADD CONSTRAINT fk_#{app}_#{p_name}
+            FOREIGN KEY (#{c_name}_id)
+            REFERENCES (#{p_name}_(id)
+        SQL" => 
+				"        execute <<-SQL
+          ALTER TABLE tab
+            DROP FOREIGN KEY fk_#{app}_#{p_name}]
+        SQL"]
+				exec = execute_hash.key
 	str << <<-END
 		reversible do |dir|
       			dir.up do
+						#{exec}
 				change_table :role_descriptions do |t|
 	END
   str << array.join(" ")
 
   str << <<-END
 			dir.down do
+			#{exec[execute_hash]}
 				change_table :role_descriptions do |t|
   END
 	str << change_default.join(" ")
@@ -121,5 +144,5 @@ res << random_migration(false, correct_indexes.pop, app)
 
 file = File.open("words/test_migration/test_true/#{number(10)}_#{app}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
-30.times{
+1.times{
 add_sbor}
