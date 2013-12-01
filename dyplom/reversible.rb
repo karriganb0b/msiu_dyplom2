@@ -102,28 +102,29 @@ END
 	c_name = column_names.pop
 	p_name = c_name.pluralize
 	tab = app
-	execute_hash = [" execute <<-SQL
+	execute_hash = {"execute <<-SQL
           ALTER TABLE #{tab}
-            ADD CONSTRAINT fk_#{app}_#{p_name}
+            ADD CONSTRAINT fk_#{tab}_#{p_name}
             FOREIGN KEY (#{c_name}_id)
-            REFERENCES (#{p_name}_(id)
-        SQL" => 
-				"        execute <<-SQL
-          ALTER TABLE tab
-            DROP FOREIGN KEY fk_#{app}_#{p_name}]
-        SQL"]
-				exec = execute_hash.key
+            REFERENCES #{p_name}_(id)
+        SQL" =>
+				"execute <<-SQL
+          ALTER TABLE #{tab}
+            DROP FOREIGN KEY fk_#{tab}_#{p_name}
+        SQL"}
+				exec = execute_hash.keys.shuffle.first
+				
 	str << <<-END
 		reversible do |dir|
       			dir.up do
-						#{exec}
+        #{exec}
 				change_table :role_descriptions do |t|
 	END
   str << array.join(" ")
 
   str << <<-END
 			dir.down do
-			#{exec[execute_hash]}
+        #{execute_hash[exec]}
 				change_table :role_descriptions do |t|
   END
 	str << change_default.join(" ")
