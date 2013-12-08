@@ -105,11 +105,9 @@ END
 	finder2 = test.find_all{|x| x.include?(column_name3) == true}.join(" ")
 	k2 = finder2.scan(/null: false|null: true/).join('')
 	k3 = k2.gsub(/(null:+)/, '\\2')
-	p k2
 	reverse_k = ["true", "false"].shuffle.first
 	if k3 == " true" or k3 == " false"
 	c_hash = {change_column_null(app, column_name3, k3) => change_column_null(app, column_name3, reverse_k)}
-	p c_hash
 	meth = c_hash.keys.first
 	c_meth = c_hash[meth]
 	change_null_up << meth
@@ -139,7 +137,7 @@ finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|te
 	array << change_column_up(app, column_name2, finder)
 	change_null_down << "\t\t\t\tremove_columns #{app} #{[" :#{column_name}"," :#{column_name2}"," :#{column_name3}"," :#{column_name4}"].shuffle.first}\n"
 
-	p new_type
+
   end
 
 
@@ -165,7 +163,7 @@ finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|te
 end
   END
 end
-def add_sbor
+def add_sbor_ud
 app = random_column_name
 res = []
 correct_indexes = ([true]).shuffle
@@ -174,5 +172,3 @@ res << random_migration(false, correct_indexes.pop, app)
 
 file = File.open("words/test_migration/test_true/1_1.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
-
-add_sbor
