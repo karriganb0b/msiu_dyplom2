@@ -37,10 +37,10 @@ def change_default(table, correct=true, change_default)
 
   "\t\t\t\tt.change_default :#{table}, #{change_default}\n     end\n"
 end
-def change_column_up(table, name, data_type)
+def change_column_up(table, name, data_type, correct = false)
 "\t\t\t\tchange_column :#{table}, :#{name}, :#{data_type}\n      \n"
 end
-def change_column_down(table, name, data_type)
+def change_column_down(table, name, data_type, correct = false)
 "\t\t\t\tchange_column :#{table}, :#{name}, :#{data_type}\n       \n"
 end
 def change_column_null(table, name, null)
@@ -49,8 +49,9 @@ end
 
 def random_migration(correct=false , correct_index=true, app) 
   # beginning of migration
-	
+	indicator = correct ? "F" : "T"
   str = <<-END
+#{indicator}
 class Create#{app.camelize} < ActiveRecord::Migration
 	 def up
 	   create_table :#{app} do |t|
@@ -128,14 +129,21 @@ END
 
 finder = test.find_all{|x| x.include?(column_name2) == true}.join(" ")
 finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|text|float/).join(" ")
-
-
+	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
+rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
+ if rem[-2] == ","
+	rem[-2] = " "
+	change_null_down << rem
+	else
+	change_null_down << rem
+  end
 
 	array << index(column_name, column_name, defaulte)
 	change_default << change_default(column_name, column_name2, methode)
-	change_default << change_column_down(app, column_name2, new_type)
-	array << change_column_up(app, column_name2, finder)
-	change_null_down << "\t\t\t\tremove_columns #{app} #{[" :#{column_name}"," :#{column_name2}"," :#{column_name3}"," :#{column_name4}"].shuffle.first}\n"
+	cu = correct ? change_column_up(app, column_name2, eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, new_type, true)
+	change_default << cu
+	cd = correct ? change_column_up(app, column_name2, eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, finder, true)
+	array << cd
 
 
   end
@@ -168,7 +176,8 @@ app = random_column_name
 res = []
 correct_indexes = ([true]).shuffle
 res << random_migration(false, correct_indexes.pop, app)
-0.times {res << random_migration(false, correct_indexes.pop) }
+3.times {res << random_migration(true, correct_indexes.pop, app) }
 
 file = File.open("words/test_migration/test_true/1_1.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
+add_sbor_ud

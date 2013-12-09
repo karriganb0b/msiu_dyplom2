@@ -134,19 +134,21 @@ finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|te
 
 	array << index(column_name, column_name, defaulte)
 	change_default << change_default(column_name, column_name2, methode)
-	change_default << change_column_down(app, column_name2, new_type)
-	array << change_column_up(app, column_name2, finder)
+	cu = correct ? change_column_up(app, column_name2,  eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, new_type, true)
+	change_default << cu
+	cd = correct ? change_column_up(app, column_name2,  eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, finder, true)
+	array << cd
 	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
 	arr = arr[0..rand(1..3)].join(" ")
 	
-	rem = correct ? "\t\t\t\tremove_columns :#{app}, #{}\n" : "\t\t\t\tremove_columns :#{app}, #{arr}\n"
- if rem[-2] == ","
-	rem[-2] = " "
-	change_null_down << rem
-	else
-	change_null_down << rem
-  end
-	end
+	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
+  rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
+   if rem[-2] == ","
+	  rem[-2] = " "
+	  change_null_down << rem
+	 else
+	  change_null_down << rem
+   end
 
 
 	tab = app
