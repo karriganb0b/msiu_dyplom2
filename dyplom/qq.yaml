@@ -1,7 +1,6 @@
 ---
 boolean: random_boolean_keys
-date: random_date
-timestamp: datatime
+timestamp: randomTimeAndDate
 decimal: random_float_number
 float: random_float_number
 integer: random_nubmer

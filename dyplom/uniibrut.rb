@@ -11,6 +11,7 @@ def data_type_f
   postgresql_data_type = postgresql_data_type.shuffle.first
 
 end
+
 def default_f
   array_default = YAML::load(open('words/keys_arguments/default_f.yaml'))
   array_default = array_default.split(',')
@@ -28,7 +29,6 @@ def random_data_type
   postgresql_data_type_hash = YAML::load(open('qq.yaml'))
   postgresql_data_type = postgresql_data_type_hash.keys
   postgresql_data_type = postgresql_data_type.shuffle.first
-  p postgresql_data_type
 end
 
 

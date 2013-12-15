@@ -31,28 +31,26 @@ def column(name, method, rand_field, data_type)
 end
 
 def index(table, correct=true, default)
-  "\t\t\t\tt.change_default :#{table},#{default}\n       end\n"
+  "\t\tt.change_default :#{table},#{default}\n       end\n"
 end
 def change_default(table, correct=true, change_default)
 
-  "\t\t\t\tt.change_default :#{table}, #{change_default}\n     end\n"
+  "\t\tt.change_default :#{table}, #{change_default}\n     end\n"
 end
-def change_column_up(table, name, data_type)
-"\t\t\t\tchange_column :#{table}, :#{name}, :#{data_type}\n      \n"
+def change_column_up(table, name, data_type, correct = false)
+"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n      \n"
 end
-def change_column_down(table, name, data_type)
-"\t\t\t\tchange_column :#{table}, :#{name}, :#{data_type}\n       \n"
+def change_column_down(table, name, data_type, correct = false)
+"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n       \n"
 end
 def change_column_null(table, name, null)
-"\t\t\t\tchange_column_null :#{table}, :#{name}, #{null}\n"
+"\t\tchange_column_null :#{table}, :#{name}, #{null}\n"
 end
 
 def random_migration(correct=false , correct_index=true, app) 
   # beginning of migration
 indicate = correct ? "F" : "T"	
 str = <<-END
-#{indicate}
-	
 class Create#{app.camelize} < ActiveRecord::Migration
 	 def change
 	   create_table :#{app} do |t|
@@ -116,11 +114,10 @@ END
 	change_null_up << meth
 	change_null_down << c_meth
 	elsif k3.size == 0
-	array << "\t\t\t\tt.belongs_to :#{[column_name3, column_name2, column_name].shuffle.first}, polymorphic: true\n"
+	array << "\t\tt.belongs_to :#{[column_name3, column_name2, column_name].shuffle.first}, polymorphic: true\n"
 	array
 	change_default
 	end
-
 	
 	defaulte = defaultes.pop
 	defaultes = defaultes
@@ -134,36 +131,37 @@ finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|te
 
 	array << index(column_name, column_name, defaulte)
 	change_default << change_default(column_name, column_name2, methode)
-	cu = correct ? change_column_up(app, column_name2,  eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, new_type, true)
+	cu = correct ? change_column_up(app, column_name2, eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, new_type, true)
 	change_default << cu
-	cd = correct ? change_column_up(app, column_name2,  eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, finder, true)
+	cd = correct ? change_column_up(app, column_name2, eval([ "random_str", "random_nubmer"].shuffle.first), false) : change_column_up(app, column_name2, finder, true)
 	array << cd
+
 	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
 	arr = arr[0..rand(1..3)].join(" ")
 	
 	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
-  rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
+  rem = correct ? "\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
    if rem[-2] == ","
 	  rem[-2] = " "
 	  change_null_down << rem
 	 else
 	  change_null_down << rem
    end
-
+end
 
 	tab = app
 	
 	str << <<-END
-	reversible do |dir|
-      			dir.up do
-				change_table :#{app} do |t|
+reversible do |dir|
+  dir.up do
+		change_table :#{app} do |t|
 	END
   str << array.join(" ")
 	str << change_null_up.join(" ")	
 
   str << <<-END
-			dir.down do
-				change_table :#{app} do |t|
+  dir.down do
+		change_table :#{app} do |t|
   END
 	str << change_default.join(" ")
 	str << change_null_down.join(" ")
@@ -176,13 +174,5 @@ finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|te
   end
 end
   END
-end
-def add_sbor_rv
-app = random_column_name
-res = []
-res << random_migration(false,app)
-3.times {res << random_migration(true, app) }
-
-file = File.open("words/test_migration/test_true/1_2.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
 

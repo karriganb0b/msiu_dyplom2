@@ -75,7 +75,6 @@ END
   indnum = rand(number_columns) + 1
   i = 0
   while i < indnum
-    puts column_names.inspect 
 	x = rand(indnum - i) + 1
 	i += x
 	column_name = column_names[0...x].join(', :')
@@ -90,23 +89,23 @@ END
 end
   END
 end
-def add_sbor
-app = random_column_name
+=begin
+def add_sbor_index
 res = []
-correct_indexes = ([true]).shuffle
-res << random_migration(false, correct_indexes.pop, app)
-0.times { res << random_migration(false, correct_indexes.pop) }
+app = random_column_name
+correct_indexes = true
+res << random_migration(true, correct_indexes, app)
+#3.times { res << random_migration(false, correct_indexes.pop) }
 
-file = File.open("words/index_test/test_true/#{number(10)}_#{app}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+file = File.open("words/index_test/test_true/#test.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
 end
-50.times{
-add_sbor}
+=end
 def add_index(correct=true, app)
   files_with_types = correct ? 'words/falsedatatype.yaml' : 'qq.yaml'
   hash = YAML::load(open(files_with_types))
-  indicator = correct ? "F" : "T"
+  #indicator = correct ? "F" : "T"
 
-  "class Create#{app.camelize} < ActiveRecord::Migration \n  def change \n    create_table :#{app} do |t| \n      "+
+  "\nclass Create#{app.camelize} < ActiveRecord::Migration \n  def change \n    create_table :#{app} do |t| \n      "+
 	(0..rand(4..6)).map do |x|
 	  data_type = hash.keys.shuffle.first
 	  method = hash[data_type]
@@ -129,15 +128,4 @@ def add_index(correct=true, app)
   "end\nend\nend"
 end
 
-#выбросить default .gsub(/, :default=> .+/,'')
-#Мацумото - программирование на Ruby. rubyonrails.org  - guides
-def migration
-res = []
-app = random_column_name
-res << add_index(false, app)
 
-0.times { res << add_index }
-  text = File.open('migration2.tex', 'a'){ |file| file.puts  text }
-res
-file = File.open("words/test_migration/test_true/#{number(10)}_#{app}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
-end

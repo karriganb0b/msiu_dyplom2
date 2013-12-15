@@ -29,13 +29,17 @@ def random_date
    
    rescue
   ensure
+	if date_r != nil
+	date_r
+	else
+  date_r = "Date.new(#{year.to_i},#{month.to_i},#{day.to_i})"
+	end
 return date_r
 end
 end
-
 end
 
-random_date
+
 def randomTime
   hour = (rand(24)).ceil
   min = (rand(60)).ceil
@@ -44,7 +48,7 @@ def randomTime
 end
 
 def randomTimeAndDate
-  while true 
+  while true
     begin
      hour = (rand(24))
      min = (rand(60))
@@ -55,19 +59,18 @@ def randomTimeAndDate
      time = Time.local(year,month,day,hour,min,sec)
      date_t = "DateTime.new(#{year.to_i},#{month.to_i},#{day.to_i},#{hour.to_i},#{min.to_i},#{sec.to_i})"
 	 rescue
-  ensure
+  ensure 
+	if date_t != nil
+	date_t
+	else
+	date_t = "DateTime.new(#{year.to_i},#{month.to_i},#{day.to_i},#{hour.to_i},#{min.to_i},#{sec.to_i})"
+	end
 return date_t
 end
 end
 end
-def datatime
-  a = nil
-    while a == nil
-     a = randomTimeAndDate
-    end
-		p a
-end
-datatime
+
+40.times{p randomTimeAndDate}
 #p randomTime
 #random_str
 #random_nubmer

@@ -20,7 +20,7 @@ end
 
 def mod_decimal
   scale = rand(1..5)
-	precision = rand(1..7) + scale
+	precision = rand(2..7) + scale
   array = ["precision: #{precision}, scale: #{scale}"].shuffle.first
 end
 

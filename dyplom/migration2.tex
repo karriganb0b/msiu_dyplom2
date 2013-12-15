@@ -485,3 +485,15 @@
 
 
 
+
+class CreateEmailNames < ActiveRecord::Migration 
+  def change 
+    create_table :email_names do |t| 
+      t.time :name_songs, :default => Time.new(2010, 10, 10, 6,21,34), null: true
+      t.boolean :artist_passwords, :default => false
+      t.text :password_firstnames, :default => :length_countries, limit: 1
+      t.decimal :email_artists, :default => 3.4952723916375716, array: false
+      t.decimal :film_passwords, array: true
+   end
+end
+end

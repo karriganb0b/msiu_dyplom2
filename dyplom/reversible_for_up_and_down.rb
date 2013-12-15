@@ -49,9 +49,8 @@ end
 
 def random_migration(correct=false , correct_index=true, app) 
   # beginning of migration
-	indicator = correct ? "F" : "T"
+	#indicator = correct ? "F" : "T"
   str = <<-END
-#{indicator}
 class Create#{app.camelize} < ActiveRecord::Migration
 	 def up
 	   create_table :#{app} do |t|
@@ -171,13 +170,7 @@ rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\
 end
   END
 end
-def add_sbor_ud
-app = random_column_name
+def add_sbor_ud(app)
 res = []
-correct_indexes = ([true]).shuffle
-res << random_migration(false, correct_indexes.pop, app)
-3.times {res << random_migration(true, correct_indexes.pop, app) }
-
-file = File.open("words/test_migration/test_true/1_1.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+k = random_migration(false, app)
 end
-add_sbor_ud

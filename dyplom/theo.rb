@@ -1,5 +1,6 @@
 require 'faker'
 require 'active_support/all'
+require './uniibrut'
 
 def number(digits)
   rand(digits ** 10 - 1).to_s.center(digits, rand(9).to_s)
@@ -14,78 +15,78 @@ class MigrationMethod
     @rest = args[:rest] || nil
   end
    
-		
+                
    def to_s
-		# TODO: refactor! it's ugly!
-		"#{@type}_column :"+
+                # TODO: refactor! it's ugly!
+    "    #{@type}_column :"+
     [
       @table_name,
       @column_name,
       @data_type,
       @old_column_name,
       @rest
-		].compact.join(', :').strip
-	end
+                ].compact.join(', :').strip
+        end
 end
 
 class AddMethod < MigrationMethod
-	def initialize(args)
-		args[:type] = :add
-		super args
-	end
+        def initialize(args)
+                args[:type] = :add
+                super args
+        end
 
-	def reverse
-	  RemoveMethod.new({
-			table_name: @table_name, 
-			column_name: @column_name 
-	  })
-	end
+        def reverse
+          RemoveMethod.new({
+                        table_name: @table_name, 
+                        column_name: @column_name 
+          })
+        end
 end
 
 class RemoveMethod < MigrationMethod
-	def initialize(args)
-		args[:type] = :remove
-		super args
-	end
+        def initialize(args)
+                args[:type] = :remove
+                super args
+        end
 
-	def reverse	
-		AddMethod.new({
-			table_name: @table_name, 
-			column_name: @column_name, 
-			data_type: "string",
-			rest: "null => false"
-		})
-	end
+        def reverse        
+                AddMethod.new({
+                        table_name: @table_name, 
+                        column_name: @column_name, 
+                        data_type: "#{random_data_type}",
+                        rest: "null => false"
+                })
+        end
 end
 def name
-	 	postgresql_column_name = YAML::load(open('words/columnname.yaml'))
+    postgresql_column_name = YAML::load(open('words/columnname.yaml'))
     postgresql_column_name = postgresql_column_name.strip.split(',')
     postgresql_column_name_one = postgresql_column_name.compact.shuffle.first
     app =  "#{postgresql_column_name_one}"
     
-	 end
-	 def name2
-	 	postgresql_column_name = YAML::load(open('words/columnname.yaml'))
+         end
+def name2
+    postgresql_column_name = YAML::load(open('words/columnname.yaml'))
     postgresql_column_name = postgresql_column_name.strip.split(',')
     postgresql_column_name_two = "#{postgresql_column_name.compact.shuffle.first}s"
-		app2 = "#{postgresql_column_name_two}"
-		end
+    app2 = "#{postgresql_column_name_two}"
+end
 
 
-		
+                
 class RenameMethod < MigrationMethod
-	def initialize(args)
-		args[:type] = :rename
-		super args
-	end
+        def initialize(args)
+                args[:type] = :rename
+                super args
+        end
 
-	def reverse		
-		RenameMethod.new({
-			table_name: @table_name, 
-			column_name: @old_column_name, 
-			old_column_name: @column_name 
-		})
-	end
+        def reverse                
+                RenameMethod.new({
+                        table_name: @table_name, 
+                        column_name: @old_column_name, 
+                        old_column_name: @column_name 
+                })
+        end
 end
 class MigrationTimestamps
   def initialize(args)
@@ -93,41 +94,41 @@ class MigrationTimestamps
     @type = args[:type]
     @column_name = args[:column_name]
    def to_s
-		# TODO: refactor! it's ugly!
-		"#{@type}_timestamps :"+
+                # TODO: refactor! it's ugly!
+    "    #{@type}_timestamps :"+
     [
       @table_name,
       @column_name
-		].compact.join(', :').strip
-	end
+                ].compact.join(', :').strip
+        end
   end
 end
 class AddTimestamps < MigrationTimestamps
-	def initialize(args)
-		args[:type] = :add
-		super args
-	end
+        def initialize(args)
+                args[:type] = :add
+                super args
+        end
 
-	def reverse
-	  RemoveTimestamps.new({
-			table_name: @table_name, 
-			column_name: @column_name 
-	  })
-	end
+        def reverse
+          RemoveTimestamps.new({
+                        table_name: @table_name, 
+                        column_name: @column_name 
+          })
+        end
 end
 
 class RemoveTimestamps < MigrationTimestamps
-	def initialize(args)
-		args[:type] = :remove
-		super args
-	end
+        def initialize(args)
+                args[:type] = :remove
+                super args
+        end
 
-	def reverse	
-		AddTimestamps.new({
-			table_name: @table_name, 
-			column_name: @column_name, 
-		})
-	end
+        def reverse        
+                AddTimestamps.new({
+                        table_name: @table_name, 
+                        column_name: @column_name, 
+                })
+        end
 end
 class MigrationReference
   def initialize(args)
@@ -137,41 +138,41 @@ class MigrationReference
   end
 
    def to_s
-		# TODO: refactor! it's ugly!
-		"#{@type}_reference :"+
+                # TODO: refactor! it's ugly!
+    "    #{@type}_reference :"+
     [
       @table_name,
       @column_name
-		].compact.join(', :').strip
-	end
+                ].compact.join(', :').strip
+        end
 end
 
 class AddReference < MigrationReference
-	def initialize(args)
-		args[:type] = :add
-		super args
-	end
+        def initialize(args)
+                args[:type] = :add
+                super args
+        end
 
-	def reverse
-	  RemoveReference.new({
-			table_name: @table_name, 
-			column_name: @column_name 
-	  })
-	end
+        def reverse
+          RemoveReference.new({
+                        table_name: @table_name, 
+                        column_name: @column_name 
+          })
+        end
 end
 
 class RemoveReference < MigrationReference
-	def initialize(args)
-		args[:type] = :remove
-		super args
-	end
+        def initialize(args)
+                args[:type] = :remove
+                super args
+        end
 
-	def reverse	
-		AddReference.new({
-			table_name: @table_name, 
-			column_name: @column_name, 
-		})
-	end
+        def reverse        
+                AddReference.new({
+                        table_name: @table_name, 
+                        column_name: @column_name, 
+                })
+        end
 end
 
 
@@ -180,23 +181,28 @@ class Migration
   REFERENCE_TYPES = [:add, :remove]
   
   def initialize(numbers=rand(3..4))
-    @column_names = Faker::Lorem.words(numbers)
-    @ins = "#{name}"	
-    @ins2 = "#{name2}"		
+	  mas = []
+	  numbers.times{
+		mas << "#{name}_#{name2}"
+		}
+
+    @column_names = mas
+    @ins = "#{name}"        
+    @ins2 = "#{name2}"                
     @table_name = "#{@ins+"_"+@ins2}"
-		@classname = "#{@ins.capitalize}" +"#{@ins2.capitalize}"
+    @classname = "#{@ins.capitalize}" +"#{@ins2.capitalize}"
   end
   
   def methods(correct = true)
    @migrations ||= @column_names.map do |column_name|
    type = METHOD_TYPES.shuffle.first
-		
+                
       args = case type
       when :add
         # TODO: random data type
-      correct ? {table_name: @table_name, type: type, column_name: column_name, data_type: type, rest: "null => false"} : {table_name: "asdf", type: type, column_name: "asdf", data_type: "string", rest: "null => false"}
+      correct ? {table_name: @table_name, type: type, column_name: column_name, data_type: random_data_type, rest: "null => false"} : {table_name: "asdf", type: type, column_name: "asdf", data_type: random_data_type, rest: "null => false"}
       when :remove
-      correct ?  {table_name: @table_name, type: type, column_name: column_name} : {table_name: "228", type: type, column_name: "228"}
+      correct ?  {table_name: @table_name, type: type, column_name: column_name} : {table_name: random_false_column, type: type, column_name: "228"}
       when :rename
        correct ? {table_name: @table_name, type: type, column_name: column_name, old_column_name: Faker::Lorem.word} : {table_name: @table_name, type: type, column_name: "falssssse", old_column_name: Faker::Lorem.word}
       end
@@ -206,10 +212,9 @@ class Migration
   end
     
   def up_methods(correct = true)
-	k = Faker::Lorem.words.first.pluralize
-	column_name = @column_names.shuffle.first
-	  hash = correct ? {"create_table :#{@table_name.pluralize} do |t|" => "drop_table :#{@table_name.pluralize}",
-	  "rename_table :#{k}, :#{@table_name.pluralize}" => "rename_table :#{@table_name.pluralize}, :#{k}" } : 
+   k = "#{name}_#{name2.pluralize}"
+   column_name = @column_names.shuffle.first
+   hash = correct ? {"create_table :#{@table_name} do |t|\n end" => "drop_table :#{@table_name}"} : 
 	  {"create_table :#{@table_name}s do |t|" => "drop_column :#{@table_name}s", 
 	  "create_table :#{@table_name}s do |t|" => "rename_column :#{@table_name}s"	}	
 	  indicatore = correct ? "T" : "F"
@@ -217,9 +222,10 @@ class Migration
     method_down_table = hash[method_up_table] 
 	  test_array = []
 	   rand(2).times do
-	      column_name = @column_names.shuffle.first
-        reference = correct ? AddReference.new({table_name: @table_name, column_name: column_name}) : AddReference.new({table_name: @table_name,column_name: column_name})
+	   column_name = @column_names.shuffle.first
+     reference = correct ? AddReference.new({table_name: @table_name, column_name: column_name}) : AddReference.new({table_name: @table_name,column_name: column_name})
 		 test_array << reference
+		 p test_array
 		 end
 			
 	  timestamps = []
@@ -232,32 +238,33 @@ class Migration
 			
 		
 	str = <<-END
-#{indicatore}
-	 
-class AddHashTo#{@classname} < ActiveRecord::Migration
-  \tdef up
-	     #{method_up_table}
-       #{correct ? methods(true).map {|m| "\t\t#{m}"}.join("\n") : methods(false).map {|m| "\t\t#{m}"}.join("\n")}
-       #{test_array.map {|m| "\t\t#{m}"}.join("\n")}
-    \tend
 
-  \tdef down\n
-    #{test_array.map {|m| "\t\t#{m.reverse.to_s}"}.reverse.join("\n")}
-    #{methods.map {|m| "\t\t#{m.reverse.to_s}"}.reverse.join("\n")}
-    \t#{method_down_table}
-    \n\tend\n
+class AddHashTo#{@classname} < ActiveRecord::Migration
+  def up
+    #{method_up_table}
+#{correct ? methods(true).map {|m| "#{m}"}.join("\n") : methods(false).map {|m| "#{m}"}.join("\n")}
+#{test_array.map {|m| "#{m}"}.join("\n")}
+   end
+  def down
+#{test_array.map {|m| "#{m.reverse.to_s}"}.reverse.join("\n")}
+#{methods.map {|m| "#{m.reverse.to_s}"}.reverse.join("\n")}
+    #{method_down_table}
+  end
+end
 END
 str = str.strip
   end
 end
 
+
 def gene
 migration = Migration.new()
-res = []
-res << migration.up_methods(true)
-file = File.open("words/test_migration/test_up_down_true/#{number(10)}.rb", 'a'){ |file| file.puts res.shuffle.join("\n") }
+text = migration.up_methods(true)
 end
-30.times{gene}
+
+def genef
+migration = Migration.new()
+text = migration.up_methods(false)
+end
 
 
-#убрать  дефаулт если есть аррэй фолс
