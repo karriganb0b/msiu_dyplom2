@@ -1,0 +1,3951 @@
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateArtistEmails < ActiveRecord::Migration 
+  def change 
+    create_table :artist_emails do |t| 
+      t.time :length_addresses, :default => Time.new(2010, 10, 10, 23,18,21), null: true
+      t.string :role_artists, :default => "dfpOTjpc", null: false
+      t.string :song_passwords, :default => "eQmPEPHF", array: false
+      t.time :role_names, :default => Time.new(2010, 10, 10, 18,49,36), array: false
+      t.text :description_musics, :default => :name_passwords, limit: 1
+      t.string :description_films, :default => "VCZiNeUV", array: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_firstnames", force: true do |t|
+    t.time   "length_addresses",   default: Date.new(1999,8,15)
+    t.string "role_artists",       default: Date.new(2014,3,17)
+    t.string "song_passwords",     default: false
+    t.time   "role_names",         default: true
+    t.text   "description_musics", default: "name_passwords"
+    t.string "description_films",  default: "VCZiNeUV"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "country_songs", force: true do |t|
+    t.time   "length_addresses",   default: Date.new(2014,11,28)
+    t.string "role_artists",       default: true
+    t.string "song_passwords",     default: 5.259496029460276
+    t.time   "role_names",         default: 1.5567552754290803
+    t.text   "description_musics", default: "name_passwords"
+    t.string "description_films",  default: "VCZiNeUV"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8322689520) do
+
+  create_table "artist_emails", force: true do |t|
+    t.time   "length_addresses",   default: '2000-01-01 19:18:21'
+    t.string "role_artists",       default: "dfpOTjpc",            null: false
+    t.string "song_passwords",     default: "eQmPEPHF"
+    t.time   "role_names",         default: '2000-01-01 14:49:36'
+    t.text   "description_musics", default: "name_passwords"
+    t.string "description_films",  default: "VCZiNeUV"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "email_musics", force: true do |t|
+    t.time   "length_addresses",   default: 0.2768724108197641
+    t.string "role_artists",       default: 6.437772715114051
+    t.string "song_passwords",     default: false
+    t.time   "role_names",         default: Date.new(2012,2,20)
+    t.text   "description_musics", default: "name_passwords"
+    t.string "description_films",  default: "VCZiNeUV"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleLengths < ActiveRecord::Migration 
+  def change 
+    create_table :role_lengths do |t| 
+      t.text :length_roles, :default => :song_musics, null: false
+      t.timestamp :length_artists, array: true
+      t.text :country_emails, array: true
+      t.time :email_countries, :default => Time.new(2010, 10, 10, 14,50,46), null: true
+      t.string :film_songs, array: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_musics", force: true do |t|
+    t.text     "length_roles",    default: 6.651327987679831
+    t.datetime "length_artists",                                               array: true
+    t.text     "country_emails",                                               array: true
+    t.time     "email_countries", default: 6.954309043776049
+    t.string   "film_songs",                                                   array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "artist_lengths", force: true do |t|
+    t.text     "length_roles",    default: Date.new(2009,7,7)
+    t.datetime "length_artists",                                               array: true
+    t.text     "country_emails",                                               array: true
+    t.time     "email_countries", default: false
+    t.string   "film_songs",                                                   array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 1795654031) do
+
+  create_table "role_lengths", force: true do |t|
+    t.text     "length_roles",    default: "song_musics",         null: false
+    t.datetime "length_artists",                                               array: true
+    t.text     "country_emails",                                               array: true
+    t.time     "email_countries", default: '2000-01-01 10:50:46'
+    t.string   "film_songs",                                                   array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "address_films", force: true do |t|
+    t.text     "length_roles",    default: 0.5739157592041984
+    t.datetime "length_artists",                                               array: true
+    t.text     "country_emails",                                               array: true
+    t.time     "email_countries", default: false
+    t.string   "film_songs",                                                   array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleMusics < ActiveRecord::Migration 
+  def change 
+    create_table :role_musics do |t| 
+      t.time :password_films, array: true
+      t.boolean :music_songs, :default => false
+      t.text :description_descriptions, :default => :firstname_films, limit: 1
+      t.string :music_firstnames, :default => "cNVGZYUp", array: false
+      t.integer :firstname_lengths, array: true
+      t.boolean :email_passwords, :default => false
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6827617649) do
+
+  create_table "role_musics", force: true do |t|
+    t.time    "password_films",                                       array: true
+    t.boolean "music_songs",              default: false
+    t.text    "description_descriptions", default: "firstname_films"
+    t.string  "music_firstnames",         default: "cNVGZYUp"
+    t.integer "firstname_lengths",                                    array: true
+    t.boolean "email_passwords",          default: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "artist_addresses", force: true do |t|
+    t.time    "password_films",                                       array: true
+    t.boolean "music_songs",              default: false
+    t.text    "description_descriptions", default: Date.new(2012,10,20)
+    t.string  "music_firstnames",         default: 1.7975595727578288
+    t.integer "firstname_lengths",                                    array: true
+    t.boolean "email_passwords",          default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_artists", force: true do |t|
+    t.time    "password_films",                                       array: true
+    t.boolean "music_songs",              default: Date.new(2005,1,5)
+    t.text    "description_descriptions", default: true
+    t.string  "music_firstnames",         default: 8.069412789566124
+    t.integer "firstname_lengths",                                    array: true
+    t.boolean "email_passwords",          default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_songs", force: true do |t|
+    t.time    "password_films",                                       array: true
+    t.boolean "music_songs",              default: true
+    t.text    "description_descriptions", default: Date.new(2001,5,17)
+    t.string  "music_firstnames",         default: 7.268520990297165
+    t.integer "firstname_lengths",                                    array: true
+    t.boolean "email_passwords",          default: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleSongs < ActiveRecord::Migration 
+  def change 
+    create_table :role_songs do |t| 
+      t.time :address_roles, :default => Time.new(2010, 10, 10, 15,54,20), array: false
+      t.text :artist_roles, :default => :name_countries, limit: 5
+      t.text :description_emails, :default => :song_films, limit: 119
+      t.time :password_emails, array: true
+      t.time :music_addresses, array: true
+      t.timestamp :artist_firstnames, :default => DateTime.new(2003,10,23,22,44,52), null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_addresses", force: true do |t|
+    t.time     "address_roles",      default: Date.new(2004,4,19)
+    t.text     "artist_roles",       default: 6.315281194853445
+    t.text     "description_emails", default: 1.5228153890588385
+    t.time     "password_emails",                                                 array: true
+    t.time     "music_addresses",                                                 array: true
+    t.datetime "artist_firstnames",  default: '2003-10-23 22:44:52', null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_countries", force: true do |t|
+    t.time     "address_roles",      default: false
+    t.text     "artist_roles",       default: true
+    t.text     "description_emails", default: Date.new(2001,4,16)
+    t.time     "password_emails",                                                 array: true
+    t.time     "music_addresses",                                                 array: true
+    t.datetime "artist_firstnames",  default: '2003-10-23 22:44:52', null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_artists", force: true do |t|
+    t.time     "address_roles",      default: false
+    t.text     "artist_roles",       default: 8.636005858141722
+    t.text     "description_emails", default: Date.new(2007,5,9)
+    t.time     "password_emails",                                                 array: true
+    t.time     "music_addresses",                                                 array: true
+    t.datetime "artist_firstnames",  default: '2003-10-23 22:44:52', null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 5013721739) do
+
+  create_table "role_songs", force: true do |t|
+    t.time     "address_roles",      default: '2000-01-01 11:54:20'
+    t.text     "artist_roles",       default: "name_countries"
+    t.text     "description_emails", default: "song_films"
+    t.time     "password_emails",                                                 array: true
+    t.time     "music_addresses",                                                 array: true
+    t.datetime "artist_firstnames",  default: '2003-10-23 22:44:52', null: false
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateSongMusics < ActiveRecord::Migration 
+  def change 
+    create_table :song_musics do |t| 
+      t.boolean :film_firstnames, :default => false
+      t.boolean :role_musics, :default => true
+      t.string :address_musics, :default => "nclNyOHK", limit: 1
+      t.float :firstname_firstnames, array: true
+      t.text :name_descriptions, :default => :firstname_descriptions, null: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_songs", force: true do |t|
+    t.boolean "film_firstnames",                default: Date.new(2002,9,23)
+    t.boolean "role_musics",                    default: false
+    t.string  "address_musics",       limit: 1, default: Date.new(2012,10,20)
+    t.float   "firstname_firstnames",                                              array: true
+    t.text    "name_descriptions",              default: "firstname_descriptions"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_countries", force: true do |t|
+    t.boolean "film_firstnames",                default: 6.107445675903037
+    t.boolean "role_musics",                    default: Date.new(2014,0,13)
+    t.string  "address_musics",       limit: 1, default: Date.new(2013,0,5)
+    t.float   "firstname_firstnames",                                              array: true
+    t.text    "name_descriptions",              default: "firstname_descriptions"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 5955711094) do
+
+  create_table "song_musics", force: true do |t|
+    t.boolean "film_firstnames",                default: false
+    t.boolean "role_musics",                    default: true
+    t.string  "address_musics",       limit: 1, default: "nclNyOHK"
+    t.float   "firstname_firstnames",                                              array: true
+    t.text    "name_descriptions",              default: "firstname_descriptions"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "description_lengths", force: true do |t|
+    t.boolean "film_firstnames",                default: Date.new(2002,3,6)
+    t.boolean "role_musics",                    default: true
+    t.string  "address_musics",       limit: 1, default: Date.new(2011,0,9)
+    t.float   "firstname_firstnames",                                              array: true
+    t.text    "name_descriptions",              default: "firstname_descriptions"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateFilmRoles < ActiveRecord::Migration 
+  def change 
+    create_table :film_roles do |t| 
+      t.decimal :role_lengths, array: true
+      t.timestamp :address_films, :default => DateTime.new(2007,10,19,4,7,51), null: false
+      t.boolean :artist_songs, :default => false
+      t.boolean :name_films, :default => false
+      t.decimal :password_lengths, :default => 2.636702899415798, null: false
+      t.timestamp :song_lengths, :default => DateTime.new(2000,5,29,17,7,39), null: false
+      t.string :description_films, :default => "JiQNCfgd", null: false
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8273865775) do
+
+  create_table "film_roles", force: true do |t|
+    t.decimal  "role_lengths",                                                   array: true
+    t.datetime "address_films",     default: '2007-10-19 04:07:51', null: false
+    t.boolean  "artist_songs",      default: false
+    t.boolean  "name_films",        default: false
+    t.decimal  "password_lengths",  default: 2.636702899415798,     null: false
+    t.datetime "song_lengths",      default: '2000-05-29 17:07:39', null: false
+    t.string   "description_films", default: "JiQNCfgd",            null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "name_descriptions", force: true do |t|
+    t.decimal  "role_lengths",                                                   array: true
+    t.datetime "address_films",     default: false
+    t.boolean  "artist_songs",      default: Date.new(2014,6,18)
+    t.boolean  "name_films",        default: true
+    t.decimal  "password_lengths",  default: 2.636702899415798,     null: false
+    t.datetime "song_lengths",      default: '2000-05-29 17:07:39', null: false
+    t.string   "description_films", default: "JiQNCfgd",            null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "password_films", force: true do |t|
+    t.decimal  "role_lengths",                                                   array: true
+    t.datetime "address_films",     default: false
+    t.boolean  "artist_songs",      default: Date.new(2002,5,26)
+    t.boolean  "name_films",        default: false
+    t.decimal  "password_lengths",  default: 2.636702899415798,     null: false
+    t.datetime "song_lengths",      default: '2000-05-29 17:07:39', null: false
+    t.string   "description_films", default: "JiQNCfgd",            null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_roles", force: true do |t|
+    t.decimal  "role_lengths",                                                   array: true
+    t.datetime "address_films",     default: 7.041910233018603
+    t.boolean  "artist_songs",      default: 8.772966251868185
+    t.boolean  "name_films",        default: false
+    t.decimal  "password_lengths",  default: 2.636702899415798,     null: false
+    t.datetime "song_lengths",      default: '2000-05-29 17:07:39', null: false
+    t.string   "description_films", default: "JiQNCfgd",            null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateSongPasswords < ActiveRecord::Migration 
+  def change 
+    create_table :song_passwords do |t| 
+      t.text :name_passwords, :default => :length_roles, null: false
+      t.timestamp :role_countries, :default => DateTime.new(2012,8,7,8,58,21), null: true
+      t.time :firstname_firstnames, :default => Time.new(2010, 10, 10, 20,24,55), null: false
+      t.decimal :role_roles, :default => 6.561634163864215, null: false
+      t.integer :password_passwords, :default => 190, null: false
+      t.integer :email_passwords, :default => 81, null: true
+      t.text :password_emails, :default => :music_artists, limit: 5
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_films", force: true do |t|
+    t.text     "name_passwords",       default: Date.new(2002,0,6)
+    t.datetime "role_countries",       default: true
+    t.time     "firstname_firstnames", default: 7.656946839086636
+    t.decimal  "role_roles",           default: 7.410000161203209
+    t.integer  "password_passwords",   default: 190,                   null: false
+    t.integer  "email_passwords",      default: 81
+    t.text     "password_emails",      default: "music_artists"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 7480657715) do
+
+  create_table "song_passwords", force: true do |t|
+    t.text     "name_passwords",       default: "length_roles",        null: false
+    t.datetime "role_countries",       default: '2012-08-07 08:58:21'
+    t.time     "firstname_firstnames", default: '2000-01-01 16:24:55', null: false
+    t.decimal  "role_roles",           default: 6.561634163864215,     null: false
+    t.integer  "password_passwords",   default: 190,                   null: false
+    t.integer  "email_passwords",      default: 81
+    t.text     "password_emails",      default: "music_artists"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "role_songs", force: true do |t|
+    t.text     "name_passwords",       default: 8.561766282898933
+    t.datetime "role_countries",       default: 5.657717262192243
+    t.time     "firstname_firstnames", default: 4.540380318233586
+    t.decimal  "role_roles",           default: 1.0778677472636886
+    t.integer  "password_passwords",   default: 190,                   null: false
+    t.integer  "email_passwords",      default: 81
+    t.text     "password_emails",      default: "music_artists"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_roles", force: true do |t|
+    t.text     "name_passwords",       default: false
+    t.datetime "role_countries",       default: 3.3922547807301897
+    t.time     "firstname_firstnames", default: 0.15230186164432824
+    t.decimal  "role_roles",           default: true
+    t.integer  "password_passwords",   default: 190,                   null: false
+    t.integer  "email_passwords",      default: 81
+    t.text     "password_emails",      default: "music_artists"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateAddressPasswords < ActiveRecord::Migration 
+  def change 
+    create_table :address_passwords do |t| 
+      t.boolean :email_descriptions, :default => false
+      t.text :song_emails, :default => :music_names, limit: 6
+      t.integer :artist_roles, array: true
+      t.decimal :country_names, :default => 0.3400032156728492, precision: 3, scale: 1
+      t.decimal :description_musics, array: true
+      t.time :role_names, :default => Time.new(2010, 10, 10, 6,13,17), null: true
+      t.time :firstname_firstnames, array: true
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9328170379) do
+
+  create_table "address_passwords", force: true do |t|
+    t.boolean "email_descriptions",                           default: false
+    t.text    "song_emails",                                  default: "music_names"
+    t.integer "artist_roles",                                                                 array: true
+    t.decimal "country_names",        precision: 3, scale: 1, default: 0.3400032156728492
+    t.decimal "description_musics",                                                           array: true
+    t.time    "role_names",                                   default: '2000-01-01 02:13:17'
+    t.time    "firstname_firstnames",                                                         array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "song_roles", force: true do |t|
+    t.boolean "email_descriptions",                           default: Date.new(2006,8,13)
+    t.text    "song_emails",                                  default: 1.936442186749182
+    t.integer "artist_roles",                                                                 array: true
+    t.decimal "country_names",        precision: 3, scale: 1, default: false
+    t.decimal "description_musics",                                                           array: true
+    t.time    "role_names",                                   default: '2000-01-01 02:13:17'
+    t.time    "firstname_firstnames",                                                         array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_addresses", force: true do |t|
+    t.boolean "email_descriptions",                           default: 0.5946085240400603
+    t.text    "song_emails",                                  default: 6.354298828984961
+    t.integer "artist_roles",                                                                 array: true
+    t.decimal "country_names",        precision: 3, scale: 1, default: 2.169511481707597
+    t.decimal "description_musics",                                                           array: true
+    t.time    "role_names",                                   default: '2000-01-01 02:13:17'
+    t.time    "firstname_firstnames",                                                         array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_roles", force: true do |t|
+    t.boolean "email_descriptions",                           default: Date.new(2001,10,5)
+    t.text    "song_emails",                                  default: false
+    t.integer "artist_roles",                                                                 array: true
+    t.decimal "country_names",        precision: 3, scale: 1, default: false
+    t.decimal "description_musics",                                                           array: true
+    t.time    "role_names",                                   default: '2000-01-01 02:13:17'
+    t.time    "firstname_firstnames",                                                         array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreatePasswordLengths < ActiveRecord::Migration 
+  def change 
+    create_table :password_lengths do |t| 
+      t.integer :music_musics, :default => 179, limit: 5
+      t.string :email_lengths, array: true
+      t.text :email_countries, :default => :film_passwords, null: true
+      t.text :email_countries, array: true
+      t.string :film_songs, :default => "PLvrhnBJ", array: false
+      t.integer :firstname_names, :default => 30, null: true
+      t.integer :description_emails, :default => 127, null: false
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 3820854598) do
+
+  create_table "password_lengths", force: true do |t|
+    t.integer "music_musics",       limit: 8, default: 179
+    t.string  "email_lengths",                                                  array: true
+    t.text    "email_countries",                                                array: true
+    t.string  "film_songs",                   default: "PLvrhnBJ"
+    t.integer "firstname_names",              default: 30
+    t.integer "description_emails",           default: 127,        null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "length_songs", force: true do |t|
+    t.integer "music_musics",       limit: 8, default: Date.new(2009,4,13)
+    t.string  "email_lengths",                                                  array: true
+    t.text    "email_countries",                                                array: true
+    t.string  "film_songs",                   default: 4.724548989909249
+    t.integer "firstname_names",              default: 30
+    t.integer "description_emails",           default: 127,        null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_lengths", force: true do |t|
+    t.integer "music_musics",       limit: 8, default: true
+    t.string  "email_lengths",                                                  array: true
+    t.text    "email_countries",                                                array: true
+    t.string  "film_songs",                   default: 7.729323687321112
+    t.integer "firstname_names",              default: 30
+    t.integer "description_emails",           default: 127,        null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_descriptions", force: true do |t|
+    t.integer "music_musics",       limit: 8, default: 4.992913331139107
+    t.string  "email_lengths",                                                  array: true
+    t.text    "email_countries",                                                array: true
+    t.string  "film_songs",                   default: Date.new(2009,1,14)
+    t.integer "firstname_names",              default: 30
+    t.integer "description_emails",           default: 127,        null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateDescriptionCountries < ActiveRecord::Migration 
+  def change 
+    create_table :description_countries do |t| 
+      t.string :role_roles, :default => "VOQOlYBQ", limit: 1
+      t.decimal :password_descriptions, :default => 2.230038663730913, null: true
+      t.string :description_lengths, :default => "JSoKVWtC", limit: 5
+      t.timestamp :role_songs, array: true
+      t.string :film_films, :default => "uKiogdWC", limit: 8
+      t.timestamp :music_lengths, array: true
+      t.time :music_firstnames, :default => Time.new(2010, 10, 10, 23,24,55), array: false
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9026032141) do
+
+  create_table "description_countries", force: true do |t|
+    t.string   "role_roles",            limit: 1, default: "VOQOlYBQ"
+    t.decimal  "password_descriptions",           default: 2.230038663730913
+    t.string   "description_lengths",   limit: 5, default: "JSoKVWtC"
+    t.datetime "role_songs",                                                      array: true
+    t.string   "film_films",            limit: 8, default: "uKiogdWC"
+    t.datetime "music_lengths",                                                   array: true
+    t.time     "music_firstnames",                default: '2000-01-01 19:24:55'
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "music_addresses", force: true do |t|
+    t.string   "role_roles",            limit: 1, default: 4.332684363191332
+    t.decimal  "password_descriptions",           default: Date.new(2006,9,4)
+    t.string   "description_lengths",   limit: 5, default: false
+    t.datetime "role_songs",                                                      array: true
+    t.string   "film_films",            limit: 8, default: "uKiogdWC"
+    t.datetime "music_lengths",                                                   array: true
+    t.time     "music_firstnames",                default: '2000-01-01 19:24:55'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_artists", force: true do |t|
+    t.string   "role_roles",            limit: 1, default: 0.6552909310934707
+    t.decimal  "password_descriptions",           default: false
+    t.string   "description_lengths",   limit: 5, default: true
+    t.datetime "role_songs",                                                      array: true
+    t.string   "film_films",            limit: 8, default: "uKiogdWC"
+    t.datetime "music_lengths",                                                   array: true
+    t.time     "music_firstnames",                default: '2000-01-01 19:24:55'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "password_lengths", force: true do |t|
+    t.string   "role_roles",            limit: 1, default: 7.098432736118652
+    t.decimal  "password_descriptions",           default: 5.394494626313759
+    t.string   "description_lengths",   limit: 5, default: true
+    t.datetime "role_songs",                                                      array: true
+    t.string   "film_films",            limit: 8, default: "uKiogdWC"
+    t.datetime "music_lengths",                                                   array: true
+    t.time     "music_firstnames",                default: '2000-01-01 19:24:55'
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateEmailFilms < ActiveRecord::Migration 
+  def change 
+    create_table :email_films do |t| 
+      t.string :country_roles, :default => "LzQoUXKn", null: true
+      t.timestamp :name_passwords, :default => DateTime.new(2002,0,20,2,27,52), null: false
+      t.integer :artist_lengths, :default => 155, null: false
+      t.string :role_musics, :default => "oqVqWaxV", null: true
+      t.float :address_lengths, :default => 5.899526885076338, array: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_musics", force: true do |t|
+    t.float   "name_firstnames",    default: Date.new(2010,11,16)
+    t.float   "role_countries",     default: Date.new(2006,5,9)
+    t.text    "address_firstnames", default: Date.new(2011,11,8)
+    t.decimal "password_songs",     default: Date.new(1999,4,1)
+    t.boolean "length_films",       default: true
+    t.text    "length_countries",                                             array: true
+    t.decimal "email_roles",        default: 3.8261787839589214, null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_passwords", force: true do |t|
+    t.float   "name_firstnames",    default: 8.81136940298392
+    t.float   "role_countries",     default: true
+    t.text    "address_firstnames", default: true
+    t.decimal "password_songs",     default: Date.new(2007,6,30)
+    t.boolean "length_films",       default: true
+    t.text    "length_countries",                                             array: true
+    t.decimal "email_roles",        default: 3.8261787839589214, null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6525651723) do
+
+  create_table "role_artists", force: true do |t|
+    t.float   "name_firstnames",    default: 3.092792783699359
+    t.float   "role_countries",     default: 1.300257774435893,  null: false
+    t.text    "address_firstnames", default: "country_musics"
+    t.decimal "password_songs",     default: 6.323538410302092
+    t.boolean "length_films",       default: true
+    t.text    "length_countries",                                             array: true
+    t.decimal "email_roles",        default: 3.8261787839589214, null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "email_names", force: true do |t|
+    t.float   "name_firstnames",    default: Date.new(2014,1,2)
+    t.float   "role_countries",     default: 5.991888525070992
+    t.text    "address_firstnames", default: Date.new(2012,7,30)
+    t.decimal "password_songs",     default: 7.296099897948916
+    t.boolean "length_films",       default: true
+    t.text    "length_countries",                                             array: true
+    t.decimal "email_roles",        default: 3.8261787839589214, null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateMusicSongs < ActiveRecord::Migration 
+  def change 
+    create_table :music_songs do |t| 
+      t.string :firstname_songs, :default => "YKsVVWli", null: false
+      t.integer :address_musics, array: true
+      t.integer :music_films, :default => 58, array: false
+      t.text :description_songs, :default => :firstname_addresses, null: false
+      t.boolean :email_films, :default => false
+      t.string :firstname_emails, :default => "FVzvHLLv", limit: 10
+      t.float :description_emails, :default => 6.068552588918285, null: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_lengths", force: true do |t|
+    t.string  "firstname_songs",               default: 7.096935669682482
+    t.integer "address_musics",                                                             array: true
+    t.integer "music_films",                   default: Date.new(2002,9,30)
+    t.text    "description_songs",             default: Date.new(1999,5,26)
+    t.boolean "email_films",                   default: false
+    t.string  "firstname_emails",   limit: 10, default: "FVzvHLLv"
+    t.float   "description_emails",            default: 6.068552588918285
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_lengths", force: true do |t|
+    t.string  "firstname_songs",               default: true
+    t.integer "address_musics",                                                             array: true
+    t.integer "music_films",                   default: Date.new(1999,3,24)
+    t.text    "description_songs",             default: 6.023131058574824
+    t.boolean "email_films",                   default: false
+    t.string  "firstname_emails",   limit: 10, default: "FVzvHLLv"
+    t.float   "description_emails",            default: 6.068552588918285
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9251724380) do
+
+  create_table "music_songs", force: true do |t|
+    t.string  "firstname_songs",               default: "YKsVVWli",            null: false
+    t.integer "address_musics",                                                             array: true
+    t.integer "music_films",                   default: 58
+    t.text    "description_songs",             default: "firstname_addresses", null: false
+    t.boolean "email_films",                   default: false
+    t.string  "firstname_emails",   limit: 10, default: "FVzvHLLv"
+    t.float   "description_emails",            default: 6.068552588918285
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "film_descriptions", force: true do |t|
+    t.string  "firstname_songs",               default: true
+    t.integer "address_musics",                                                             array: true
+    t.integer "music_films",                   default: Date.new(2004,7,21)
+    t.text    "description_songs",             default: false
+    t.boolean "email_films",                   default: false
+    t.string  "firstname_emails",   limit: 10, default: "FVzvHLLv"
+    t.float   "description_emails",            default: 6.068552588918285
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateFilmCountries < ActiveRecord::Migration 
+  def change 
+    create_table :film_countries do |t| 
+      t.timestamp :firstname_lengths, :default => DateTime.new(2002,0,24,4,39,29), array: false
+      t.time :address_roles, array: true
+      t.float :country_songs, :default => 4.796367535741198, null: false
+      t.text :song_countries, :default => :email_musics, null: false
+      t.float :description_names, array: true
+      t.boolean :firstname_lengths, :default => false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_passwords", force: true do |t|
+    t.string   "address_emails",                                                 array: true
+    t.float    "length_passwords",  default: false
+    t.time     "music_passwords",   default: true
+    t.string   "role_countries",                                                 array: true
+    t.datetime "firstname_musics",  default: '2008-10-16 00:41:43', null: false
+    t.integer  "firstname_artists", default: 152,                   null: false
+    t.datetime "password_names",    default: '2009-11-14 12:58:09'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_passwords", force: true do |t|
+    t.string   "address_emails",                                                 array: true
+    t.float    "length_passwords",  default: Date.new(2008,0,23)
+    t.time     "music_passwords",   default: Date.new(2011,11,16)
+    t.string   "role_countries",                                                 array: true
+    t.datetime "firstname_musics",  default: '2008-10-16 00:41:43', null: false
+    t.integer  "firstname_artists", default: 152,                   null: false
+    t.datetime "password_names",    default: '2009-11-14 12:58:09'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_lengths", force: true do |t|
+    t.string   "address_emails",                                                 array: true
+    t.float    "length_passwords",  default: Date.new(2014,2,24)
+    t.time     "music_passwords",   default: true
+    t.string   "role_countries",                                                 array: true
+    t.datetime "firstname_musics",  default: '2008-10-16 00:41:43', null: false
+    t.integer  "firstname_artists", default: 152,                   null: false
+    t.datetime "password_names",    default: '2009-11-14 12:58:09'
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 5354729554) do
+
+  create_table "role_names", force: true do |t|
+    t.string   "address_emails",                                                 array: true
+    t.float    "length_passwords",  default: 5.1557530781669545
+    t.time     "music_passwords",   default: '2000-01-01 05:01:19', null: false
+    t.string   "role_countries",                                                 array: true
+    t.datetime "firstname_musics",  default: '2008-10-16 00:41:43', null: false
+    t.integer  "firstname_artists", default: 152,                   null: false
+    t.datetime "password_names",    default: '2009-11-14 12:58:09'
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateMusicSongs < ActiveRecord::Migration 
+  def change 
+    create_table :music_songs do |t| 
+      t.integer :email_songs, array: true
+      t.integer :firstname_firstnames, :default => 217, array: false
+      t.boolean :song_firstnames, :default => true
+      t.string :film_addresses, :default => "HKLhsWwX", limit: 2
+      t.string :country_roles, :default => "AcBEvlOh", limit: 9
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 2014536365) do
+
+  create_table "music_songs", force: true do |t|
+    t.integer "email_songs",                                         array: true
+    t.integer "firstname_firstnames",           default: 217
+    t.boolean "song_firstnames",                default: true
+    t.string  "film_addresses",       limit: 2, default: "HKLhsWwX"
+    t.string  "country_roles",        limit: 9, default: "AcBEvlOh"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "film_descriptions", force: true do |t|
+    t.integer "email_songs",                                         array: true
+    t.integer "firstname_firstnames",           default: false
+    t.boolean "song_firstnames",                default: true
+    t.string  "film_addresses",       limit: 2, default: Date.new(2000,8,28)
+    t.string  "country_roles",        limit: 9, default: "AcBEvlOh"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "name_names", force: true do |t|
+    t.integer "email_songs",                                         array: true
+    t.integer "firstname_firstnames",           default: Date.new(2001,4,3)
+    t.boolean "song_firstnames",                default: 7.258539272003472
+    t.string  "film_addresses",       limit: 2, default: Date.new(2004,1,22)
+    t.string  "country_roles",        limit: 9, default: "AcBEvlOh"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_passwords", force: true do |t|
+    t.integer "email_songs",                                         array: true
+    t.integer "firstname_firstnames",           default: Date.new(2013,3,8)
+    t.boolean "song_firstnames",                default: true
+    t.string  "film_addresses",       limit: 2, default: Date.new(2003,7,24)
+    t.string  "country_roles",        limit: 9, default: "AcBEvlOh"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateLengthNames < ActiveRecord::Migration 
+  def change 
+    create_table :length_names do |t| 
+      t.boolean :address_roles, :default => false
+      t.string :music_descriptions, array: true
+      t.integer :address_songs, :default => 177, array: false
+      t.string :length_names, :default => "rGZoGqWU", null: false
+      t.timestamp :firstname_passwords, :default => DateTime.new(2000,8,3,2,0,1), null: true
+      t.decimal :firstname_descriptions, :default => 8.226168724769325, precision: 6, scale: 4
+      t.float :address_films, :default => 8.611952817442853, array: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "artist_names", force: true do |t|
+    t.boolean  "address_roles",                                  default: 2.4600118646189184
+    t.string   "music_descriptions",                                                                          array: true
+    t.integer  "address_songs",                                  default: 4.968024291301318
+    t.string   "length_names",                                   default: Date.new(2000,4,28)
+    t.datetime "firstname_passwords",                            default: '2000-08-03 02:00:01'
+    t.decimal  "firstname_descriptions", precision: 6, scale: 4, default: 8.226168724769325
+    t.float    "address_films",                                  default: 8.611952817442853
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "name_emails", force: true do |t|
+    t.boolean  "address_roles",                                  default: 4.835223304717564
+    t.string   "music_descriptions",                                                                          array: true
+    t.integer  "address_songs",                                  default: 6.287714908749969
+    t.string   "length_names",                                   default: Date.new(2013,10,27)
+    t.datetime "firstname_passwords",                            default: '2000-08-03 02:00:01'
+    t.decimal  "firstname_descriptions", precision: 6, scale: 4, default: 8.226168724769325
+    t.float    "address_films",                                  default: 8.611952817442853
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_lengths", force: true do |t|
+    t.boolean  "address_roles",                                  default: Date.new(2010,3,13)
+    t.string   "music_descriptions",                                                                          array: true
+    t.integer  "address_songs",                                  default: Date.new(2002,7,9)
+    t.string   "length_names",                                   default: false
+    t.datetime "firstname_passwords",                            default: '2000-08-03 02:00:01'
+    t.decimal  "firstname_descriptions", precision: 6, scale: 4, default: 8.226168724769325
+    t.float    "address_films",                                  default: 8.611952817442853
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 4474462492) do
+
+  create_table "length_names", force: true do |t|
+    t.boolean  "address_roles",                                  default: false
+    t.string   "music_descriptions",                                                                          array: true
+    t.integer  "address_songs",                                  default: 177
+    t.string   "length_names",                                   default: "rGZoGqWU",            null: false
+    t.datetime "firstname_passwords",                            default: '2000-08-03 02:00:01'
+    t.decimal  "firstname_descriptions", precision: 6, scale: 4, default: 8.226168724769325
+    t.float    "address_films",                                  default: 8.611952817442853
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateNameMusics < ActiveRecord::Migration 
+  def change 
+    create_table :name_musics do |t| 
+      t.boolean :name_songs, :default => false
+      t.time :role_passwords, :default => Time.new(2010, 10, 10, 15,6,20), array: false
+      t.text :song_descriptions, :default => :name_musics, null: false
+      t.string :name_artists, :default => "CKCnpfDb", null: true
+      t.float :song_songs, array: true
+      t.decimal :role_roles, :default => 7.378016000041509, array: false
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8687721490) do
+
+  create_table "name_musics", force: true do |t|
+    t.boolean "name_songs",        default: false
+    t.time    "role_passwords",    default: '2000-01-01 11:06:20'
+    t.text    "song_descriptions", default: "name_musics",         null: false
+    t.string  "name_artists",      default: "CKCnpfDb"
+    t.float   "song_songs",                                                     array: true
+    t.decimal "role_roles",        default: 7.378016000041509
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "firstname_films", force: true do |t|
+    t.boolean "name_songs",        default: Date.new(2011,8,16)
+    t.time    "role_passwords",    default: false
+    t.text    "song_descriptions", default: true
+    t.string  "name_artists",      default: true
+    t.float   "song_songs",                                                     array: true
+    t.decimal "role_roles",        default: 7.378016000041509
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_names", force: true do |t|
+    t.boolean "name_songs",        default: Date.new(2009,3,27)
+    t.time    "role_passwords",    default: 4.1747586022854595
+    t.text    "song_descriptions", default: 8.878169440715855
+    t.string  "name_artists",      default: 0.14000875942039792
+    t.float   "song_songs",                                                     array: true
+    t.decimal "role_roles",        default: 7.378016000041509
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_films", force: true do |t|
+    t.boolean "name_songs",        default: 3.665368843691486
+    t.time    "role_passwords",    default: 8.903382027570881
+    t.text    "song_descriptions", default: 4.181412194971107
+    t.string  "name_artists",      default: 8.214459030153746
+    t.float   "song_songs",                                                     array: true
+    t.decimal "role_roles",        default: 7.378016000041509
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateDescriptionArtists < ActiveRecord::Migration 
+  def change 
+    create_table :description_artists do |t| 
+      t.time :country_films, array: true
+      t.string :role_passwords, :default => "RutzcNMk", limit: 253
+      t.integer :country_artists, :default => 213, limit: 1
+      t.time :song_roles, :default => Time.new(2010, 10, 10, 7,42,51), array: false
+      t.text :description_musics, :default => :address_musics, null: true
+      t.timestamp :address_roles, :default => DateTime.new(2009,7,23,15,42,41), null: true
+      t.text :song_descriptions, array: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_songs", force: true do |t|
+    t.time     "country_films",                                                  array: true
+    t.string   "role_passwords",     limit: 253, default: 5.150804530054599
+    t.integer  "country_artists",    limit: 2,   default: 6.464170937682272
+    t.time     "song_roles",                     default: Date.new(1999,5,3)
+    t.text     "description_musics",             default: "address_musics"
+    t.datetime "address_roles",                  default: '2009-07-23 15:42:41'
+    t.text     "song_descriptions",                                              array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 4322121994) do
+
+  create_table "description_artists", force: true do |t|
+    t.time     "country_films",                                                  array: true
+    t.string   "role_passwords",     limit: 253, default: "RutzcNMk"
+    t.integer  "country_artists",    limit: 2,   default: 213
+    t.time     "song_roles",                     default: '2000-01-01 03:42:51'
+    t.text     "description_musics",             default: "address_musics"
+    t.datetime "address_roles",                  default: '2009-07-23 15:42:41'
+    t.text     "song_descriptions",                                              array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "address_artists", force: true do |t|
+    t.time     "country_films",                                                  array: true
+    t.string   "role_passwords",     limit: 253, default: 2.498285829531647
+    t.integer  "country_artists",    limit: 2,   default: 1.4457978084904195
+    t.time     "song_roles",                     default: true
+    t.text     "description_musics",             default: "address_musics"
+    t.datetime "address_roles",                  default: '2009-07-23 15:42:41'
+    t.text     "song_descriptions",                                              array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_countries", force: true do |t|
+    t.time     "country_films",                                                  array: true
+    t.string   "role_passwords",     limit: 253, default: Date.new(2000,8,21)
+    t.integer  "country_artists",    limit: 2,   default: 1.1583955669239958
+    t.time     "song_roles",                     default: 5.5430926601691315
+    t.text     "description_musics",             default: "address_musics"
+    t.datetime "address_roles",                  default: '2009-07-23 15:42:41'
+    t.text     "song_descriptions",                                              array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateFilmAddresses < ActiveRecord::Migration 
+  def change 
+    create_table :film_addresses do |t| 
+      t.text :length_films, array: true
+      t.boolean :film_films, :default => true
+      t.timestamp :email_songs, :default => DateTime.new(2011,4,3,21,49,46), array: false
+      t.boolean :password_artists, :default => true
+      t.float :song_countries, :default => 1.207315490380476, null: true
+      t.integer :password_films, :default => 225, null: true
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 2478402769) do
+
+  create_table "film_addresses", force: true do |t|
+    t.text     "length_films",                                     array: true
+    t.boolean  "film_films",       default: true
+    t.datetime "email_songs",      default: '2011-04-03 21:49:46'
+    t.boolean  "password_artists", default: true
+    t.float    "song_countries",   default: 1.207315490380476
+    t.integer  "password_films",   default: 225
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "length_songs", force: true do |t|
+    t.text     "length_films",                                     array: true
+    t.boolean  "film_films",       default: true
+    t.datetime "email_songs",      default: true
+    t.boolean  "password_artists", default: 4.224772221296188
+    t.float    "song_countries",   default: 1.207315490380476
+    t.integer  "password_films",   default: 225
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "country_roles", force: true do |t|
+    t.text     "length_films",                                     array: true
+    t.boolean  "film_films",       default: false
+    t.datetime "email_songs",      default: Date.new(2004,2,3)
+    t.boolean  "password_artists", default: true
+    t.float    "song_countries",   default: 1.207315490380476
+    t.integer  "password_films",   default: 225
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_films", force: true do |t|
+    t.text     "length_films",                                     array: true
+    t.boolean  "film_films",       default: false
+    t.datetime "email_songs",      default: Date.new(1999,2,5)
+    t.boolean  "password_artists", default: 8.953908440352764
+    t.float    "song_countries",   default: 1.207315490380476
+    t.integer  "password_films",   default: 225
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateFilmNames < ActiveRecord::Migration 
+  def change 
+    create_table :film_names do |t| 
+      t.boolean :email_names, :default => false
+      t.float :firstname_countries, :default => 4.218613672658191, null: false
+      t.string :address_artists, :default => "cMGJGZqM", null: false
+      t.timestamp :artist_firstnames, array: true
+      t.float :email_artists, :default => 3.725139671133931, null: false
+      t.boolean :music_songs, :default => true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_emails", force: true do |t|
+    t.boolean  "email_names",         default: 5.473958038717217
+    t.float    "firstname_countries", default: 1.2958488735978957
+    t.string   "address_artists",     default: true
+    t.datetime "artist_firstnames",                                            array: true
+    t.float    "email_artists",       default: 3.725139671133931, null: false
+    t.boolean  "music_songs",         default: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 3006157783) do
+
+  create_table "film_names", force: true do |t|
+    t.boolean  "email_names",         default: false
+    t.float    "firstname_countries", default: 4.218613672658191, null: false
+    t.string   "address_artists",     default: "cMGJGZqM",        null: false
+    t.datetime "artist_firstnames",                                            array: true
+    t.float    "email_artists",       default: 3.725139671133931, null: false
+    t.boolean  "music_songs",         default: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "artist_films", force: true do |t|
+    t.boolean  "email_names",         default: 1.0602214395296756
+    t.float    "firstname_countries", default: false
+    t.string   "address_artists",     default: Date.new(2010,6,24)
+    t.datetime "artist_firstnames",                                            array: true
+    t.float    "email_artists",       default: 3.725139671133931, null: false
+    t.boolean  "music_songs",         default: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_emails", force: true do |t|
+    t.boolean  "email_names",         default: Date.new(2001,4,2)
+    t.float    "firstname_countries", default: Date.new(2014,8,11)
+    t.string   "address_artists",     default: false
+    t.datetime "artist_firstnames",                                            array: true
+    t.float    "email_artists",       default: 3.725139671133931, null: false
+    t.boolean  "music_songs",         default: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateCountrySongs < ActiveRecord::Migration 
+  def change 
+    create_table :country_songs do |t| 
+      t.time :length_artists, :default => Time.new(2010, 10, 10, 15,19,19), null: true
+      t.string :password_firstnames, :default => "QQzsFzcP", null: true
+      t.time :country_firstnames, :default => Time.new(2010, 10, 10, 8,7,9), null: true
+      t.string :film_addresses, :default => "iRYCwnrH", null: false
+      t.text :password_countries, array: true
+      t.integer :name_emails, :default => 181, limit: 1
+      t.integer :film_roles, :default => 129, null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "song_musics", force: true do |t|
+    t.time    "length_artists",                default: true
+    t.string  "password_firstnames",           default: false
+    t.time    "country_firstnames",            default: Date.new(2006,7,29)
+    t.string  "film_addresses",                default: 7.2659287664109975
+    t.text    "password_countries",                                                         array: true
+    t.integer "name_emails",         limit: 2, default: 181
+    t.integer "film_roles",                    default: 129,                   null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_countries", force: true do |t|
+    t.time    "length_artists",                default: 2.1686252417711667
+    t.string  "password_firstnames",           default: Date.new(2011,6,1)
+    t.time    "country_firstnames",            default: 5.606246218578577
+    t.string  "film_addresses",                default: true
+    t.text    "password_countries",                                                         array: true
+    t.integer "name_emails",         limit: 2, default: 181
+    t.integer "film_roles",                    default: 129,                   null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 5704023550) do
+
+  create_table "country_songs", force: true do |t|
+    t.time    "length_artists",                default: '2000-01-01 11:19:19'
+    t.string  "password_firstnames",           default: "QQzsFzcP"
+    t.time    "country_firstnames",            default: '2000-01-01 04:07:09'
+    t.string  "film_addresses",                default: "iRYCwnrH",            null: false
+    t.text    "password_countries",                                                         array: true
+    t.integer "name_emails",         limit: 2, default: 181
+    t.integer "film_roles",                    default: 129,                   null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "description_addresses", force: true do |t|
+    t.time    "length_artists",                default: true
+    t.string  "password_firstnames",           default: Date.new(2002,5,8)
+    t.time    "country_firstnames",            default: 3.512456378329305
+    t.string  "film_addresses",                default: Date.new(2014,2,0)
+    t.text    "password_countries",                                                         array: true
+    t.integer "name_emails",         limit: 2, default: 181
+    t.integer "film_roles",                    default: 129,                   null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleMusics < ActiveRecord::Migration 
+  def change 
+    create_table :role_musics do |t| 
+      t.time :address_countries, :default => Time.new(2010, 10, 10, 12,44,45), array: false
+      t.text :music_names, :default => :country_emails, null: true
+      t.time :role_emails, array: true
+      t.timestamp :address_countries, :default => DateTime.new(2006,7,24,6,54,46), null: true
+      t.text :artist_passwords, :default => :film_names, limit: 5
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "password_addresses", force: true do |t|
+    t.datetime "address_countries", default: Date.new(2004,6,13)
+    t.text     "music_names",       default: 6.407237554185652
+    t.time     "role_emails",                                       array: true
+    t.text     "artist_passwords",  default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_musics", force: true do |t|
+    t.datetime "address_countries", default: true
+    t.text     "music_names",       default: false
+    t.time     "role_emails",                                       array: true
+    t.text     "artist_passwords",  default: Date.new(2014,8,27)
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6001725722) do
+
+  create_table "role_musics", force: true do |t|
+    t.datetime "address_countries", default: '2006-07-24 06:54:46'
+    t.text     "music_names",       default: "country_emails"
+    t.time     "role_emails",                                       array: true
+    t.text     "artist_passwords",  default: "film_names"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "music_songs", force: true do |t|
+    t.datetime "address_countries", default: Date.new(2014,9,29)
+    t.text     "music_names",       default: Date.new(2010,2,10)
+    t.time     "role_emails",                                       array: true
+    t.text     "artist_passwords",  default: Date.new(2013,4,22)
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreatePasswordMusics < ActiveRecord::Migration 
+  def change 
+    create_table :password_musics do |t| 
+      t.text :email_songs, :default => :country_artists, array: false
+      t.boolean :description_songs, :default => false
+      t.string :email_emails, :default => "KzHYZGmQ", null: true
+      t.string :role_roles, :default => "ZiQvRoNQ", array: false
+      t.timestamp :film_passwords, :default => DateTime.new(2014,1,15,20,22,52), null: true
+      t.timestamp :length_descriptions, array: true
+      t.boolean :name_musics, :default => false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_songs", force: true do |t|
+    t.text     "email_songs",         default: Date.new(1999,9,7)
+    t.boolean  "description_songs",   default: 2.150288672799325
+    t.string   "email_emails",        default: false
+    t.string   "role_roles",          default: 3.6158440513696988
+    t.datetime "film_passwords",      default: '2014-01-15 20:22:52'
+    t.datetime "length_descriptions",                                 array: true
+    t.boolean  "name_musics",         default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_countries", force: true do |t|
+    t.text     "email_songs",         default: false
+    t.boolean  "description_songs",   default: false
+    t.string   "email_emails",        default: Date.new(2007,9,3)
+    t.string   "role_roles",          default: 5.402438964513747
+    t.datetime "film_passwords",      default: '2014-01-15 20:22:52'
+    t.datetime "length_descriptions",                                 array: true
+    t.boolean  "name_musics",         default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_musics", force: true do |t|
+    t.text     "email_songs",         default: Date.new(2004,4,12)
+    t.boolean  "description_songs",   default: true
+    t.string   "email_emails",        default: false
+    t.string   "role_roles",          default: Date.new(2001,5,22)
+    t.datetime "film_passwords",      default: '2014-01-15 20:22:52'
+    t.datetime "length_descriptions",                                 array: true
+    t.boolean  "name_musics",         default: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6357632446) do
+
+  create_table "password_musics", force: true do |t|
+    t.text     "email_songs",         default: "country_artists"
+    t.boolean  "description_songs",   default: false
+    t.string   "email_emails",        default: "KzHYZGmQ"
+    t.string   "role_roles",          default: "ZiQvRoNQ"
+    t.datetime "film_passwords",      default: '2014-01-15 20:22:52'
+    t.datetime "length_descriptions",                                 array: true
+    t.boolean  "name_musics",         default: false
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateFilmMusics < ActiveRecord::Migration 
+  def change 
+    create_table :film_musics do |t| 
+      t.timestamp :film_addresses, :default => DateTime.new(2010,5,0,13,32,19), null: true
+      t.integer :description_descriptions, :default => 61, limit: 2
+      t.boolean :name_firstnames, :default => false
+      t.integer :address_addresses, :default => 143, null: false
+      t.decimal :address_artists, :default => 5.198690699752713, null: true
+      t.decimal :description_names, :default => 7.952945032236318, null: true
+      t.decimal :role_passwords, :default => 8.825471105609454, null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_countries", force: true do |t|
+    t.integer "song_firstnames",          default: 2.8679992810287573
+    t.float   "description_descriptions", default: true
+    t.integer "name_names",               default: false
+    t.float   "description_musics",       default: true
+    t.text    "film_songs",                                                          array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_artists", force: true do |t|
+    t.integer "song_firstnames",          default: Date.new(2008,7,4)
+    t.float   "description_descriptions", default: true
+    t.integer "name_names",               default: 6.819326817180818
+    t.float   "description_musics",       default: false
+    t.text    "film_songs",                                                          array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "artist_lengths", force: true do |t|
+    t.integer "song_firstnames",          default: Date.new(2001,2,24)
+    t.float   "description_descriptions", default: Date.new(2011,0,30)
+    t.integer "name_names",               default: false
+    t.float   "description_musics",       default: false
+    t.text    "film_songs",                                                          array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 1206608499) do
+
+  create_table "name_lengths", force: true do |t|
+    t.integer "song_firstnames",          default: 228
+    t.float   "description_descriptions", default: 0.30708773234935716
+    t.integer "name_names",               default: 200
+    t.float   "description_musics",       default: 5.325621769458112,   null: false
+    t.text    "film_songs",                                                          array: true
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateEmailSongs < ActiveRecord::Migration 
+  def change 
+    create_table :email_songs do |t| 
+      t.time :film_addresses, :default => Time.new(2010, 10, 10, 9,5,24), null: false
+      t.text :film_passwords, :default => :music_lengths, null: false
+      t.string :email_artists, :default => "qcpaDSwz", null: false
+      t.timestamp :email_descriptions, :default => DateTime.new(2002,6,26,14,30,57), null: false
+      t.time :music_lengths, array: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_passwords", force: true do |t|
+    t.time     "film_addresses",     default: Date.new(2008,10,22)
+    t.text     "film_passwords",     default: true
+    t.string   "email_artists",      default: true
+    t.datetime "email_descriptions", default: 3.238401128897271
+    t.time     "music_lengths",                                                   array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "password_names", force: true do |t|
+    t.time     "film_addresses",     default: Date.new(2014,7,23)
+    t.text     "film_passwords",     default: 4.258663080148673
+    t.string   "email_artists",      default: 8.525327143061345
+    t.datetime "email_descriptions", default: false
+    t.time     "music_lengths",                                                   array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6619602821) do
+
+  create_table "email_songs", force: true do |t|
+    t.time     "film_addresses",     default: '2000-01-01 05:05:24', null: false
+    t.text     "film_passwords",     default: "music_lengths",       null: false
+    t.string   "email_artists",      default: "qcpaDSwz",            null: false
+    t.datetime "email_descriptions", default: '2002-06-26 14:30:57', null: false
+    t.time     "music_lengths",                                                   array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "song_musics", force: true do |t|
+    t.time     "film_addresses",     default: Date.new(2012,2,4)
+    t.text     "film_passwords",     default: Date.new(1999,1,19)
+    t.string   "email_artists",      default: Date.new(2000,3,3)
+    t.datetime "email_descriptions", default: Date.new(2005,8,6)
+    t.time     "music_lengths",                                                   array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateDescriptionFilms < ActiveRecord::Migration 
+  def change 
+    create_table :description_films do |t| 
+      t.string :description_lengths, :default => "qrUPdOME", limit: 8
+      t.float :description_artists, array: true
+      t.boolean :description_firstnames, :default => false
+      t.text :description_musics, :default => :address_songs, null: false
+      t.integer :length_artists, :default => 138, limit: 5
+      t.boolean :country_firstnames, :default => true
+      t.string :music_songs, array: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "country_passwords", force: true do |t|
+    t.string  "description_lengths",    limit: 8, default: 8.898823803674786
+    t.float   "description_artists",                                                     array: true
+    t.boolean "description_firstnames",           default: 3.0441558591078888
+    t.text    "description_musics",               default: 3.987547794449797
+    t.integer "length_artists",         limit: 8, default: 138
+    t.boolean "country_firstnames",               default: true
+    t.string  "music_songs",                                                             array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_emails", force: true do |t|
+    t.string  "description_lengths",    limit: 8, default: false
+    t.float   "description_artists",                                                     array: true
+    t.boolean "description_firstnames",           default: Date.new(2003,3,19)
+    t.text    "description_musics",               default: false
+    t.integer "length_artists",         limit: 8, default: 138
+    t.boolean "country_firstnames",               default: true
+    t.string  "music_songs",                                                             array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_musics", force: true do |t|
+    t.string  "description_lengths",    limit: 8, default: 3.7602411870266716
+    t.float   "description_artists",                                                     array: true
+    t.boolean "description_firstnames",           default: Date.new(2014,10,12)
+    t.text    "description_musics",               default: true
+    t.integer "length_artists",         limit: 8, default: 138
+    t.boolean "country_firstnames",               default: true
+    t.string  "music_songs",                                                             array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8926270341) do
+
+  create_table "description_films", force: true do |t|
+    t.string  "description_lengths",    limit: 8, default: "qrUPdOME"
+    t.float   "description_artists",                                                     array: true
+    t.boolean "description_firstnames",           default: false
+    t.text    "description_musics",               default: "address_songs", null: false
+    t.integer "length_artists",         limit: 8, default: 138
+    t.boolean "country_firstnames",               default: true
+    t.string  "music_songs",                                                             array: true
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateArtistAddresses < ActiveRecord::Migration 
+  def change 
+    create_table :artist_addresses do |t| 
+      t.float :password_countries, :default => 0.8466038622495109, null: true
+      t.string :song_lengths, :default => "QaOzCvLU", array: false
+      t.text :address_descriptions, :default => :description_roles, limit: 1
+      t.boolean :film_countries, :default => false
+      t.float :length_names, array: true
+      t.float :artist_lengths, :default => 8.702084171098376, null: true
+      t.timestamp :description_firstnames, array: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_firstnames", force: true do |t|
+    t.float    "password_countries",     default: 6.783160763834231
+    t.string   "song_lengths",           default: Date.new(1999,8,25)
+    t.text     "address_descriptions",   default: true
+    t.boolean  "film_countries",         default: true
+    t.float    "length_names",                                         array: true
+    t.float    "artist_lengths",         default: 8.702084171098376
+    t.datetime "description_firstnames",                               array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 5773131081) do
+
+  create_table "artist_addresses", force: true do |t|
+    t.float    "password_countries",     default: 0.8466038622495109
+    t.string   "song_lengths",           default: "QaOzCvLU"
+    t.text     "address_descriptions",   default: "description_roles"
+    t.boolean  "film_countries",         default: false
+    t.float    "length_names",                                         array: true
+    t.float    "artist_lengths",         default: 8.702084171098376
+    t.datetime "description_firstnames",                               array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "song_emails", force: true do |t|
+    t.float    "password_countries",     default: false
+    t.string   "song_lengths",           default: false
+    t.text     "address_descriptions",   default: 4.790190042195599
+    t.boolean  "film_countries",         default: 5.4600348762158415
+    t.float    "length_names",                                         array: true
+    t.float    "artist_lengths",         default: 8.702084171098376
+    t.datetime "description_firstnames",                               array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_names", force: true do |t|
+    t.float    "password_countries",     default: 5.77311190112219
+    t.string   "song_lengths",           default: Date.new(1999,8,8)
+    t.text     "address_descriptions",   default: true
+    t.boolean  "film_countries",         default: false
+    t.float    "length_names",                                         array: true
+    t.float    "artist_lengths",         default: 8.702084171098376
+    t.datetime "description_firstnames",                               array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateArtistFilms < ActiveRecord::Migration 
+  def change 
+    create_table :artist_films do |t| 
+      t.string :country_artists, array: true
+      t.string :role_artists, :default => "KLeZfpHH", limit: 134
+      t.boolean :music_films, :default => false
+      t.timestamp :music_firstnames, :default => DateTime.new(1999,6,14,21,23,38), null: true
+      t.boolean :length_countries, :default => true
+      t.integer :music_passwords, array: true
+      t.boolean :music_artists, :default => false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_countries", force: true do |t|
+    t.string   "country_artists",                                              array: true
+    t.string   "role_artists",     limit: 134, default: 8.574097270520264
+    t.boolean  "music_films",                  default: Date.new(2004,9,15)
+    t.datetime "music_firstnames",             default: Date.new(2005,8,5)
+    t.boolean  "length_countries",             default: true
+    t.integer  "music_passwords",                                              array: true
+    t.boolean  "music_artists",                default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_countries", force: true do |t|
+    t.string   "country_artists",                                              array: true
+    t.string   "role_artists",     limit: 134, default: Date.new(2014,1,7)
+    t.boolean  "music_films",                  default: 2.4800572521594555
+    t.datetime "music_firstnames",             default: Date.new(2007,1,2)
+    t.boolean  "length_countries",             default: true
+    t.integer  "music_passwords",                                              array: true
+    t.boolean  "music_artists",                default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_names", force: true do |t|
+    t.string   "country_artists",                                              array: true
+    t.string   "role_artists",     limit: 134, default: Date.new(2013,4,18)
+    t.boolean  "music_films",                  default: Date.new(2011,6,9)
+    t.datetime "music_firstnames",             default: true
+    t.boolean  "length_countries",             default: true
+    t.integer  "music_passwords",                                              array: true
+    t.boolean  "music_artists",                default: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 7263617820) do
+
+  create_table "artist_films", force: true do |t|
+    t.string   "country_artists",                                              array: true
+    t.string   "role_artists",     limit: 134, default: "KLeZfpHH"
+    t.boolean  "music_films",                  default: false
+    t.datetime "music_firstnames",             default: '1999-06-14 21:23:38'
+    t.boolean  "length_countries",             default: true
+    t.integer  "music_passwords",                                              array: true
+    t.boolean  "music_artists",                default: false
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateCountryNames < ActiveRecord::Migration 
+  def change 
+    create_table :country_names do |t| 
+      t.time :length_descriptions, :default => Time.new(2010, 10, 10, 23,48,34), null: false
+      t.boolean :country_lengths, :default => false
+      t.integer :email_roles, array: true
+      t.decimal :song_firstnames, :default => 1.410898235761649, array: false
+      t.text :music_emails, array: true
+      t.time :song_countries, :default => Time.new(2010, 10, 10, 1,49,52), array: false
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8458044392) do
+
+  create_table "country_names", force: true do |t|
+    t.time    "length_descriptions", default: '2000-01-01 19:48:34', null: false
+    t.boolean "country_lengths",     default: false
+    t.integer "email_roles",                                                      array: true
+    t.decimal "song_firstnames",     default: 1.410898235761649
+    t.text    "music_emails",                                                     array: true
+    t.time    "song_countries",      default: '2000-01-01 21:49:52'
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "name_roles", force: true do |t|
+    t.time    "length_descriptions", default: Date.new(1999,0,19)
+    t.boolean "country_lengths",     default: false
+    t.integer "email_roles",                                                      array: true
+    t.decimal "song_firstnames",     default: true
+    t.text    "music_emails",                                                     array: true
+    t.time    "song_countries",      default: '2000-01-01 21:49:52'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "name_countries", force: true do |t|
+    t.time    "length_descriptions", default: false
+    t.boolean "country_lengths",     default: true
+    t.integer "email_roles",                                                      array: true
+    t.decimal "song_firstnames",     default: 5.131448939513352
+    t.text    "music_emails",                                                     array: true
+    t.time    "song_countries",      default: '2000-01-01 21:49:52'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_firstnames", force: true do |t|
+    t.time    "length_descriptions", default: 5.375651558494452
+    t.boolean "country_lengths",     default: 1.7710294577729724
+    t.integer "email_roles",                                                      array: true
+    t.decimal "song_firstnames",     default: false
+    t.text    "music_emails",                                                     array: true
+    t.time    "song_countries",      default: '2000-01-01 21:49:52'
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateMusicDescriptions < ActiveRecord::Migration 
+  def change 
+    create_table :music_descriptions do |t| 
+      t.float :address_musics, :default => 3.671780457474674, null: false
+      t.text :name_roles, :default => :country_descriptions, null: true
+      t.decimal :email_musics, :default => 0.03740906067046612, precision: 9, scale: 3
+      t.integer :password_names, :default => 10, limit: 10
+      t.integer :role_countries, :default => 193, null: true
+      t.text :music_roles, :default => :firstname_passwords, null: true
+      t.string :address_addresses, :default => "agdtKWxZ", null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_names", force: true do |t|
+    t.string  "address_roles",       limit: 9,                         default: Date.new(2006,10,9)
+    t.decimal "role_descriptions",             precision: 5, scale: 2, default: 6.871654465314547
+    t.integer "description_lengths", limit: 2,                         default: 2.7206419996552063
+    t.text    "music_countries",                                       default: Date.new(2008,0,2)
+    t.string  "password_countries",                                                                  array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9154848026) do
+
+  create_table "film_addresses", force: true do |t|
+    t.string  "address_roles",       limit: 9,                         default: "fyIJnKfp"
+    t.decimal "role_descriptions",             precision: 5, scale: 2, default: 5.500574101062564
+    t.integer "description_lengths", limit: 2,                         default: 227
+    t.text    "music_countries",                                       default: "country_countries"
+    t.string  "password_countries",                                                                  array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "address_addresses", force: true do |t|
+    t.string  "address_roles",       limit: 9,                         default: Date.new(2006,1,2)
+    t.decimal "role_descriptions",             precision: 5, scale: 2, default: false
+    t.integer "description_lengths", limit: 2,                         default: 1.8051187633142054
+    t.text    "music_countries",                                       default: Date.new(2008,4,15)
+    t.string  "password_countries",                                                                  array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_films", force: true do |t|
+    t.string  "address_roles",       limit: 9,                         default: true
+    t.decimal "role_descriptions",             precision: 5, scale: 2, default: Date.new(2004,3,22)
+    t.integer "description_lengths", limit: 2,                         default: Date.new(2007,0,22)
+    t.text    "music_countries",                                       default: Date.new(2009,5,10)
+    t.string  "password_countries",                                                                  array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateSongCountries < ActiveRecord::Migration 
+  def change 
+    create_table :song_countries do |t| 
+      t.string :film_addresses, :default => "DiYSKEYU", array: false
+      t.integer :song_roles, :default => 91, array: false
+      t.text :email_emails, :default => :name_firstnames, limit: 57
+      t.time :music_roles, array: true
+      t.text :password_names, array: true
+   end
+end
+end
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 7758895881) do
+
+  create_table "song_countries", force: true do |t|
+    t.string  "film_addresses", default: "DiYSKEYU"
+    t.integer "song_roles",     default: 91
+    t.text    "email_emails",   default: "name_firstnames"
+    t.time    "music_roles",                                array: true
+    t.text    "password_names",                             array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "music_films", force: true do |t|
+    t.string  "film_addresses", default: Date.new(2014,5,4)
+    t.integer "song_roles",     default: 6.411124939485847
+    t.text    "email_emails",   default: false
+    t.time    "music_roles",                                array: true
+    t.text    "password_names",                             array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_roles", force: true do |t|
+    t.string  "film_addresses", default: true
+    t.integer "song_roles",     default: 0.9563713594421872
+    t.text    "email_emails",   default: 5.767144430736724
+    t.time    "music_roles",                                array: true
+    t.text    "password_names",                             array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_songs", force: true do |t|
+    t.string  "film_addresses", default: 7.3368803114850545
+    t.integer "song_roles",     default: Date.new(2011,4,7)
+    t.text    "email_emails",   default: 8.891463201492098
+    t.time    "music_roles",                                array: true
+    t.text    "password_names",                             array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateAddressPasswords < ActiveRecord::Migration 
+  def change 
+    create_table :address_passwords do |t| 
+      t.integer :film_countries, :default => 80, null: true
+      t.timestamp :address_passwords, array: true
+      t.boolean :film_addresses, :default => true
+      t.integer :address_emails, :default => 205, null: true
+      t.time :address_lengths, :default => Time.new(2010, 10, 10, 20,11,47), array: false
+      t.text :name_artists, :default => :artist_descriptions, null: true
+      t.boolean :address_names, :default => true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_artists", force: true do |t|
+    t.integer  "film_countries",    default: Date.new(2013,6,5)
+    t.datetime "address_passwords",                                 array: true
+    t.boolean  "film_addresses",    default: false
+    t.integer  "address_emails",    default: 1.2143656765477238
+    t.time     "address_lengths",   default: '2000-01-01 16:11:47'
+    t.text     "name_artists",      default: "artist_descriptions"
+    t.boolean  "address_names",     default: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_descriptions", force: true do |t|
+    t.integer  "film_countries",    default: false
+    t.datetime "address_passwords",                                 array: true
+    t.boolean  "film_addresses",    default: Date.new(2004,0,10)
+    t.integer  "address_emails",    default: Date.new(2013,2,16)
+    t.time     "address_lengths",   default: '2000-01-01 16:11:47'
+    t.text     "name_artists",      default: "artist_descriptions"
+    t.boolean  "address_names",     default: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 4699594256) do
+
+  create_table "address_passwords", force: true do |t|
+    t.integer  "film_countries",    default: 80
+    t.datetime "address_passwords",                                 array: true
+    t.boolean  "film_addresses",    default: true
+    t.integer  "address_emails",    default: 205
+    t.time     "address_lengths",   default: '2000-01-01 16:11:47'
+    t.text     "name_artists",      default: "artist_descriptions"
+    t.boolean  "address_names",     default: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "music_names", force: true do |t|
+    t.integer  "film_countries",    default: Date.new(2001,7,6)
+    t.datetime "address_passwords",                                 array: true
+    t.boolean  "film_addresses",    default: 7.578473528920188
+    t.integer  "address_emails",    default: false
+    t.time     "address_lengths",   default: '2000-01-01 16:11:47'
+    t.text     "name_artists",      default: "artist_descriptions"
+    t.boolean  "address_names",     default: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateNameCountries < ActiveRecord::Migration 
+  def change 
+    create_table :name_countries do |t| 
+      t.integer :role_passwords, :default => 237, limit: 8
+      t.decimal :length_addresses, :default => 5.436058168526031, null: true
+      t.integer :music_descriptions, :default => 107, limit: 217
+      t.decimal :description_names, :default => 7.551046697398961, null: true
+      t.decimal :artist_lengths, :default => 4.867413606247472, precision: 6, scale: 2
+      t.float :film_countries, :default => 7.950015892739669, array: false
+      t.integer :song_roles, :default => 164, array: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "name_descriptions", force: true do |t|
+    t.integer  "description_descriptions",                          default: Date.new(2010,2,23)
+    t.text     "password_films",                                    default: Date.new(2011,8,6)
+    t.decimal  "description_countries",    precision: 10, scale: 4, default: Date.new(2008,3,18)
+    t.float    "address_films",                                     default: true
+    t.datetime "film_roles",                                                                     array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_firstnames", force: true do |t|
+    t.integer  "description_descriptions",                          default: 2.260439011376842
+    t.text     "password_films",                                    default: true
+    t.decimal  "description_countries",    precision: 10, scale: 4, default: Date.new(2009,4,1)
+    t.float    "address_films",                                     default: Date.new(2004,2,21)
+    t.datetime "film_roles",                                                                     array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6303674116) do
+
+  create_table "role_lengths", force: true do |t|
+    t.integer  "description_descriptions",                          default: 121
+    t.text     "password_films",                                    default: "role_films"
+    t.decimal  "description_countries",    precision: 10, scale: 4, default: 3.1279757918660422
+    t.float    "address_films",                                     default: 2.1406274976949176
+    t.datetime "film_roles",                                                                     array: true
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "film_passwords", force: true do |t|
+    t.integer  "description_descriptions",                          default: Date.new(2003,7,30)
+    t.text     "password_films",                                    default: Date.new(2010,11,21)
+    t.decimal  "description_countries",    precision: 10, scale: 4, default: Date.new(2000,6,3)
+    t.float    "address_films",                                     default: Date.new(2011,0,5)
+    t.datetime "film_roles",                                                                     array: true
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateNameRoles < ActiveRecord::Migration 
+  def change 
+    create_table :name_roles do |t| 
+      t.timestamp :email_artists, array: true
+      t.integer :country_addresses, :default => 138, null: false
+      t.text :song_descriptions, :default => :role_songs, limit: 8
+      t.boolean :role_addresses, :default => false
+      t.string :country_descriptions, :default => "dGsMtuGT", limit: 2
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_firstnames", force: true do |t|
+    t.datetime "email_artists",                                                      array: true
+    t.integer  "country_addresses",              default: false
+    t.text     "song_descriptions",              default: 0.4031184807576611
+    t.boolean  "role_addresses",                 default: Date.new(2001,3,26)
+    t.string   "country_descriptions", limit: 2, default: "dGsMtuGT"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_names", force: true do |t|
+    t.datetime "email_artists",                                                      array: true
+    t.integer  "country_addresses",              default: true
+    t.text     "song_descriptions",              default: 2.060587897037623
+    t.boolean  "role_addresses",                 default: Date.new(2008,8,3)
+    t.string   "country_descriptions", limit: 2, default: "dGsMtuGT"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_emails", force: true do |t|
+    t.datetime "email_artists",                                                      array: true
+    t.integer  "country_addresses",              default: true
+    t.text     "song_descriptions",              default: 1.570270480470311
+    t.boolean  "role_addresses",                 default: false
+    t.string   "country_descriptions", limit: 2, default: "dGsMtuGT"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 1366149604) do
+
+  create_table "name_roles", force: true do |t|
+    t.datetime "email_artists",                                                      array: true
+    t.integer  "country_addresses",              default: 138,          null: false
+    t.text     "song_descriptions",              default: "role_songs"
+    t.boolean  "role_addresses",                 default: false
+    t.string   "country_descriptions", limit: 2, default: "dGsMtuGT"
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleFilms < ActiveRecord::Migration 
+  def change 
+    create_table :role_films do |t| 
+      t.float :name_emails, :default => 8.87252664026927, array: false
+      t.integer :length_lengths, :default => 175, limit: 1
+      t.float :firstname_films, :default => 5.248946569240724, null: true
+      t.float :password_addresses, array: true
+      t.string :film_emails, :default => "nrEHNdlN", null: false
+      t.string :firstname_descriptions, array: true
+      t.text :description_emails, :default => :film_films, limit: 204
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "name_lengths", force: true do |t|
+    t.float   "name_emails",                      default: true
+    t.integer "length_lengths",         limit: 2, default: Date.new(2008,6,5)
+    t.float   "firstname_films",                  default: false
+    t.float   "password_addresses",                                                        array: true
+    t.string  "film_emails",                      default: "nrEHNdlN",        null: false
+    t.string  "firstname_descriptions",                                                    array: true
+    t.text    "description_emails",               default: "film_films"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8269616937) do
+
+  create_table "role_films", force: true do |t|
+    t.float   "name_emails",                      default: 8.87252664026927
+    t.integer "length_lengths",         limit: 2, default: 175
+    t.float   "firstname_films",                  default: 5.248946569240724
+    t.float   "password_addresses",                                                        array: true
+    t.string  "film_emails",                      default: "nrEHNdlN",        null: false
+    t.string  "firstname_descriptions",                                                    array: true
+    t.text    "description_emails",               default: "film_films"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "film_descriptions", force: true do |t|
+    t.float   "name_emails",                      default: Date.new(2006,1,30)
+    t.integer "length_lengths",         limit: 2, default: 2.1185104500798153
+    t.float   "firstname_films",                  default: 3.7504397257003665
+    t.float   "password_addresses",                                                        array: true
+    t.string  "film_emails",                      default: "nrEHNdlN",        null: false
+    t.string  "firstname_descriptions",                                                    array: true
+    t.text    "description_emails",               default: "film_films"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "country_roles", force: true do |t|
+    t.float   "name_emails",                      default: false
+    t.integer "length_lengths",         limit: 2, default: false
+    t.float   "firstname_films",                  default: 1.0601091495617818
+    t.float   "password_addresses",                                                        array: true
+    t.string  "film_emails",                      default: "nrEHNdlN",        null: false
+    t.string  "firstname_descriptions",                                                    array: true
+    t.text    "description_emails",               default: "film_films"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateLengthArtists < ActiveRecord::Migration 
+  def change 
+    create_table :length_artists do |t| 
+      t.float :country_emails, array: true
+      t.time :address_descriptions, :default => Time.new(2010, 10, 10, 3,47,10), array: false
+      t.decimal :music_firstnames, :default => 7.008805100583368, null: false
+      t.string :length_musics, :default => "fNNHQELj", null: false
+      t.decimal :artist_songs, :default => 8.418302473757644, array: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_names", force: true do |t|
+    t.float   "country_emails",                                                    array: true
+    t.time    "address_descriptions", default: true
+    t.decimal "music_firstnames",     default: Date.new(2005,1,22)
+    t.string  "length_musics",        default: true
+    t.decimal "artist_songs",         default: 8.418302473757644
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_addresses", force: true do |t|
+    t.float   "country_emails",                                                    array: true
+    t.time    "address_descriptions", default: Date.new(2001,11,23)
+    t.decimal "music_firstnames",     default: 0.41783810555751366
+    t.string  "length_musics",        default: 0.12347148188084356
+    t.decimal "artist_songs",         default: 8.418302473757644
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_roles", force: true do |t|
+    t.float   "country_emails",                                                    array: true
+    t.time    "address_descriptions", default: 2.6087688669112836
+    t.decimal "music_firstnames",     default: Date.new(2001,10,9)
+    t.string  "length_musics",        default: true
+    t.decimal "artist_songs",         default: 8.418302473757644
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 2296376930) do
+
+  create_table "length_artists", force: true do |t|
+    t.float   "country_emails",                                                    array: true
+    t.time    "address_descriptions", default: '2000-01-01 23:47:10'
+    t.decimal "music_firstnames",     default: 7.008805100583368,     null: false
+    t.string  "length_musics",        default: "fNNHQELj",            null: false
+    t.decimal "artist_songs",         default: 8.418302473757644
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateCountryDescriptions < ActiveRecord::Migration 
+  def change 
+    create_table :country_descriptions do |t| 
+      t.timestamp :password_passwords, :default => DateTime.new(2003,7,4,6,42,20), array: false
+      t.timestamp :description_countries, :default => DateTime.new(2005,5,0,20,15,18), null: false
+      t.float :film_names, :default => 2.7986281300974123, null: true
+      t.integer :song_musics, array: true
+      t.text :role_emails, :default => :music_emails, null: true
+      t.string :address_firstnames, :default => "lSyYhSjo", null: true
+      t.string :address_names, :default => "tlXzfaeU", limit: 111
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_countries", force: true do |t|
+    t.boolean  "firstname_descriptions",           default: false
+    t.datetime "name_songs",                                                       array: true
+    t.string   "film_descriptions",      limit: 3, default: Date.new(2013,7,18)
+    t.text     "country_artists",                  default: Date.new(1999,3,26)
+    t.datetime "music_films",                      default: '2012-08-23 09:47:55'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_emails", force: true do |t|
+    t.boolean  "firstname_descriptions",           default: true
+    t.datetime "name_songs",                                                       array: true
+    t.string   "film_descriptions",      limit: 3, default: Date.new(1999,8,5)
+    t.text     "country_artists",                  default: true
+    t.datetime "music_films",                      default: '2012-08-23 09:47:55'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_countries", force: true do |t|
+    t.boolean  "firstname_descriptions",           default: Date.new(2005,0,2)
+    t.datetime "name_songs",                                                       array: true
+    t.string   "film_descriptions",      limit: 3, default: 8.839435181642369
+    t.text     "country_artists",                  default: 1.2558864768073086
+    t.datetime "music_films",                      default: '2012-08-23 09:47:55'
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9628105071) do
+
+  create_table "password_countries", force: true do |t|
+    t.boolean  "firstname_descriptions",           default: true
+    t.datetime "name_songs",                                                       array: true
+    t.string   "film_descriptions",      limit: 3, default: "VjtGfkhx"
+    t.text     "country_artists",                  default: "artist_names"
+    t.datetime "music_films",                      default: '2012-08-23 09:47:55'
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleAddresses < ActiveRecord::Migration 
+  def change 
+    create_table :role_addresses do |t| 
+      t.time :address_countries, :default => Time.new(2010, 10, 10, 21,12,51), null: false
+      t.integer :music_emails, :default => 211, null: true
+      t.boolean :length_artists, :default => false
+      t.text :artist_countries, :default => :name_addresses, limit: 17
+      t.text :name_lengths, :default => :song_passwords, null: false
+      t.timestamp :length_addresses, :default => DateTime.new(2007,9,8,23,36,10), array: false
+      t.text :film_films, :default => :email_roles, null: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_passwords", force: true do |t|
+    t.time     "address_countries", default: true
+    t.integer  "music_emails",      default: true
+    t.boolean  "length_artists",    default: 0.8778767221327471
+    t.text     "artist_countries",  default: Date.new(1999,7,24)
+    t.text     "name_lengths",      default: "song_passwords",      null: false
+    t.datetime "length_addresses",  default: '2007-09-08 23:36:10'
+    t.text     "film_films",        default: "email_roles"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 7483743986) do
+
+  create_table "role_addresses", force: true do |t|
+    t.time     "address_countries", default: '2000-01-01 17:12:51', null: false
+    t.integer  "music_emails",      default: 211
+    t.boolean  "length_artists",    default: false
+    t.text     "artist_countries",  default: "name_addresses"
+    t.text     "name_lengths",      default: "song_passwords",      null: false
+    t.datetime "length_addresses",  default: '2007-09-08 23:36:10'
+    t.text     "film_films",        default: "email_roles"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "song_emails", force: true do |t|
+    t.time     "address_countries", default: true
+    t.integer  "music_emails",      default: Date.new(2009,7,14)
+    t.boolean  "length_artists",    default: true
+    t.text     "artist_countries",  default: true
+    t.text     "name_lengths",      default: "song_passwords",      null: false
+    t.datetime "length_addresses",  default: '2007-09-08 23:36:10'
+    t.text     "film_films",        default: "email_roles"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "artist_countries", force: true do |t|
+    t.time     "address_countries", default: 4.018967569083392
+    t.integer  "music_emails",      default: Date.new(2014,9,30)
+    t.boolean  "length_artists",    default: 8.45908252853385
+    t.text     "artist_countries",  default: 6.89126703952285
+    t.text     "name_lengths",      default: "song_passwords",      null: false
+    t.datetime "length_addresses",  default: '2007-09-08 23:36:10'
+    t.text     "film_films",        default: "email_roles"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateCountryNames < ActiveRecord::Migration 
+  def change 
+    create_table :country_names do |t| 
+      t.float :description_addresses, :default => 4.412116934026077, null: true
+      t.decimal :firstname_songs, :default => 3.8907491329063255, precision: 9, scale: 3
+      t.integer :length_musics, :default => 60, null: false
+      t.decimal :music_names, array: true
+      t.boolean :firstname_lengths, :default => true
+      t.boolean :firstname_firstnames, :default => false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_names", force: true do |t|
+    t.float   "description_addresses",                         default: 8.886225119878572
+    t.decimal "firstname_songs",       precision: 9, scale: 3, default: Date.new(2012,1,22)
+    t.integer "length_musics",                                 default: false
+    t.decimal "music_names",                                                                             array: true
+    t.boolean "firstname_lengths",                             default: true
+    t.boolean "firstname_firstnames",                          default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_artists", force: true do |t|
+    t.float   "description_addresses",                         default: 0.4724101107028912
+    t.decimal "firstname_songs",       precision: 9, scale: 3, default: 1.344038663094107
+    t.integer "length_musics",                                 default: false
+    t.decimal "music_names",                                                                             array: true
+    t.boolean "firstname_lengths",                             default: true
+    t.boolean "firstname_firstnames",                          default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "description_emails", force: true do |t|
+    t.float   "description_addresses",                         default: Date.new(2003,2,27)
+    t.decimal "firstname_songs",       precision: 9, scale: 3, default: false
+    t.integer "length_musics",                                 default: true
+    t.decimal "music_names",                                                                             array: true
+    t.boolean "firstname_lengths",                             default: true
+    t.boolean "firstname_firstnames",                          default: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 3873529610) do
+
+  create_table "country_names", force: true do |t|
+    t.float   "description_addresses",                         default: 4.412116934026077
+    t.decimal "firstname_songs",       precision: 9, scale: 3, default: 3.8907491329063255
+    t.integer "length_musics",                                 default: 60,                 null: false
+    t.decimal "music_names",                                                                             array: true
+    t.boolean "firstname_lengths",                             default: true
+    t.boolean "firstname_firstnames",                          default: false
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateAddressPasswords < ActiveRecord::Migration 
+  def change 
+    create_table :address_passwords do |t| 
+      t.integer :music_films, :default => 78, limit: 1
+      t.time :song_songs, :default => Time.new(2010, 10, 10, 2,29,59), array: false
+      t.boolean :song_passwords, :default => true
+      t.decimal :song_roles, :default => 0.6438040163681071, precision: 11, scale: 5
+      t.string :description_addresses, :default => "NuIYArVx", limit: 162
+      t.decimal :email_names, :default => 2.150734459180507, array: false
+      t.time :country_roles, array: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "song_artists", force: true do |t|
+    t.integer "music_films",           limit: 2,                            default: Date.new(1999,4,27)
+    t.time    "song_songs",                                                 default: 8.459421505636385
+    t.boolean "song_passwords",                                             default: 7.233813101179297
+    t.decimal "song_roles",                        precision: 11, scale: 5, default: Date.new(2004,4,28)
+    t.string  "description_addresses", limit: 162,                          default: "NuIYArVx"
+    t.decimal "email_names",                                                default: 2.150734459180507
+    t.time    "country_roles",                                                                              array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_addresses", force: true do |t|
+    t.integer "music_films",           limit: 2,                            default: 5.9230488550926355
+    t.time    "song_songs",                                                 default: 5.296996250351111
+    t.boolean "song_passwords",                                             default: false
+    t.decimal "song_roles",                        precision: 11, scale: 5, default: 8.87128416823201
+    t.string  "description_addresses", limit: 162,                          default: "NuIYArVx"
+    t.decimal "email_names",                                                default: 2.150734459180507
+    t.time    "country_roles",                                                                              array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_firstnames", force: true do |t|
+    t.integer "music_films",           limit: 2,                            default: false
+    t.time    "song_songs",                                                 default: Date.new(2000,0,14)
+    t.boolean "song_passwords",                                             default: Date.new(2000,4,23)
+    t.decimal "song_roles",                        precision: 11, scale: 5, default: 6.845362482012293
+    t.string  "description_addresses", limit: 162,                          default: "NuIYArVx"
+    t.decimal "email_names",                                                default: 2.150734459180507
+    t.time    "country_roles",                                                                              array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9113261586) do
+
+  create_table "address_passwords", force: true do |t|
+    t.integer "music_films",           limit: 2,                            default: 78
+    t.time    "song_songs",                                                 default: '2000-01-01 22:29:59'
+    t.boolean "song_passwords",                                             default: true
+    t.decimal "song_roles",                        precision: 11, scale: 5, default: 0.6438040163681071
+    t.string  "description_addresses", limit: 162,                          default: "NuIYArVx"
+    t.decimal "email_names",                                                default: 2.150734459180507
+    t.time    "country_roles",                                                                              array: true
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateDescriptionSongs < ActiveRecord::Migration 
+  def change 
+    create_table :description_songs do |t| 
+      t.string :firstname_descriptions, :default => "OWETXSMc", limit: 1
+      t.text :description_firstnames, :default => :role_roles, limit: 5
+      t.integer :role_descriptions, :default => 218, limit: 1
+      t.text :name_films, :default => :music_passwords, limit: 7
+      t.float :firstname_addresses, :default => 5.70208542803086, null: true
+      t.boolean :password_emails, :default => false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "artist_countries", force: true do |t|
+    t.string  "firstname_descriptions", limit: 1, default: Date.new(2005,9,30)
+    t.text    "description_firstnames",           default: 6.241353958255523
+    t.integer "role_descriptions",      limit: 2, default: true
+    t.text    "name_films",                       default: 3.3620499909822716
+    t.float   "firstname_addresses",              default: 5.70208542803086
+    t.boolean "password_emails",                  default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "password_passwords", force: true do |t|
+    t.string  "firstname_descriptions", limit: 1, default: true
+    t.text    "description_firstnames",           default: 4.409467383213665
+    t.integer "role_descriptions",      limit: 2, default: Date.new(2008,1,2)
+    t.text    "name_films",                       default: true
+    t.float   "firstname_addresses",              default: 5.70208542803086
+    t.boolean "password_emails",                  default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_names", force: true do |t|
+    t.string  "firstname_descriptions", limit: 1, default: true
+    t.text    "description_firstnames",           default: false
+    t.integer "role_descriptions",      limit: 2, default: false
+    t.text    "name_films",                       default: 3.612909573609329
+    t.float   "firstname_addresses",              default: 5.70208542803086
+    t.boolean "password_emails",                  default: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 9964063608) do
+
+  create_table "description_songs", force: true do |t|
+    t.string  "firstname_descriptions", limit: 1, default: "OWETXSMc"
+    t.text    "description_firstnames",           default: "role_roles"
+    t.integer "role_descriptions",      limit: 2, default: 218
+    t.text    "name_films",                       default: "music_passwords"
+    t.float   "firstname_addresses",              default: 5.70208542803086
+    t.boolean "password_emails",                  default: false
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateDescriptionPasswords < ActiveRecord::Migration 
+  def change 
+    create_table :description_passwords do |t| 
+      t.decimal :country_emails, :default => 7.251922924149766, null: false
+      t.float :password_descriptions, :default => 6.998105597076755, null: true
+      t.boolean :music_passwords, :default => false
+      t.text :film_passwords, :default => :artist_addresses, limit: 8
+      t.timestamp :name_musics, :default => DateTime.new(2014,0,3,15,12,6), null: true
+      t.timestamp :email_emails, :default => DateTime.new(2000,3,4,8,35,46), null: false
+      t.float :film_artists, :default => 6.634103096330378, null: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_musics", force: true do |t|
+    t.float    "length_artists",                             default: 4.3427964678648845
+    t.decimal  "country_firstnames", precision: 9, scale: 2, default: true
+    t.datetime "artist_countries",                           default: 0.5939978394287886
+    t.float    "song_roles",                                 default: Date.new(2003,6,29)
+    t.decimal  "music_roles",        precision: 9, scale: 3, default: 4.30143750714792
+    t.decimal  "role_emails",                                default: 4.099976170693146
+    t.time     "song_countries",                             default: '2000-01-01 06:01:07'
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "music_lengths", force: true do |t|
+    t.float    "length_artists",                             default: Date.new(2005,9,8)
+    t.decimal  "country_firstnames", precision: 9, scale: 2, default: Date.new(2010,11,28)
+    t.datetime "artist_countries",                           default: Date.new(2010,0,28)
+    t.float    "song_roles",                                 default: 5.119350276312691
+    t.decimal  "music_roles",        precision: 9, scale: 3, default: 4.30143750714792
+    t.decimal  "role_emails",                                default: 4.099976170693146
+    t.time     "song_countries",                             default: '2000-01-01 06:01:07'
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 1973249620) do
+
+  create_table "role_descriptions", force: true do |t|
+    t.float    "length_artists",                             default: 5.192486330718176
+    t.decimal  "country_firstnames", precision: 9, scale: 2, default: 0.5440534609297488
+    t.datetime "artist_countries",                           default: '2003-02-19 05:15:50'
+    t.float    "song_roles",                                 default: 5.483690668106453
+    t.decimal  "music_roles",        precision: 9, scale: 3, default: 4.30143750714792
+    t.decimal  "role_emails",                                default: 4.099976170693146
+    t.time     "song_countries",                             default: '2000-01-01 06:01:07'
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "song_films", force: true do |t|
+    t.float    "length_artists",                             default: Date.new(2012,2,2)
+    t.decimal  "country_firstnames", precision: 9, scale: 2, default: 3.054628789100311
+    t.datetime "artist_countries",                           default: true
+    t.float    "song_roles",                                 default: 2.850691915126005
+    t.decimal  "music_roles",        precision: 9, scale: 3, default: 4.30143750714792
+    t.decimal  "role_emails",                                default: 4.099976170693146
+    t.time     "song_countries",                             default: '2000-01-01 06:01:07'
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateAddressEmails < ActiveRecord::Migration 
+  def change 
+    create_table :address_emails do |t| 
+      t.integer :role_addresses, :default => 58, null: true
+      t.time :description_musics, :default => Time.new(2010, 10, 10, 22,33,49), null: false
+      t.time :password_films, :default => Time.new(2010, 10, 10, 15,31,42), null: false
+      t.integer :film_passwords, array: true
+      t.string :email_roles, :default => "xLwgtzAB", array: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_passwords", force: true do |t|
+    t.integer "role_addresses",     default: true
+    t.time    "description_musics", default: 3.933762133575113
+    t.time    "password_films",     default: 1.1903264447671793
+    t.integer "film_passwords",                                                  array: true
+    t.string  "email_roles",        default: "xLwgtzAB"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "country_descriptions", force: true do |t|
+    t.integer "role_addresses",     default: Date.new(1999,5,5)
+    t.time    "description_musics", default: false
+    t.time    "password_films",     default: 8.546215081041982
+    t.integer "film_passwords",                                                  array: true
+    t.string  "email_roles",        default: "xLwgtzAB"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_firstnames", force: true do |t|
+    t.integer "role_addresses",     default: Date.new(2004,3,15)
+    t.time    "description_musics", default: Date.new(2003,1,20)
+    t.time    "password_films",     default: false
+    t.integer "film_passwords",                                                  array: true
+    t.string  "email_roles",        default: "xLwgtzAB"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 1793341565) do
+
+  create_table "address_emails", force: true do |t|
+    t.integer "role_addresses",     default: 58
+    t.time    "description_musics", default: '2000-01-01 18:33:49', null: false
+    t.time    "password_films",     default: '2000-01-01 11:31:42', null: false
+    t.integer "film_passwords",                                                  array: true
+    t.string  "email_roles",        default: "xLwgtzAB"
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateArtistMusics < ActiveRecord::Migration 
+  def change 
+    create_table :artist_musics do |t| 
+      t.time :email_musics, :default => Time.new(2010, 10, 10, 19,5,0), array: false
+      t.float :address_artists, :default => 5.972120140884696, array: false
+      t.string :email_countries, :default => "YwhmVxgb", limit: 4
+      t.text :description_passwords, :default => :artist_firstnames, limit: 21
+      t.string :length_addresses, :default => "UXXNAeCd", null: true
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "song_emails", force: true do |t|
+    t.time   "email_musics",                    default: 1.406141866622202
+    t.float  "address_artists",                 default: Date.new(2006,8,24)
+    t.string "email_countries",       limit: 4, default: 0.024145510555609095
+    t.text   "description_passwords",           default: true
+    t.string "length_addresses",                default: "UXXNAeCd"
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 5589164930) do
+
+  create_table "artist_musics", force: true do |t|
+    t.time   "email_musics",                    default: '2000-01-01 15:05:00'
+    t.float  "address_artists",                 default: 5.972120140884696
+    t.string "email_countries",       limit: 4, default: "YwhmVxgb"
+    t.text   "description_passwords",           default: "artist_firstnames"
+    t.string "length_addresses",                default: "UXXNAeCd"
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "role_countries", force: true do |t|
+    t.time   "email_musics",                    default: true
+    t.float  "address_artists",                 default: 4.212389246133414
+    t.string "email_countries",       limit: 4, default: 1.4648176474292798
+    t.text   "description_passwords",           default: Date.new(2007,9,29)
+    t.string "length_addresses",                default: "UXXNAeCd"
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_films", force: true do |t|
+    t.time   "email_musics",                    default: Date.new(2008,8,25)
+    t.float  "address_artists",                 default: 2.0338802560606375
+    t.string "email_countries",       limit: 4, default: 4.618538374307644
+    t.text   "description_passwords",           default: true
+    t.string "length_addresses",                default: "UXXNAeCd"
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateMusicRoles < ActiveRecord::Migration 
+  def change 
+    create_table :music_roles do |t| 
+      t.float :artist_countries, :default => 1.915832947828976, null: false
+      t.float :firstname_names, :default => 3.268266128983122, array: false
+      t.string :music_songs, :default => "ycAzpthJ", limit: 7
+      t.integer :music_firstnames, :default => 147, array: false
+      t.decimal :description_lengths, :default => 6.246086883582929, precision: 7, scale: 4
+      t.time :description_passwords, :default => Time.new(2010, 10, 10, 10,26,32), null: true
+      t.time :email_lengths, :default => Time.new(2010, 10, 10, 20,57,16), null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_addresses", force: true do |t|
+    t.float   "artist_countries",                                        default: true
+    t.float   "firstname_names",                                         default: Date.new(2007,0,7)
+    t.string  "music_songs",           limit: 7,                         default: false
+    t.integer "music_firstnames",                                        default: 1.8735961863095467
+    t.decimal "description_lengths",             precision: 7, scale: 4, default: 6.246086883582929
+    t.time    "description_passwords",                                   default: '2000-01-01 06:26:32'
+    t.time    "email_lengths",                                           default: '2000-01-01 16:57:16', null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_descriptions", force: true do |t|
+    t.float   "artist_countries",                                        default: Date.new(2013,6,5)
+    t.float   "firstname_names",                                         default: 3.827732138091576
+    t.string  "music_songs",           limit: 7,                         default: Date.new(2005,6,15)
+    t.integer "music_firstnames",                                        default: 7.009797106014026
+    t.decimal "description_lengths",             precision: 7, scale: 4, default: 6.246086883582929
+    t.time    "description_passwords",                                   default: '2000-01-01 06:26:32'
+    t.time    "email_lengths",                                           default: '2000-01-01 16:57:16', null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 2378875636) do
+
+  create_table "music_roles", force: true do |t|
+    t.float   "artist_countries",                                        default: 1.915832947828976,     null: false
+    t.float   "firstname_names",                                         default: 3.268266128983122
+    t.string  "music_songs",           limit: 7,                         default: "ycAzpthJ"
+    t.integer "music_firstnames",                                        default: 147
+    t.decimal "description_lengths",             precision: 7, scale: 4, default: 6.246086883582929
+    t.time    "description_passwords",                                   default: '2000-01-01 06:26:32'
+    t.time    "email_lengths",                                           default: '2000-01-01 16:57:16', null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "password_emails", force: true do |t|
+    t.float   "artist_countries",                                        default: 5.32099764107803
+    t.float   "firstname_names",                                         default: Date.new(2000,5,7)
+    t.string  "music_songs",           limit: 7,                         default: true
+    t.integer "music_firstnames",                                        default: Date.new(2011,6,16)
+    t.decimal "description_lengths",             precision: 7, scale: 4, default: 6.246086883582929
+    t.time    "description_passwords",                                   default: '2000-01-01 06:26:32'
+    t.time    "email_lengths",                                           default: '2000-01-01 16:57:16', null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateNameEmails < ActiveRecord::Migration 
+  def change 
+    create_table :name_emails do |t| 
+      t.time :role_names, :default => Time.new(2010, 10, 10, 17,27,3), null: false
+      t.timestamp :name_firstnames, :default => DateTime.new(2012,1,15,11,27,43), array: false
+      t.string :song_songs, :default => "hDxIDBcU", limit: 1
+      t.string :name_lengths, array: true
+      t.integer :song_passwords, :default => 62, limit: 47
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "artist_passwords", force: true do |t|
+    t.integer "password_songs",         default: 3.9363450473944317
+    t.text    "film_addresses",         default: false
+    t.integer "firstname_descriptions", default: 3.643763673722912
+    t.text    "name_roles",             default: true
+    t.text    "email_countries",        default: "music_roles",        null: false
+    t.integer "email_passwords",                                                    array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "name_films", force: true do |t|
+    t.integer "password_songs",         default: 1.5906166693077908
+    t.text    "film_addresses",         default: true
+    t.integer "firstname_descriptions", default: true
+    t.text    "name_roles",             default: 1.2680676917378895
+    t.text    "email_countries",        default: "music_roles",        null: false
+    t.integer "email_passwords",                                                    array: true
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_lengths", force: true do |t|
+    t.integer "password_songs",         default: Date.new(2005,2,4)
+    t.text    "film_addresses",         default: true
+    t.integer "firstname_descriptions", default: Date.new(2008,1,20)
+    t.text    "name_roles",             default: 4.4562585617983075
+    t.text    "email_countries",        default: "music_roles",        null: false
+    t.integer "email_passwords",                                                    array: true
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 8803743027) do
+
+  create_table "name_descriptions", force: true do |t|
+    t.integer "password_songs",         default: 17,                   null: false
+    t.text    "film_addresses",         default: "country_firstnames"
+    t.integer "firstname_descriptions", default: 202
+    t.text    "name_roles",             default: "role_addresses"
+    t.text    "email_countries",        default: "music_roles",        null: false
+    t.integer "email_passwords",                                                    array: true
+  end
+
+end
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateEmailDescriptions < ActiveRecord::Migration 
+  def change 
+    create_table :email_descriptions do |t| 
+      t.text :password_roles, array: true
+      t.time :film_films, :default => Time.new(2010, 10, 10, 13,20,33), array: false
+      t.string :song_artists, :default => "webGBxyt", limit: 147
+      t.string :address_lengths, :default => "erbvbkZK", null: true
+      t.boolean :address_lengths, :default => false
+      t.time :artist_passwords, :default => Time.new(2010, 10, 10, 10,53,7), null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_countries", force: true do |t|
+    t.text    "password_roles",                                                            array: true
+    t.time    "film_films",                   default: 5.710604152949461
+    t.string  "song_artists",     limit: 147, default: Date.new(2001,4,23)
+    t.boolean "address_lengths",              default: 7.668589783796281
+    t.time    "artist_passwords",             default: '2000-01-01 06:53:07', null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "email_addresses", force: true do |t|
+    t.text    "password_roles",                                                            array: true
+    t.time    "film_films",                   default: 2.3284225005721018
+    t.string  "song_artists",     limit: 147, default: 2.1630132257425436
+    t.boolean "address_lengths",              default: 0.2239771521915005
+    t.time    "artist_passwords",             default: '2000-01-01 06:53:07', null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 7970156318) do
+
+  create_table "email_descriptions", force: true do |t|
+    t.text    "password_roles",                                                            array: true
+    t.time    "film_films",                   default: '2000-01-01 09:20:33'
+    t.string  "song_artists",     limit: 147, default: "webGBxyt"
+    t.boolean "address_lengths",              default: false
+    t.time    "artist_passwords",             default: '2000-01-01 06:53:07', null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "password_names", force: true do |t|
+    t.text    "password_roles",                                                            array: true
+    t.time    "film_films",                   default: Date.new(2006,2,2)
+    t.string  "song_artists",     limit: 147, default: Date.new(2002,8,12)
+    t.boolean "address_lengths",              default: 1.942709051948571
+    t.time    "artist_passwords",             default: '2000-01-01 06:53:07', null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateRoleRoles < ActiveRecord::Migration 
+  def change 
+    create_table :role_roles do |t| 
+      t.text :description_emails, :default => :length_artists, limit: 8
+      t.string :music_countries, :default => "FlXIreLf", array: false
+      t.boolean :music_roles, :default => false
+      t.string :password_descriptions, array: true
+      t.boolean :description_addresses, :default => false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "role_firstnames", force: true do |t|
+    t.text    "description_emails",    default: false
+    t.string  "music_countries",       default: 0.20381199837109787
+    t.boolean "music_roles",           default: true
+    t.string  "password_descriptions",                            array: true
+    t.boolean "description_addresses", default: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_films", force: true do |t|
+    t.text    "description_emails",    default: Date.new(2003,2,23)
+    t.string  "music_countries",       default: Date.new(2005,2,18)
+    t.boolean "music_roles",           default: 4.045708872512647
+    t.string  "password_descriptions",                            array: true
+    t.boolean "description_addresses", default: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6995798842) do
+
+  create_table "role_roles", force: true do |t|
+    t.text    "description_emails",    default: "length_artists"
+    t.string  "music_countries",       default: "FlXIreLf"
+    t.boolean "music_roles",           default: false
+    t.string  "password_descriptions",                            array: true
+    t.boolean "description_addresses", default: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "artist_passwords", force: true do |t|
+    t.text    "description_emails",    default: Date.new(2004,1,7)
+    t.string  "music_countries",       default: true
+    t.boolean "music_roles",           default: Date.new(2005,7,26)
+    t.string  "password_descriptions",                            array: true
+    t.boolean "description_addresses", default: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateLengthFirstnames < ActiveRecord::Migration 
+  def change 
+    create_table :length_firstnames do |t| 
+      t.decimal :description_passwords, :default => 3.993843185762628, null: false
+      t.string :length_countries, array: true
+      t.decimal :email_addresses, :default => 5.188669396987324, null: false
+      t.string :song_artists, :default => "wBOjqAVW", array: false
+      t.timestamp :firstname_countries, :default => DateTime.new(2002,1,21,12,4,15), null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "film_musics", force: true do |t|
+    t.decimal  "description_passwords", default: 7.042462480363101
+    t.string   "length_countries",                                                   array: true
+    t.decimal  "email_addresses",       default: Date.new(2003,1,10)
+    t.string   "song_artists",          default: true
+    t.datetime "firstname_countries",   default: '2002-01-21 12:04:15', null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 2143125706) do
+
+  create_table "length_firstnames", force: true do |t|
+    t.decimal  "description_passwords", default: 3.993843185762628,     null: false
+    t.string   "length_countries",                                                   array: true
+    t.decimal  "email_addresses",       default: 5.188669396987324,     null: false
+    t.string   "song_artists",          default: "wBOjqAVW"
+    t.datetime "firstname_countries",   default: '2002-01-21 12:04:15', null: false
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "country_emails", force: true do |t|
+    t.decimal  "description_passwords", default: Date.new(2003,5,10)
+    t.string   "length_countries",                                                   array: true
+    t.decimal  "email_addresses",       default: 4.036629296343743
+    t.string   "song_artists",          default: 7.570045871720351
+    t.datetime "firstname_countries",   default: '2002-01-21 12:04:15', null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "country_countries", force: true do |t|
+    t.decimal  "description_passwords", default: 7.686444205548366
+    t.string   "length_countries",                                                   array: true
+    t.decimal  "email_addresses",       default: 6.7406952942089635
+    t.string   "song_artists",          default: Date.new(2009,7,22)
+    t.datetime "firstname_countries",   default: '2002-01-21 12:04:15', null: false
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreatePasswordCountries < ActiveRecord::Migration 
+  def change 
+    create_table :password_countries do |t| 
+      t.decimal :name_roles, :default => 7.860269843675722, array: false
+      t.timestamp :description_artists, array: true
+      t.time :description_names, array: true
+      t.string :password_artists, :default => "gBDlgRgC", array: false
+      t.decimal :country_addresses, :default => 3.722795827334508, array: false
+      t.decimal :address_names, :default => 4.392431648832492, precision: 6, scale: 4
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "password_songs", force: true do |t|
+    t.decimal  "name_roles",                                  default: true
+    t.datetime "description_artists",                                                     array: true
+    t.time     "description_names",                                                       array: true
+    t.string   "password_artists",                            default: 8.02463044205379
+    t.decimal  "country_addresses",                           default: 3.722795827334508
+    t.decimal  "address_names",       precision: 6, scale: 4, default: 4.392431648832492
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_names", force: true do |t|
+    t.decimal  "name_roles",                                  default: Date.new(2005,1,22)
+    t.datetime "description_artists",                                                     array: true
+    t.time     "description_names",                                                       array: true
+    t.string   "password_artists",                            default: 6.012841066517421
+    t.decimal  "country_addresses",                           default: 3.722795827334508
+    t.decimal  "address_names",       precision: 6, scale: 4, default: 4.392431648832492
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 6391197136) do
+
+  create_table "password_countries", force: true do |t|
+    t.decimal  "name_roles",                                  default: 7.860269843675722
+    t.datetime "description_artists",                                                     array: true
+    t.time     "description_names",                                                       array: true
+    t.string   "password_artists",                            default: "gBDlgRgC"
+    t.decimal  "country_addresses",                           default: 3.722795827334508
+    t.decimal  "address_names",       precision: 6, scale: 4, default: 4.392431648832492
+  end
+
+end
+\end{verbatim}
+
+
+F
+\begin{verbatim}
+
+  create_table "music_firstnames", force: true do |t|
+    t.decimal  "name_roles",                                  default: true
+    t.datetime "description_artists",                                                     array: true
+    t.time     "description_names",                                                       array: true
+    t.string   "password_artists",                            default: Date.new(2003,10,19)
+    t.decimal  "country_addresses",                           default: 3.722795827334508
+    t.decimal  "address_names",       precision: 6, scale: 4, default: 4.392431648832492
+  end
+
+\end{verbatim}
+
+Q
+Как будет выглядеть файл shema.rb, после выполнения следующей миграции:
+
+\begin{verbatim}
+
+class CreateSongFirstnames < ActiveRecord::Migration 
+  def change 
+    create_table :song_firstnames do |t| 
+      t.time :password_lengths, array: true
+      t.boolean :firstname_passwords, :default => false
+      t.float :name_emails, :default => 2.5879695331722354, null: false
+      t.timestamp :description_passwords, array: true
+      t.boolean :film_songs, :default => false
+      t.text :film_firstnames, :default => :name_musics, null: false
+   end
+end
+end
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "address_lengths", force: true do |t|
+    t.time     "password_lengths",                                                array: true
+    t.boolean  "firstname_passwords",   default: Date.new(2003,5,12)
+    t.float    "name_emails",           default: 1.0295155412740096
+    t.datetime "description_passwords",                                           array: true
+    t.boolean  "film_songs",            default: false
+    t.text     "film_firstnames",       default: "name_musics",      null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "length_firstnames", force: true do |t|
+    t.time     "password_lengths",                                                array: true
+    t.boolean  "firstname_passwords",   default: Date.new(2006,7,16)
+    t.float    "name_emails",           default: Date.new(2001,1,1)
+    t.datetime "description_passwords",                                           array: true
+    t.boolean  "film_songs",            default: false
+    t.text     "film_firstnames",       default: "name_musics",      null: false
+  end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+
+  create_table "firstname_passwords", force: true do |t|
+    t.time     "password_lengths",                                                array: true
+    t.boolean  "firstname_passwords",   default: Date.new(2009,4,10)
+    t.float    "name_emails",           default: false
+    t.datetime "description_passwords",                                           array: true
+    t.boolean  "film_songs",            default: false
+    t.text     "film_firstnames",       default: "name_musics",      null: false
+  end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+
+ActiveRecord::Schema.define(version: 3607056809) do
+
+  create_table "song_firstnames", force: true do |t|
+    t.time     "password_lengths",                                                array: true
+    t.boolean  "firstname_passwords",   default: false
+    t.float    "name_emails",           default: 2.5879695331722354, null: false
+    t.datetime "description_passwords",                                           array: true
+    t.boolean  "film_songs",            default: false
+    t.text     "film_firstnames",       default: "name_musics",      null: false
+  end
+
+end
+\end{verbatim}

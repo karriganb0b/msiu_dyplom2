@@ -1,3 +1,5 @@
+#encoding: UTF-8
+
 require './theo'
 require 'active_support/all'
 require 'faker'
@@ -56,23 +58,29 @@ if $0 == __FILE__
 	p is_ok
 	p result
 	p app
-	#while is_ok != true
-  #text = gene
-	#app = text.split(/[ : \.]/)
-  #app = app[1]
-  #app = app.gsub(/(AddHashTo+)/, '\\2')
-	#app = app.underscore
-	#p app
-	#mt = MigrationTester.new
-	#is_ok, result, schema = mt.test_migration(text, "#{number(10)}_create_#{app}.rb")
-	#p is_ok
-	#p result
-  #end
+	while is_ok != true
+  text = gene
+  app = text.split(/[ : \.]/)
+  app = app[1]
+  app = app.gsub(/(AddHashTo+)/, '\\2')
+	app = app.underscore
+	mt = MigrationTester.new
+	is_ok, result, schema = mt.test_migration(text, "#{number(10)}_add_hash_to_#{app}.rb")
+	p is_ok
+	p app
+	p result
+  end
+vopros = <<-END
+Q
+Выберите правильную миграцию
+
+END
+
 str_true = <<-END
 T
 \\begin{verbatim}
 #{text}
-\\end{verbatim|
+\\end{verbatim}
 END
 	
 str_false = <<-END
@@ -84,5 +92,6 @@ END
 	res = []
 	res << str_true
 	3.times{ res << str_false }
+	file = File.open("words/test_migration/test_true/theo_base.tex", 'a'){ |file| file.puts vopros}
   file = File.open("words/test_migration/test_true/theo_base.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
 end

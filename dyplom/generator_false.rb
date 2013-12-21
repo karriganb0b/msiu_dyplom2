@@ -41,7 +41,7 @@ def index(table, name, correct=true)
   select_scob2 = correct ? select_cor2 : (symbol_function).to_s 
   
 
-  "\t\t\t\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
+  "\tadd_index(:#{table}, #{select_scob}#{select_full}#{name}#{select_scob2}, :unique => #{[true,false].shuffle.first})\n"
 end
 
 
@@ -49,8 +49,8 @@ def random_migration(correct=false , correct_index=true, app)
   # beginning of migration
   str = <<-END
 class Create#{app.camelize} < ActiveRecord::Migration
-	 def change
-	   create_table :#{app} do |t|
+def change
+	create_table :#{app} do |t|
 END
 
   # add columns
@@ -81,6 +81,7 @@ END
 	column_names = column_names[x..-1]
 	array << index(app, column_name, correct_index)
   end
+  str << array.uniq.join(" ")
   str << array.uniq.join(" ")
   
   # end of migration

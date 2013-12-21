@@ -80,9 +80,9 @@ F
 		#{add_index(true, app)}
 \\end{verbatim}
 END
-	
+	res = []
 	res << str_true
 	3.times{ res << str_false }
-	file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts vopros}
-  file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
+	file = File.open("words/test_migration/test_true/block1create.tex", 'a'){ |file| file.puts vopros}
+  file = File.open("words/test_migration/test_true/block1create.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
 end

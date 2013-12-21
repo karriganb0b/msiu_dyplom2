@@ -17,43 +17,44 @@ end
 def column(name, method, rand_field, data_type)
 
 	if data_type == "string"+
-    t = "t.#{data_type} :#{name}, :default"  + " => " +(method ).to_s + ", #{rand_field}\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => " +(method ).to_s + ", #{rand_field}\n\t\t"
     t.gsub(/(:default => "[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "text"
-    t = "t.#{data_type} :#{name}, :default"  + " => :" +(method ).to_s + ", #{rand_field}\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => :" +(method ).to_s + ", #{rand_field}\n\t\t"
     t.gsub(/(:default => :[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "boolean"
-    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + "\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + "\n\t\t"
   else
-    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + ", #{rand_field}\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + ", #{rand_field}\n\t\t"
   	t.gsub(/(:default => [^\f\t\n\r]+), (array: true)/, '\\2')
   end
 end
 
+
 def index(table, correct=true, default)
-  "\t\t\t\tt.change_default :#{table},#{default}\n       end\n"
+  "\t\tt.change_default :#{table},#{default}\n  end\n"
 end
 def change_default(table, correct=true, change_default)
 
-  "\t\t\t\tt.change_default :#{table}, #{change_default}\n     end\n"
+  "\t\tt.change_default :#{table}, #{change_default}\n  end\n"
 end
 def change_column_up(table, name, data_type, correct = false)
-"\t\t\t\tchange_column :#{table}, :#{name}, :#{data_type}\n      \n"
+"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n   \n"
 end
 def change_column_down(table, name, data_type, correct = false)
-"\t\t\t\tchange_column :#{table}, :#{name}, :#{data_type}\n       \n"
+"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n   \n"
 end
 def change_column_null(table, name, null)
-"\t\t\t\tchange_column_null :#{table}, :#{name}, #{null}\n"
+"\t\tchange_column_null :#{table}, :#{name}, #{null}\n"
 end
 
 def random_migration(correct=false , correct_index=true, app) 
   # beginning of migration
 	#indicator = correct ? "F" : "T"
-  str = <<-END
+str = <<-END
 class Create#{app.camelize} < ActiveRecord::Migration
-	 def up
-	   create_table :#{app} do |t|
+  def up
+	  create_table :#{app} do |t|
 END
 
   # add columns
@@ -77,7 +78,7 @@ END
   column_name = correct ? (random_false_column).to_s : (random_column_name).to_s
 	defaultes << ins
 	data_types << data_type
-   ik = column(column_name, ins, rand_field, data_type)
+  ik = column(column_name, ins, rand_field, data_type)
 	str <<  ik
 	test << ik
 	column_names << column_name
@@ -85,9 +86,9 @@ END
 	
   end
 
-	str << <<-END
-		end
-	END
+str << <<-END
+  end
+END
   # add indexes
   array = []
 	change_default = []
@@ -113,7 +114,7 @@ END
 	change_null_up << meth
 	change_null_down << c_meth
 	elsif k3.size == 0
-	array << "\t\t\t\tt.belongs_to :#{[column_name3, column_name2, column_name].shuffle.first}, polymorphic: true\n"
+	array << "\t\tt.belongs_to :#{[column_name3, column_name2, column_name].shuffle.first}, polymorphic: true\n"
 	array
 	change_default
 	end
@@ -129,7 +130,7 @@ END
 finder = test.find_all{|x| x.include?(column_name2) == true}.join(" ")
 finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|text|float/).join(" ")
 	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
-rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
+rem = correct ? "\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
  if rem[-2] == ","
 	rem[-2] = " "
 	change_null_down << rem
@@ -148,20 +149,20 @@ rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\
   end
 
 
-	tab = app
+tab = app
 	
-	str << <<-END
-				change_table :#{app} do |t|
-	END
-  str << array.join(" ")
-	str << change_null_up.join(" ")	
+str << <<-END
+  change_table :#{app} do |t|
+END
+str << array.join(" ")
+str << change_null_up.join(" ")	
 
-  str << <<-END
-			def down
-				change_table :#{app} do |t|
-  END
-	str << change_default.join(" ")
-	str << change_null_down.join(" ")
+str << <<-END
+	def down
+		change_table :#{app} do |t|
+END
+str << change_default.join(" ")
+str << change_null_down.join(" ")
   
   # end of migration
   str << <<-END
@@ -170,7 +171,9 @@ rem = correct ? "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\
 end
   END
 end
-def add_sbor_ud(app)
-res = []
-k = random_migration(false, app)
-end
+#def add_sbor_ud
+#app = random_column_name
+#text = random_migration(false, app)
+#file = File.open("words/test_migration/test_true/reversible_base.rb", 'a'){ |file| file.puts text}
+#end
+#add_sbor_ud

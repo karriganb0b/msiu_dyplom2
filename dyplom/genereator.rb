@@ -70,7 +70,6 @@ end
 end
 end
 
-40.times{p randomTimeAndDate}
 #p randomTime
 #random_str
 #random_nubmer

@@ -1,0 +1,3674 @@
+N
+Использование вспомогательных методов для функций up и down, в ActiveRecord migration
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateMusicCountries < ActiveRecord::Migration
+  def up
+	  create_table :music_countries do |t|
+t.datetimeoffset :end, :default => Date.new(2011,6,23), limit: 1
+		t.tinyint(1) :then, :default => true, precision: 4, scale: 1
+		t.char :break, :default => "KfQGPezO", limit: 2
+		t.blob :in, :default => 194, limit: 9
+		t.tinyint(1) :false, :default => false, precision: 4, scale: 1
+		  end
+  change_table :music_countries do |t|
+		t.belongs_to :in, polymorphic: true
+ 		t.change_default :false,false
+  end
+ 		change_column :music_countries, :in, :197
+   
+	def down
+		change_table :music_countries do |t|
+		t.change_default :false, false
+  end
+ 		change_column :music_countries, :in, :79
+   
+		remove_columns :music_countries,  :name_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicCountries < ActiveRecord::Migration
+  def up
+	  create_table :music_countries do |t|
+t.datetimeoffset :end, :default => Date.new(2011,6,23), limit: 1
+		t.tinyint(1) :then, :default => true, precision: 4, scale: 1
+		t.char :break, :default => "KfQGPezO", limit: 2
+		t.blob :in, :default => 194, limit: 9
+		t.tinyint(1) :false, :default => false, precision: 4, scale: 1
+		  end
+  change_table :music_countries do |t|
+		t.belongs_to :in, polymorphic: true
+ 		t.change_default :false,false
+  end
+ 		change_column :music_countries, :in, :197
+   
+	def down
+		change_table :music_countries do |t|
+		t.change_default :false, false
+  end
+ 		change_column :music_countries, :in, :79
+   
+		remove_columns :music_countries,  :name_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateMusicCountries < ActiveRecord::Migration
+  def up
+	  create_table :music_countries do |t|
+t.float :country_films, :default => 6.1688082268873625, array: false
+		t.time :description_addresses, :default => Time.new(2010, 10, 10, 20,2,16), array: false
+		t.decimal :role_descriptions, :default => 0.1356675740331591, array: false
+		t.decimal :artist_emails, :default => 1.649999136228398, precision: 9, scale: 5
+		t.float :film_emails, :default => 2.5813749709198173, array: false
+		  end
+  change_table :music_countries do |t|
+		t.belongs_to :artist_emails, polymorphic: true
+ 		t.change_default :film_emails,2.5813749709198173
+  end
+ 		change_column :music_countries, :artist_emails, :decimal
+   
+	def down
+		change_table :music_countries do |t|
+		t.change_default :film_emails, 3.3745179269421994
+  end
+ 		change_column :music_countries, :artist_emails, :float
+   
+		remove_columns :music_countries,  :artist_emails, :film_emails, :role_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicCountries < ActiveRecord::Migration
+  def up
+	  create_table :music_countries do |t|
+t.datetimeoffset :end, :default => Date.new(2011,6,23), limit: 1
+		t.tinyint(1) :then, :default => true, precision: 4, scale: 1
+		t.char :break, :default => "KfQGPezO", limit: 2
+		t.blob :in, :default => 194, limit: 9
+		t.tinyint(1) :false, :default => false, precision: 4, scale: 1
+		  end
+  change_table :music_countries do |t|
+		t.belongs_to :in, polymorphic: true
+ 		t.change_default :false,false
+  end
+ 		change_column :music_countries, :in, :197
+   
+	def down
+		change_table :music_countries do |t|
+		t.change_default :false, false
+  end
+ 		change_column :music_countries, :in, :79
+   
+		remove_columns :music_countries,  :name_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateFilmEmails < ActiveRecord::Migration
+  def up
+	  create_table :film_emails do |t|
+t.datetime :class, :default => DateTime.new(2006,9,5,7,6,33), precision: 5, scale: 1
+		t.tinyint(1) :redo, :default => false, precision: 7, scale: 5
+		t.int(11) :end, :default => 226, limit: 2
+		t.blob :case, :default => 100, limit: 117
+		t.tinyint(1) :END, :default => true, precision: 6, scale: 2
+		  end
+  change_table :film_emails do |t|
+		t.belongs_to :end, polymorphic: true
+ 		t.change_default :END,true
+  end
+ 		change_column :film_emails, :case, :19
+   
+	def down
+		change_table :film_emails do |t|
+		t.change_default :END, false
+  end
+ 		change_column :film_emails, :case, :"ZvnLBrga"
+   
+		remove_columns :film_emails,  :song_lengths, :artist_addresses, :music_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFilmEmails < ActiveRecord::Migration
+  def up
+	  create_table :film_emails do |t|
+t.datetime :class, :default => DateTime.new(2006,9,5,7,6,33), precision: 5, scale: 1
+		t.tinyint(1) :redo, :default => false, precision: 7, scale: 5
+		t.int(11) :end, :default => 226, limit: 2
+		t.blob :case, :default => 100, limit: 117
+		t.tinyint(1) :END, :default => true, precision: 6, scale: 2
+		  end
+  change_table :film_emails do |t|
+		t.belongs_to :end, polymorphic: true
+ 		t.change_default :END,true
+  end
+ 		change_column :film_emails, :case, :19
+   
+	def down
+		change_table :film_emails do |t|
+		t.change_default :END, false
+  end
+ 		change_column :film_emails, :case, :"ZvnLBrga"
+   
+		remove_columns :film_emails,  :song_lengths, :artist_addresses, :music_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFilmEmails < ActiveRecord::Migration
+  def up
+	  create_table :film_emails do |t|
+t.datetime :class, :default => DateTime.new(2006,9,5,7,6,33), precision: 5, scale: 1
+		t.tinyint(1) :redo, :default => false, precision: 7, scale: 5
+		t.int(11) :end, :default => 226, limit: 2
+		t.blob :case, :default => 100, limit: 117
+		t.tinyint(1) :END, :default => true, precision: 6, scale: 2
+		  end
+  change_table :film_emails do |t|
+		t.belongs_to :end, polymorphic: true
+ 		t.change_default :END,true
+  end
+ 		change_column :film_emails, :case, :19
+   
+	def down
+		change_table :film_emails do |t|
+		t.change_default :END, false
+  end
+ 		change_column :film_emails, :case, :"ZvnLBrga"
+   
+		remove_columns :film_emails,  :song_lengths, :artist_addresses, :music_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateFilmEmails < ActiveRecord::Migration
+  def up
+	  create_table :film_emails do |t|
+t.integer :address_descriptions, :default => 82, null: false
+		t.float :country_lengths, :default => 5.981603856504301, array: false
+		t.text :email_lengths, :default => :firstname_addresses, null: false
+		t.decimal :email_films, :default => 1.5490458840986054, precision: 12, scale: 5
+		  end
+  change_table :film_emails do |t|
+		t.belongs_to :email_films, polymorphic: true
+ 		t.change_default :email_films,1.5490458840986054
+  end
+ 		change_column :film_emails, :email_lengths, :text
+   
+	def down
+		change_table :film_emails do |t|
+		t.change_default :email_films, 7.189666033304787
+  end
+ 		change_column :film_emails, :email_lengths, :time
+   
+		remove_columns :film_emails,  :email_films, :email_lengths, :address_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateMusicLengths < ActiveRecord::Migration
+  def up
+	  create_table :music_lengths do |t|
+t.float :address_addresses, :default => 6.931266185742611, array: false
+		t.timestamp :music_roles, :default => DateTime.new(2003,10,30,18,42,41), null: true
+		t.boolean :description_films, :default => true
+		t.float :country_descriptions, :default => 4.528340407153612, null: false
+		t.time :role_artists, :default => Time.new(2010, 10, 10, 9,35,50), null: true
+		  end
+  change_table :music_lengths do |t|
+		t.belongs_to :description_films, polymorphic: true
+ 		t.change_default :role_artists,Time.new(2010, 10, 10, 9,35,50)
+  end
+ 		change_column :music_lengths, :country_descriptions, :float
+   
+	def down
+		change_table :music_lengths do |t|
+		t.change_default :role_artists, Time.new(2010, 10, 10, 16,23,3)
+  end
+ 		change_column :music_lengths, :country_descriptions, :time
+   
+		remove_columns :music_lengths,  :country_descriptions, :description_films, :role_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicLengths < ActiveRecord::Migration
+  def up
+	  create_table :music_lengths do |t|
+t.datetimeoffset :do, :default => Date.new(2003,0,2), limit: 246
+		t.datetimeoffset :BEGIN, :default => Date.new(2014,10,22), limit: 1
+		t.char :case, :default => "VdXBlPAM", limit: 9
+		t.tinyint(1) :elsif, :default => false, precision: 9, scale: 3
+		  end
+  change_table :music_lengths do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :elsif,false
+  end
+ 		change_column :music_lengths, :case, :196
+   
+	def down
+		change_table :music_lengths do |t|
+		t.change_default :elsif, false
+  end
+ 		change_column :music_lengths, :case, :"QKlmLsSj"
+   
+		remove_columns :music_lengths,  :country_lengths, :country_descriptions, :song_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicLengths < ActiveRecord::Migration
+  def up
+	  create_table :music_lengths do |t|
+t.datetimeoffset :do, :default => Date.new(2003,0,2), limit: 246
+		t.datetimeoffset :BEGIN, :default => Date.new(2014,10,22), limit: 1
+		t.char :case, :default => "VdXBlPAM", limit: 9
+		t.tinyint(1) :elsif, :default => false, precision: 9, scale: 3
+		  end
+  change_table :music_lengths do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :elsif,false
+  end
+ 		change_column :music_lengths, :case, :196
+   
+	def down
+		change_table :music_lengths do |t|
+		t.change_default :elsif, false
+  end
+ 		change_column :music_lengths, :case, :"QKlmLsSj"
+   
+		remove_columns :music_lengths,  :country_lengths, :country_descriptions, :song_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicLengths < ActiveRecord::Migration
+  def up
+	  create_table :music_lengths do |t|
+t.datetimeoffset :do, :default => Date.new(2003,0,2), limit: 246
+		t.datetimeoffset :BEGIN, :default => Date.new(2014,10,22), limit: 1
+		t.char :case, :default => "VdXBlPAM", limit: 9
+		t.tinyint(1) :elsif, :default => false, precision: 9, scale: 3
+		  end
+  change_table :music_lengths do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :elsif,false
+  end
+ 		change_column :music_lengths, :case, :196
+   
+	def down
+		change_table :music_lengths do |t|
+		t.change_default :elsif, false
+  end
+ 		change_column :music_lengths, :case, :"QKlmLsSj"
+   
+		remove_columns :music_lengths,  :country_lengths, :country_descriptions, :song_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateNameFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :name_firstnames do |t|
+t.char :alias, :default => "ekxsGQZw", limit: 1
+		t.tinyint(1) :BEGIN, :default => true, precision: 10, scale: 5
+		t.tinyint(1) :elsif, :default => true, precision: 6, scale: 1
+		t.datetimeoffset :yield, :default => Date.new(2009,7,25), precision: 8, scale: 5
+		t.datetime :ensure, :default => DateTime.new(2010,3,18,7,26,5), precision: 4, scale: 1
+		t.tinyint(1) :yield, :default => false, limit: 1
+		  end
+  change_table :name_firstnames do |t|
+		t.belongs_to :yield, polymorphic: true
+ 		t.change_default :yield,false
+  end
+ 		change_column :name_firstnames, :ensure, :"LFQDmlpr"
+   
+	def down
+		change_table :name_firstnames do |t|
+		t.change_default :yield, false
+  end
+ 		change_column :name_firstnames, :ensure, :"BSqWgpUA"
+   
+		remove_columns :name_firstnames,  :country_descriptions, :email_roles, :music_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateNameFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :name_firstnames do |t|
+t.char :alias, :default => "ekxsGQZw", limit: 1
+		t.tinyint(1) :BEGIN, :default => true, precision: 10, scale: 5
+		t.tinyint(1) :elsif, :default => true, precision: 6, scale: 1
+		t.datetimeoffset :yield, :default => Date.new(2009,7,25), precision: 8, scale: 5
+		t.datetime :ensure, :default => DateTime.new(2010,3,18,7,26,5), precision: 4, scale: 1
+		t.tinyint(1) :yield, :default => false, limit: 1
+		  end
+  change_table :name_firstnames do |t|
+		t.belongs_to :yield, polymorphic: true
+ 		t.change_default :yield,false
+  end
+ 		change_column :name_firstnames, :ensure, :"LFQDmlpr"
+   
+	def down
+		change_table :name_firstnames do |t|
+		t.change_default :yield, false
+  end
+ 		change_column :name_firstnames, :ensure, :"BSqWgpUA"
+   
+		remove_columns :name_firstnames,  :country_descriptions, :email_roles, :music_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateNameFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :name_firstnames do |t|
+t.time :name_films, :default => Time.new(2010, 10, 10, 12,46,52), null: false
+		t.integer :music_countries, :default => 24, limit: 1
+		t.time :length_emails, :default => Time.new(2010, 10, 10, 21,52,42), null: true
+		t.string :artist_addresses, :default => "bdmWHBLl", array: false
+		t.string :role_names, :default => "GfJZlAqE", null: false
+		  end
+  change_table :name_firstnames do |t|
+		t.change_default :role_names,"GfJZlAqE"
+  end
+ 		change_column :name_firstnames, :artist_addresses, :string
+   
+		change_column_null :name_firstnames, :length_emails,  true
+	def down
+		change_table :name_firstnames do |t|
+		t.change_default :role_names, "OjfTyWab"
+  end
+ 		change_column :name_firstnames, :artist_addresses, :float
+   
+		change_column_null :name_firstnames, :length_emails, false
+ 		remove_columns :name_firstnames,  :artist_addresses, :music_countries, :length_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateNameFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :name_firstnames do |t|
+t.char :alias, :default => "ekxsGQZw", limit: 1
+		t.tinyint(1) :BEGIN, :default => true, precision: 10, scale: 5
+		t.tinyint(1) :elsif, :default => true, precision: 6, scale: 1
+		t.datetimeoffset :yield, :default => Date.new(2009,7,25), precision: 8, scale: 5
+		t.datetime :ensure, :default => DateTime.new(2010,3,18,7,26,5), precision: 4, scale: 1
+		t.tinyint(1) :yield, :default => false, limit: 1
+		  end
+  change_table :name_firstnames do |t|
+		t.belongs_to :yield, polymorphic: true
+ 		t.change_default :yield,false
+  end
+ 		change_column :name_firstnames, :ensure, :"LFQDmlpr"
+   
+	def down
+		change_table :name_firstnames do |t|
+		t.change_default :yield, false
+  end
+ 		change_column :name_firstnames, :ensure, :"BSqWgpUA"
+   
+		remove_columns :name_firstnames,  :country_descriptions, :email_roles, :music_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.integer :name_firstnames, :default => 83, array: false
+		t.timestamp :email_lengths, :default => DateTime.new(2010,3,1,23,13,21), null: false
+		t.float :artist_films, :default => 2.3280770906245944, null: false
+		t.time :artist_artists, :default => Time.new(2010, 10, 10, 2,12,49), null: true
+		  end
+  change_table :email_roles do |t|
+		t.change_default :artist_artists,Time.new(2010, 10, 10, 2,12,49)
+  end
+ 		change_column :email_roles, :artist_films, :float
+   
+		change_column_null :email_roles, :email_lengths,  false
+	def down
+		change_table :email_roles do |t|
+		t.change_default :artist_artists, Time.new(2010, 10, 10, 16,49,9)
+  end
+ 		change_column :email_roles, :artist_films, :string
+   
+		change_column_null :email_roles, :email_lengths, true
+ 		remove_columns :email_roles,  :artist_films, :email_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.tinyint(1) :elsif, :default => false, precision: 5, scale: 1
+		t.datetimeoffset :or, :default => Date.new(2009,5,1), limit: 9
+		t.char :rescue, :default => "ZqIyxMYS", precision: 9, scale: 2
+		t.datetimeoffset :until, :default => Date.new(2000,4,1), limit: 10
+		t.tinyint(1) :class, :default => false, limit: 6
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :class, polymorphic: true
+ 		t.change_default :class,false
+  end
+ 		change_column :email_roles, :until, :181
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :class, true
+  end
+ 		change_column :email_roles, :until, :246
+   
+		remove_columns :email_roles,  :film_films, :length_names, :email_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.tinyint(1) :elsif, :default => false, precision: 5, scale: 1
+		t.datetimeoffset :or, :default => Date.new(2009,5,1), limit: 9
+		t.char :rescue, :default => "ZqIyxMYS", precision: 9, scale: 2
+		t.datetimeoffset :until, :default => Date.new(2000,4,1), limit: 10
+		t.tinyint(1) :class, :default => false, limit: 6
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :class, polymorphic: true
+ 		t.change_default :class,false
+  end
+ 		change_column :email_roles, :until, :181
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :class, true
+  end
+ 		change_column :email_roles, :until, :246
+   
+		remove_columns :email_roles,  :film_films, :length_names, :email_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.tinyint(1) :elsif, :default => false, precision: 5, scale: 1
+		t.datetimeoffset :or, :default => Date.new(2009,5,1), limit: 9
+		t.char :rescue, :default => "ZqIyxMYS", precision: 9, scale: 2
+		t.datetimeoffset :until, :default => Date.new(2000,4,1), limit: 10
+		t.tinyint(1) :class, :default => false, limit: 6
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :class, polymorphic: true
+ 		t.change_default :class,false
+  end
+ 		change_column :email_roles, :until, :181
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :class, true
+  end
+ 		change_column :email_roles, :until, :246
+   
+		remove_columns :email_roles,  :film_films, :length_names, :email_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateCountryPasswords < ActiveRecord::Migration
+  def up
+	  create_table :country_passwords do |t|
+t.tinyint(1) :return, :default => true, precision: 7, scale: 3
+		t.datetime :false, :default => DateTime.new(2004,9,7,18,40,26), limit: 1
+		t.datetime :return, :default => DateTime.new(2005,5,19,9,55,15), limit: 3
+		t.int(11) :def, :default => 246, limit: 140
+		t.datetime :alias, :default => DateTime.new(2010,4,2,7,26,30), limit: 6
+		  end
+  change_table :country_passwords do |t|
+		t.belongs_to :def, polymorphic: true
+ 		t.change_default :alias,DateTime.new(2010,4,2,7,26,30)
+  end
+ 		change_column :country_passwords, :def, :233
+   
+	def down
+		change_table :country_passwords do |t|
+		t.change_default :alias, DateTime.new(2008,5,19,4,38,8)
+  end
+ 		change_column :country_passwords, :def, :"liEyrEnX"
+   
+		remove_columns :country_passwords,  :artist_addresses, :song_artists, :email_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateCountryPasswords < ActiveRecord::Migration
+  def up
+	  create_table :country_passwords do |t|
+t.tinyint(1) :return, :default => true, precision: 7, scale: 3
+		t.datetime :false, :default => DateTime.new(2004,9,7,18,40,26), limit: 1
+		t.datetime :return, :default => DateTime.new(2005,5,19,9,55,15), limit: 3
+		t.int(11) :def, :default => 246, limit: 140
+		t.datetime :alias, :default => DateTime.new(2010,4,2,7,26,30), limit: 6
+		  end
+  change_table :country_passwords do |t|
+		t.belongs_to :def, polymorphic: true
+ 		t.change_default :alias,DateTime.new(2010,4,2,7,26,30)
+  end
+ 		change_column :country_passwords, :def, :233
+   
+	def down
+		change_table :country_passwords do |t|
+		t.change_default :alias, DateTime.new(2008,5,19,4,38,8)
+  end
+ 		change_column :country_passwords, :def, :"liEyrEnX"
+   
+		remove_columns :country_passwords,  :artist_addresses, :song_artists, :email_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateCountryPasswords < ActiveRecord::Migration
+  def up
+	  create_table :country_passwords do |t|
+t.tinyint(1) :return, :default => true, precision: 7, scale: 3
+		t.datetime :false, :default => DateTime.new(2004,9,7,18,40,26), limit: 1
+		t.datetime :return, :default => DateTime.new(2005,5,19,9,55,15), limit: 3
+		t.int(11) :def, :default => 246, limit: 140
+		t.datetime :alias, :default => DateTime.new(2010,4,2,7,26,30), limit: 6
+		  end
+  change_table :country_passwords do |t|
+		t.belongs_to :def, polymorphic: true
+ 		t.change_default :alias,DateTime.new(2010,4,2,7,26,30)
+  end
+ 		change_column :country_passwords, :def, :233
+   
+	def down
+		change_table :country_passwords do |t|
+		t.change_default :alias, DateTime.new(2008,5,19,4,38,8)
+  end
+ 		change_column :country_passwords, :def, :"liEyrEnX"
+   
+		remove_columns :country_passwords,  :artist_addresses, :song_artists, :email_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateCountryPasswords < ActiveRecord::Migration
+  def up
+	  create_table :country_passwords do |t|
+t.decimal :address_emails, :default => 5.201182228142925, array: false
+		t.decimal :film_roles, :default => 7.3770633942536294, array: false
+		t.text :song_names, :default => :artist_roles, limit: 67
+		t.float :song_films, :default => 2.589175009944153, null: false
+		  end
+  change_table :country_passwords do |t|
+		t.belongs_to :song_names, polymorphic: true
+ 		t.change_default :song_films,2.589175009944153
+  end
+ 		change_column :country_passwords, :song_names, :text
+   
+	def down
+		change_table :country_passwords do |t|
+		t.change_default :song_films, 4.966639430690207
+  end
+ 		change_column :country_passwords, :song_names, :timestamp
+   
+		remove_columns :country_passwords,  :song_names, :address_emails, :song_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.tinyint(1) :defined?, :default => false, limit: 55
+		t.datetime :else, :default => DateTime.new(2001,3,6,7,4,7), limit: 1
+		t.datetimeoffset :nil, :default => Date.new(2012,10,15), limit: 10
+		t.datetimeoffset :ensure, :default => Date.new(2014,9,28), precision: 9, scale: 2
+		t.tinyint(1) :while, :default => false, precision: 8, scale: 1
+		t.datetime :until, :default => DateTime.new(2009,8,14,16,17,21), limit: 1
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :ensure, polymorphic: true
+ 		t.change_default :until,DateTime.new(2009,8,14,16,17,21)
+  end
+ 		change_column :song_passwords, :while, :"VbaHgFrs"
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :until, DateTime.new(2014,9,28,22,11,18)
+  end
+ 		change_column :song_passwords, :while, :"fAknIZku"
+   
+		remove_columns :song_passwords,  :firstname_addresses, :song_names, :password_passwords 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.string :name_firstnames, :default => "GDOpSUNv", null: true
+		t.decimal :password_artists, :default => 8.994274931603037, array: false
+		t.decimal :email_artists, :default => 4.058698292249504, array: false
+		t.string :firstname_artists, :default => "ZZWfwWtX", limit: 7
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :password_artists, polymorphic: true
+ 		t.change_default :firstname_artists,"ZZWfwWtX"
+  end
+ 		change_column :song_passwords, :email_artists, :decimal
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :firstname_artists, "ftBRjYoV"
+  end
+ 		change_column :song_passwords, :email_artists, :timestamp
+   
+		remove_columns :song_passwords,  :name_firstnames, :email_artists, :firstname_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.tinyint(1) :defined?, :default => false, limit: 55
+		t.datetime :else, :default => DateTime.new(2001,3,6,7,4,7), limit: 1
+		t.datetimeoffset :nil, :default => Date.new(2012,10,15), limit: 10
+		t.datetimeoffset :ensure, :default => Date.new(2014,9,28), precision: 9, scale: 2
+		t.tinyint(1) :while, :default => false, precision: 8, scale: 1
+		t.datetime :until, :default => DateTime.new(2009,8,14,16,17,21), limit: 1
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :ensure, polymorphic: true
+ 		t.change_default :until,DateTime.new(2009,8,14,16,17,21)
+  end
+ 		change_column :song_passwords, :while, :"VbaHgFrs"
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :until, DateTime.new(2014,9,28,22,11,18)
+  end
+ 		change_column :song_passwords, :while, :"fAknIZku"
+   
+		remove_columns :song_passwords,  :firstname_addresses, :song_names, :password_passwords 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.tinyint(1) :defined?, :default => false, limit: 55
+		t.datetime :else, :default => DateTime.new(2001,3,6,7,4,7), limit: 1
+		t.datetimeoffset :nil, :default => Date.new(2012,10,15), limit: 10
+		t.datetimeoffset :ensure, :default => Date.new(2014,9,28), precision: 9, scale: 2
+		t.tinyint(1) :while, :default => false, precision: 8, scale: 1
+		t.datetime :until, :default => DateTime.new(2009,8,14,16,17,21), limit: 1
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :ensure, polymorphic: true
+ 		t.change_default :until,DateTime.new(2009,8,14,16,17,21)
+  end
+ 		change_column :song_passwords, :while, :"VbaHgFrs"
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :until, DateTime.new(2014,9,28,22,11,18)
+  end
+ 		change_column :song_passwords, :while, :"fAknIZku"
+   
+		remove_columns :song_passwords,  :firstname_addresses, :song_names, :password_passwords 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateLengthArtists < ActiveRecord::Migration
+  def up
+	  create_table :length_artists do |t|
+t.datetimeoffset :in, :default => Date.new(2014,6,17), limit: 1
+		t.tinyint(1) :or, :default => false, limit: 35
+		t.int(11) :END, :default => 252, limit: 197
+		t.tinyint(1) :self, :default => false, precision: 6, scale: 1
+		t.datetime :retry, :default => DateTime.new(2012,5,18,11,2,38), precision: 7, scale: 1
+		t.char :then, :default => "EXJLazAO", limit: 138
+		  end
+  change_table :length_artists do |t|
+		t.belongs_to :retry, polymorphic: true
+ 		t.change_default :then,"EXJLazAO"
+  end
+ 		change_column :length_artists, :retry, :223
+   
+	def down
+		change_table :length_artists do |t|
+		t.change_default :then, "XhnwMciq"
+  end
+ 		change_column :length_artists, :retry, :"bMuFccSr"
+   
+		remove_columns :length_artists,  :music_descriptions, :song_names, :name_addresses 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthArtists < ActiveRecord::Migration
+  def up
+	  create_table :length_artists do |t|
+t.datetimeoffset :in, :default => Date.new(2014,6,17), limit: 1
+		t.tinyint(1) :or, :default => false, limit: 35
+		t.int(11) :END, :default => 252, limit: 197
+		t.tinyint(1) :self, :default => false, precision: 6, scale: 1
+		t.datetime :retry, :default => DateTime.new(2012,5,18,11,2,38), precision: 7, scale: 1
+		t.char :then, :default => "EXJLazAO", limit: 138
+		  end
+  change_table :length_artists do |t|
+		t.belongs_to :retry, polymorphic: true
+ 		t.change_default :then,"EXJLazAO"
+  end
+ 		change_column :length_artists, :retry, :223
+   
+	def down
+		change_table :length_artists do |t|
+		t.change_default :then, "XhnwMciq"
+  end
+ 		change_column :length_artists, :retry, :"bMuFccSr"
+   
+		remove_columns :length_artists,  :music_descriptions, :song_names, :name_addresses 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthArtists < ActiveRecord::Migration
+  def up
+	  create_table :length_artists do |t|
+t.datetimeoffset :in, :default => Date.new(2014,6,17), limit: 1
+		t.tinyint(1) :or, :default => false, limit: 35
+		t.int(11) :END, :default => 252, limit: 197
+		t.tinyint(1) :self, :default => false, precision: 6, scale: 1
+		t.datetime :retry, :default => DateTime.new(2012,5,18,11,2,38), precision: 7, scale: 1
+		t.char :then, :default => "EXJLazAO", limit: 138
+		  end
+  change_table :length_artists do |t|
+		t.belongs_to :retry, polymorphic: true
+ 		t.change_default :then,"EXJLazAO"
+  end
+ 		change_column :length_artists, :retry, :223
+   
+	def down
+		change_table :length_artists do |t|
+		t.change_default :then, "XhnwMciq"
+  end
+ 		change_column :length_artists, :retry, :"bMuFccSr"
+   
+		remove_columns :length_artists,  :music_descriptions, :song_names, :name_addresses 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateLengthArtists < ActiveRecord::Migration
+  def up
+	  create_table :length_artists do |t|
+t.string :artist_musics, :default => "aNOKHHbA", limit: 1
+		t.text :password_names, :default => :country_films, limit: 186
+		t.decimal :length_roles, :default => 2.0099023223023873, array: false
+		t.float :country_songs, :default => 1.5520520512430054, null: false
+		  end
+  change_table :length_artists do |t|
+		t.belongs_to :password_names, polymorphic: true
+ 		t.change_default :country_songs,1.5520520512430054
+  end
+ 		change_column :length_artists, :length_roles, :decimal
+   
+	def down
+		change_table :length_artists do |t|
+		t.change_default :country_songs, 8.008478649743806
+  end
+ 		change_column :length_artists, :length_roles, :float
+   
+		remove_columns :length_artists,  :country_songs, :password_names, :artist_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateLengthRoles < ActiveRecord::Migration
+  def up
+	  create_table :length_roles do |t|
+t.string :address_musics, :default => "UEXjZdkT", limit: 8
+		t.decimal :length_lengths, :default => 3.1676088190513503, null: false
+		t.integer :country_songs, :default => 218, array: false
+		t.integer :name_roles, :default => 136, null: true
+		t.timestamp :length_countries, :default => DateTime.new(2011,8,13,1,17,42), null: true
+		t.timestamp :address_passwords, :default => DateTime.new(2006,2,4,16,12,38), array: false
+		  end
+  change_table :length_roles do |t|
+		t.change_default :address_passwords,DateTime.new(2006,2,4,16,12,38)
+  end
+ 		change_column :length_roles, :length_countries, :timestamp
+   
+		change_column_null :length_roles, :name_roles,  true
+	def down
+		change_table :length_roles do |t|
+		t.change_default :address_passwords, DateTime.new(2001,8,6,11,4,35)
+  end
+ 		change_column :length_roles, :length_countries, :boolean
+   
+		change_column_null :length_roles, :name_roles, true
+ 		remove_columns :length_roles,  :length_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthRoles < ActiveRecord::Migration
+  def up
+	  create_table :length_roles do |t|
+t.datetime :for, :default => DateTime.new(2006,0,12,22,57,2), precision: 7, scale: 4
+		t.blob :while, :default => 170, precision: 12, scale: 5
+		t.tinyint(1) :then, :default => true, limit: 216
+		t.datetimeoffset :END, :default => Date.new(2001,2,6), precision: 8, scale: 4
+		t.datetime :and, :default => DateTime.new(2003,0,23,21,27,8), precision: 5, scale: 3
+		t.blob :retry, :default => 116, precision: 4, scale: 1
+		  end
+  change_table :length_roles do |t|
+		t.belongs_to :retry, polymorphic: true
+ 		t.change_default :retry,116
+  end
+ 		change_column :length_roles, :and, :81
+   
+	def down
+		change_table :length_roles do |t|
+		t.change_default :retry, 187
+  end
+ 		change_column :length_roles, :and, :61
+   
+		remove_columns :length_roles,  :name_passwords, :film_films, :country_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthRoles < ActiveRecord::Migration
+  def up
+	  create_table :length_roles do |t|
+t.datetime :for, :default => DateTime.new(2006,0,12,22,57,2), precision: 7, scale: 4
+		t.blob :while, :default => 170, precision: 12, scale: 5
+		t.tinyint(1) :then, :default => true, limit: 216
+		t.datetimeoffset :END, :default => Date.new(2001,2,6), precision: 8, scale: 4
+		t.datetime :and, :default => DateTime.new(2003,0,23,21,27,8), precision: 5, scale: 3
+		t.blob :retry, :default => 116, precision: 4, scale: 1
+		  end
+  change_table :length_roles do |t|
+		t.belongs_to :retry, polymorphic: true
+ 		t.change_default :retry,116
+  end
+ 		change_column :length_roles, :and, :81
+   
+	def down
+		change_table :length_roles do |t|
+		t.change_default :retry, 187
+  end
+ 		change_column :length_roles, :and, :61
+   
+		remove_columns :length_roles,  :name_passwords, :film_films, :country_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthRoles < ActiveRecord::Migration
+  def up
+	  create_table :length_roles do |t|
+t.datetime :for, :default => DateTime.new(2006,0,12,22,57,2), precision: 7, scale: 4
+		t.blob :while, :default => 170, precision: 12, scale: 5
+		t.tinyint(1) :then, :default => true, limit: 216
+		t.datetimeoffset :END, :default => Date.new(2001,2,6), precision: 8, scale: 4
+		t.datetime :and, :default => DateTime.new(2003,0,23,21,27,8), precision: 5, scale: 3
+		t.blob :retry, :default => 116, precision: 4, scale: 1
+		  end
+  change_table :length_roles do |t|
+		t.belongs_to :retry, polymorphic: true
+ 		t.change_default :retry,116
+  end
+ 		change_column :length_roles, :and, :81
+   
+	def down
+		change_table :length_roles do |t|
+		t.change_default :retry, 187
+  end
+ 		change_column :length_roles, :and, :61
+   
+		remove_columns :length_roles,  :name_passwords, :film_films, :country_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateRoleFilms < ActiveRecord::Migration
+  def up
+	  create_table :role_films do |t|
+t.datetimeoffset :defined?, :default => Date.new(2013,9,2), limit: 127
+		t.tinyint(1) :nil, :default => true, precision: 11, scale: 4
+		t.int(11) :true, :default => 189, precision: 6, scale: 3
+		t.char :else, :default => "QEJmAGnk", precision: 12, scale: 5
+		  end
+  change_table :role_films do |t|
+		t.belongs_to :nil, polymorphic: true
+ 		t.change_default :else,"QEJmAGnk"
+  end
+ 		change_column :role_films, :true, :65
+   
+	def down
+		change_table :role_films do |t|
+		t.change_default :else, "fXkkpCWw"
+  end
+ 		change_column :role_films, :true, :"sJvuPdcZ"
+   
+		remove_columns :role_films,  :email_songs, :music_films, :password_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateRoleFilms < ActiveRecord::Migration
+  def up
+	  create_table :role_films do |t|
+t.string :password_passwords, :default => "bODLFTkD", limit: 1
+		t.integer :role_passwords, :default => 34, limit: 1
+		t.integer :email_artists, :default => 115, array: false
+		t.text :name_roles, :default => :country_musics, null: true
+		t.float :artist_musics, :default => 1.2556872258623193, array: false
+		t.timestamp :music_musics, :default => DateTime.new(2008,1,30,1,52,55), null: false
+		  end
+  change_table :role_films do |t|
+		t.change_default :music_musics,DateTime.new(2008,1,30,1,52,55)
+  end
+ 		change_column :role_films, :artist_musics, :float
+   
+		change_column_null :role_films, :name_roles,  true
+	def down
+		change_table :role_films do |t|
+		t.change_default :music_musics, DateTime.new(2010,5,1,13,52,36)
+  end
+ 		change_column :role_films, :artist_musics, :time
+   
+		change_column_null :role_films, :name_roles, false
+ 		remove_columns :role_films,  :music_musics, :email_artists, :name_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateRoleFilms < ActiveRecord::Migration
+  def up
+	  create_table :role_films do |t|
+t.datetimeoffset :defined?, :default => Date.new(2013,9,2), limit: 127
+		t.tinyint(1) :nil, :default => true, precision: 11, scale: 4
+		t.int(11) :true, :default => 189, precision: 6, scale: 3
+		t.char :else, :default => "QEJmAGnk", precision: 12, scale: 5
+		  end
+  change_table :role_films do |t|
+		t.belongs_to :nil, polymorphic: true
+ 		t.change_default :else,"QEJmAGnk"
+  end
+ 		change_column :role_films, :true, :65
+   
+	def down
+		change_table :role_films do |t|
+		t.change_default :else, "fXkkpCWw"
+  end
+ 		change_column :role_films, :true, :"sJvuPdcZ"
+   
+		remove_columns :role_films,  :email_songs, :music_films, :password_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateRoleFilms < ActiveRecord::Migration
+  def up
+	  create_table :role_films do |t|
+t.datetimeoffset :defined?, :default => Date.new(2013,9,2), limit: 127
+		t.tinyint(1) :nil, :default => true, precision: 11, scale: 4
+		t.int(11) :true, :default => 189, precision: 6, scale: 3
+		t.char :else, :default => "QEJmAGnk", precision: 12, scale: 5
+		  end
+  change_table :role_films do |t|
+		t.belongs_to :nil, polymorphic: true
+ 		t.change_default :else,"QEJmAGnk"
+  end
+ 		change_column :role_films, :true, :65
+   
+	def down
+		change_table :role_films do |t|
+		t.change_default :else, "fXkkpCWw"
+  end
+ 		change_column :role_films, :true, :"sJvuPdcZ"
+   
+		remove_columns :role_films,  :email_songs, :music_films, :password_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.string :firstname_addresses, :default => "nesdzFGC", limit: 1
+		t.boolean :film_addresses, :default => false
+		t.text :email_musics, :default => :firstname_names, limit: 6
+		t.float :role_names, :default => 7.255547952310495, null: true
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :film_addresses, polymorphic: true
+ 		t.change_default :role_names,7.255547952310495
+  end
+ 		change_column :song_passwords, :email_musics, :text
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :role_names, 1.1087960850765044
+  end
+ 		change_column :song_passwords, :email_musics, :time
+   
+		remove_columns :song_passwords,  :film_addresses, :email_musics, :role_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.char :and, :default => "KxmpDzqA", precision: 7, scale: 5
+		t.char :class, :default => "PWsfwMQM", precision: 6, scale: 3
+		t.int(11) :return, :default => 93, limit: 3
+		t.blob :then, :default => 57, limit: 9
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :return, polymorphic: true
+ 		t.change_default :then,57
+  end
+ 		change_column :song_passwords, :return, :"EYqNEuSL"
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :then, 24
+  end
+ 		change_column :song_passwords, :return, :208
+   
+		remove_columns :song_passwords,  :song_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.char :and, :default => "KxmpDzqA", precision: 7, scale: 5
+		t.char :class, :default => "PWsfwMQM", precision: 6, scale: 3
+		t.int(11) :return, :default => 93, limit: 3
+		t.blob :then, :default => 57, limit: 9
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :return, polymorphic: true
+ 		t.change_default :then,57
+  end
+ 		change_column :song_passwords, :return, :"EYqNEuSL"
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :then, 24
+  end
+ 		change_column :song_passwords, :return, :208
+   
+		remove_columns :song_passwords,  :song_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongPasswords < ActiveRecord::Migration
+  def up
+	  create_table :song_passwords do |t|
+t.char :and, :default => "KxmpDzqA", precision: 7, scale: 5
+		t.char :class, :default => "PWsfwMQM", precision: 6, scale: 3
+		t.int(11) :return, :default => 93, limit: 3
+		t.blob :then, :default => 57, limit: 9
+		  end
+  change_table :song_passwords do |t|
+		t.belongs_to :return, polymorphic: true
+ 		t.change_default :then,57
+  end
+ 		change_column :song_passwords, :return, :"EYqNEuSL"
+   
+	def down
+		change_table :song_passwords do |t|
+		t.change_default :then, 24
+  end
+ 		change_column :song_passwords, :return, :208
+   
+		remove_columns :song_passwords,  :song_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.blob :or, :default => 85, precision: 12, scale: 5
+		t.tinyint(1) :redo, :default => false, limit: 231
+		t.int(11) :alias, :default => 252, limit: 79
+		t.datetime :END, :default => DateTime.new(2010,0,11,18,53,53), precision: 9, scale: 4
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :alias, polymorphic: true
+ 		t.change_default :END,DateTime.new(2010,0,11,18,53,53)
+  end
+ 		change_column :email_roles, :alias, :143
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :END, DateTime.new(2011,7,20,7,41,44)
+  end
+ 		change_column :email_roles, :alias, :"FvvgrWmG"
+   
+		remove_columns :email_roles,  :firstname_names, :role_lengths, :description_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.blob :or, :default => 85, precision: 12, scale: 5
+		t.tinyint(1) :redo, :default => false, limit: 231
+		t.int(11) :alias, :default => 252, limit: 79
+		t.datetime :END, :default => DateTime.new(2010,0,11,18,53,53), precision: 9, scale: 4
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :alias, polymorphic: true
+ 		t.change_default :END,DateTime.new(2010,0,11,18,53,53)
+  end
+ 		change_column :email_roles, :alias, :143
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :END, DateTime.new(2011,7,20,7,41,44)
+  end
+ 		change_column :email_roles, :alias, :"FvvgrWmG"
+   
+		remove_columns :email_roles,  :firstname_names, :role_lengths, :description_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.blob :or, :default => 85, precision: 12, scale: 5
+		t.tinyint(1) :redo, :default => false, limit: 231
+		t.int(11) :alias, :default => 252, limit: 79
+		t.datetime :END, :default => DateTime.new(2010,0,11,18,53,53), precision: 9, scale: 4
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :alias, polymorphic: true
+ 		t.change_default :END,DateTime.new(2010,0,11,18,53,53)
+  end
+ 		change_column :email_roles, :alias, :143
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :END, DateTime.new(2011,7,20,7,41,44)
+  end
+ 		change_column :email_roles, :alias, :"FvvgrWmG"
+   
+		remove_columns :email_roles,  :firstname_names, :role_lengths, :description_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateEmailRoles < ActiveRecord::Migration
+  def up
+	  create_table :email_roles do |t|
+t.decimal :song_addresses, :default => 0.1660924941787565, precision: 7, scale: 5
+		t.string :song_artists, :default => "FLZvipEZ", limit: 1
+		t.time :role_descriptions, :default => Time.new(2010, 10, 10, 19,51,22), array: false
+		t.float :password_artists, :default => 3.0700563237748595, array: false
+		  end
+  change_table :email_roles do |t|
+		t.belongs_to :role_descriptions, polymorphic: true
+ 		t.change_default :password_artists,3.0700563237748595
+  end
+ 		change_column :email_roles, :role_descriptions, :time
+   
+	def down
+		change_table :email_roles do |t|
+		t.change_default :password_artists, 4.728672489883833
+  end
+ 		change_column :email_roles, :role_descriptions, :integer
+   
+		remove_columns :email_roles,  :role_descriptions, :song_addresses 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateDescriptionAddresses < ActiveRecord::Migration
+  def up
+	  create_table :description_addresses do |t|
+t.integer :password_roles, :default => 178, limit: 2
+		t.float :address_lengths, :default => 6.550181672275499, null: false
+		t.float :firstname_roles, :default => 0.5134818598910288, array: false
+		t.string :country_films, :default => "sYRCiDMK", null: true
+		t.time :address_films, :default => Time.new(2010, 10, 10, 2,16,38), array: false
+		  end
+  change_table :description_addresses do |t|
+		t.belongs_to :address_films, polymorphic: true
+ 		t.change_default :address_films,Time.new(2010, 10, 10, 2,16,38)
+  end
+ 		change_column :description_addresses, :country_films, :string
+   
+	def down
+		change_table :description_addresses do |t|
+		t.change_default :address_films, Time.new(2010, 10, 10, 9,21,11)
+  end
+ 		change_column :description_addresses, :country_films, :float
+   
+		remove_columns :description_addresses,  :firstname_roles, :address_lengths, :country_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateDescriptionAddresses < ActiveRecord::Migration
+  def up
+	  create_table :description_addresses do |t|
+t.datetimeoffset :alias, :default => Date.new(2007,10,7), limit: 8
+		t.int(11) :break, :default => 114, precision: 4, scale: 1
+		t.blob :elsif, :default => 26, limit: 6
+		t.blob :false, :default => 6, limit: 56
+		t.datetimeoffset :else, :default => Date.new(2011,6,0), precision: 8, scale: 5
+		t.datetimeoffset :yield, :default => Date.new(2007,10,14), precision: 3, scale: 1
+		  end
+  change_table :description_addresses do |t|
+		t.belongs_to :else, polymorphic: true
+ 		t.change_default :yield,Date.new(2007,10,14)
+  end
+ 		change_column :description_addresses, :else, :5
+   
+	def down
+		change_table :description_addresses do |t|
+		t.change_default :yield, Date.new(2001,10,18)
+  end
+ 		change_column :description_addresses, :else, :155
+   
+		remove_columns :description_addresses,  :music_addresses, :description_descriptions, :password_passwords 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateDescriptionAddresses < ActiveRecord::Migration
+  def up
+	  create_table :description_addresses do |t|
+t.datetimeoffset :alias, :default => Date.new(2007,10,7), limit: 8
+		t.int(11) :break, :default => 114, precision: 4, scale: 1
+		t.blob :elsif, :default => 26, limit: 6
+		t.blob :false, :default => 6, limit: 56
+		t.datetimeoffset :else, :default => Date.new(2011,6,0), precision: 8, scale: 5
+		t.datetimeoffset :yield, :default => Date.new(2007,10,14), precision: 3, scale: 1
+		  end
+  change_table :description_addresses do |t|
+		t.belongs_to :else, polymorphic: true
+ 		t.change_default :yield,Date.new(2007,10,14)
+  end
+ 		change_column :description_addresses, :else, :5
+   
+	def down
+		change_table :description_addresses do |t|
+		t.change_default :yield, Date.new(2001,10,18)
+  end
+ 		change_column :description_addresses, :else, :155
+   
+		remove_columns :description_addresses,  :music_addresses, :description_descriptions, :password_passwords 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateDescriptionAddresses < ActiveRecord::Migration
+  def up
+	  create_table :description_addresses do |t|
+t.datetimeoffset :alias, :default => Date.new(2007,10,7), limit: 8
+		t.int(11) :break, :default => 114, precision: 4, scale: 1
+		t.blob :elsif, :default => 26, limit: 6
+		t.blob :false, :default => 6, limit: 56
+		t.datetimeoffset :else, :default => Date.new(2011,6,0), precision: 8, scale: 5
+		t.datetimeoffset :yield, :default => Date.new(2007,10,14), precision: 3, scale: 1
+		  end
+  change_table :description_addresses do |t|
+		t.belongs_to :else, polymorphic: true
+ 		t.change_default :yield,Date.new(2007,10,14)
+  end
+ 		change_column :description_addresses, :else, :5
+   
+	def down
+		change_table :description_addresses do |t|
+		t.change_default :yield, Date.new(2001,10,18)
+  end
+ 		change_column :description_addresses, :else, :155
+   
+		remove_columns :description_addresses,  :music_addresses, :description_descriptions, :password_passwords 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateFirstnameDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :firstname_descriptions do |t|
+t.blob :alias, :default => 88, limit: 1
+		t.tinyint(1) :not, :default => false, limit: 58
+		t.char :def, :default => "lbuXwQRt", limit: 136
+		t.char :self, :default => "qPnUusNS", precision: 8, scale: 2
+		t.int(11) :unless, :default => 12, precision: 5, scale: 3
+		  end
+  change_table :firstname_descriptions do |t|
+		t.belongs_to :unless, polymorphic: true
+ 		t.change_default :unless,12
+  end
+ 		change_column :firstname_descriptions, :self, :177
+   
+	def down
+		change_table :firstname_descriptions do |t|
+		t.change_default :unless, 127
+  end
+ 		change_column :firstname_descriptions, :self, :"wEITQGnZ"
+   
+		remove_columns :firstname_descriptions,  :name_films, :firstname_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFirstnameDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :firstname_descriptions do |t|
+t.blob :alias, :default => 88, limit: 1
+		t.tinyint(1) :not, :default => false, limit: 58
+		t.char :def, :default => "lbuXwQRt", limit: 136
+		t.char :self, :default => "qPnUusNS", precision: 8, scale: 2
+		t.int(11) :unless, :default => 12, precision: 5, scale: 3
+		  end
+  change_table :firstname_descriptions do |t|
+		t.belongs_to :unless, polymorphic: true
+ 		t.change_default :unless,12
+  end
+ 		change_column :firstname_descriptions, :self, :177
+   
+	def down
+		change_table :firstname_descriptions do |t|
+		t.change_default :unless, 127
+  end
+ 		change_column :firstname_descriptions, :self, :"wEITQGnZ"
+   
+		remove_columns :firstname_descriptions,  :name_films, :firstname_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFirstnameDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :firstname_descriptions do |t|
+t.blob :alias, :default => 88, limit: 1
+		t.tinyint(1) :not, :default => false, limit: 58
+		t.char :def, :default => "lbuXwQRt", limit: 136
+		t.char :self, :default => "qPnUusNS", precision: 8, scale: 2
+		t.int(11) :unless, :default => 12, precision: 5, scale: 3
+		  end
+  change_table :firstname_descriptions do |t|
+		t.belongs_to :unless, polymorphic: true
+ 		t.change_default :unless,12
+  end
+ 		change_column :firstname_descriptions, :self, :177
+   
+	def down
+		change_table :firstname_descriptions do |t|
+		t.change_default :unless, 127
+  end
+ 		change_column :firstname_descriptions, :self, :"wEITQGnZ"
+   
+		remove_columns :firstname_descriptions,  :name_films, :firstname_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateFirstnameDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :firstname_descriptions do |t|
+t.boolean :password_names, :default => false
+		t.float :length_passwords, :default => 4.028745983496416, null: true
+		t.string :email_descriptions, :default => "xDDnxQBd", null: false
+		t.decimal :firstname_artists, :default => 4.443831624139514, array: false
+		t.decimal :length_roles, :default => 0.8359595578286884, precision: 8, scale: 2
+		  end
+  change_table :firstname_descriptions do |t|
+		t.change_default :length_roles,0.8359595578286884
+  end
+ 		change_column :firstname_descriptions, :firstname_artists, :decimal
+   
+		change_column_null :firstname_descriptions, :email_descriptions,  false
+	def down
+		change_table :firstname_descriptions do |t|
+		t.change_default :length_roles, 8.089908709499623
+  end
+ 		change_column :firstname_descriptions, :firstname_artists, :boolean
+   
+		change_column_null :firstname_descriptions, :email_descriptions, false
+ 		remove_columns :firstname_descriptions,  :length_passwords, :email_descriptions, :length_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.blob :in, :default => 100, precision: 10, scale: 5
+		t.datetime :when, :default => DateTime.new(2012,10,21,1,52,12), limit: 135
+		t.datetime :BEGIN, :default => DateTime.new(2005,3,16,0,48,44), limit: 57
+		t.blob :true, :default => 242, precision: 8, scale: 4
+		t.tinyint(1) :undef, :default => true, limit: 10
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :undef, polymorphic: true
+ 		t.change_default :undef,true
+  end
+ 		change_column :password_lengths, :true, :"cRGIZlLy"
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :undef, false
+  end
+ 		change_column :password_lengths, :true, :179
+   
+		remove_columns :password_lengths,  :music_passwords, :role_descriptions, :artist_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.blob :in, :default => 100, precision: 10, scale: 5
+		t.datetime :when, :default => DateTime.new(2012,10,21,1,52,12), limit: 135
+		t.datetime :BEGIN, :default => DateTime.new(2005,3,16,0,48,44), limit: 57
+		t.blob :true, :default => 242, precision: 8, scale: 4
+		t.tinyint(1) :undef, :default => true, limit: 10
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :undef, polymorphic: true
+ 		t.change_default :undef,true
+  end
+ 		change_column :password_lengths, :true, :"cRGIZlLy"
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :undef, false
+  end
+ 		change_column :password_lengths, :true, :179
+   
+		remove_columns :password_lengths,  :music_passwords, :role_descriptions, :artist_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.float :password_addresses, :default => 7.287096882094902, array: false
+		t.integer :song_firstnames, :default => 131, array: false
+		t.timestamp :address_emails, :default => DateTime.new(2014,1,7,3,33,34), null: true
+		t.boolean :music_musics, :default => false
+		t.string :name_firstnames, :default => "BdPFCwSb", array: false
+		t.string :song_roles, :default => "TTyWONvB", array: false
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :song_roles, polymorphic: true
+ 		t.change_default :song_roles,"TTyWONvB"
+  end
+ 		change_column :password_lengths, :name_firstnames, :string
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :song_roles, "xkTJQgmR"
+  end
+ 		change_column :password_lengths, :name_firstnames, :time
+   
+		remove_columns :password_lengths,  :name_firstnames, :music_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.blob :in, :default => 100, precision: 10, scale: 5
+		t.datetime :when, :default => DateTime.new(2012,10,21,1,52,12), limit: 135
+		t.datetime :BEGIN, :default => DateTime.new(2005,3,16,0,48,44), limit: 57
+		t.blob :true, :default => 242, precision: 8, scale: 4
+		t.tinyint(1) :undef, :default => true, limit: 10
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :undef, polymorphic: true
+ 		t.change_default :undef,true
+  end
+ 		change_column :password_lengths, :true, :"cRGIZlLy"
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :undef, false
+  end
+ 		change_column :password_lengths, :true, :179
+   
+		remove_columns :password_lengths,  :music_passwords, :role_descriptions, :artist_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.datetime :for, :default => DateTime.new(2001,8,11,8,12,53), limit: 205
+		t.int(11) :rescue, :default => 203, precision: 9, scale: 3
+		t.datetime :elsif, :default => DateTime.new(2003,10,24,9,18,29), precision: 9, scale: 5
+		t.tinyint(1) :self, :default => false, limit: 11
+		t.tinyint(1) :end, :default => false, limit: 10
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :end, polymorphic: true
+ 		t.change_default :end,false
+  end
+ 		change_column :password_lengths, :self, :116
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :end, false
+  end
+ 		change_column :password_lengths, :self, :"ECAyNjBv"
+   
+		remove_columns :password_lengths,  :film_songs, :password_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.datetime :for, :default => DateTime.new(2001,8,11,8,12,53), limit: 205
+		t.int(11) :rescue, :default => 203, precision: 9, scale: 3
+		t.datetime :elsif, :default => DateTime.new(2003,10,24,9,18,29), precision: 9, scale: 5
+		t.tinyint(1) :self, :default => false, limit: 11
+		t.tinyint(1) :end, :default => false, limit: 10
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :end, polymorphic: true
+ 		t.change_default :end,false
+  end
+ 		change_column :password_lengths, :self, :116
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :end, false
+  end
+ 		change_column :password_lengths, :self, :"ECAyNjBv"
+   
+		remove_columns :password_lengths,  :film_songs, :password_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.integer :film_songs, :default => 10, array: false
+		t.string :description_countries, :default => "hvIeRIDo", limit: 4
+		t.decimal :description_firstnames, :default => 8.029312178325013, precision: 5, scale: 1
+		t.timestamp :role_lengths, :default => DateTime.new(2005,6,22,11,38,27), array: false
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :description_countries, polymorphic: true
+ 		t.change_default :role_lengths,DateTime.new(2005,6,22,11,38,27)
+  end
+ 		change_column :password_lengths, :description_firstnames, :decimal
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :role_lengths, DateTime.new(2013,6,0,14,6,0)
+  end
+ 		change_column :password_lengths, :description_firstnames, :timestamp
+   
+		remove_columns :password_lengths,  :description_firstnames, :description_countries, :film_songs 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordLengths < ActiveRecord::Migration
+  def up
+	  create_table :password_lengths do |t|
+t.datetime :for, :default => DateTime.new(2001,8,11,8,12,53), limit: 205
+		t.int(11) :rescue, :default => 203, precision: 9, scale: 3
+		t.datetime :elsif, :default => DateTime.new(2003,10,24,9,18,29), precision: 9, scale: 5
+		t.tinyint(1) :self, :default => false, limit: 11
+		t.tinyint(1) :end, :default => false, limit: 10
+		  end
+  change_table :password_lengths do |t|
+		t.belongs_to :end, polymorphic: true
+ 		t.change_default :end,false
+  end
+ 		change_column :password_lengths, :self, :116
+   
+	def down
+		change_table :password_lengths do |t|
+		t.change_default :end, false
+  end
+ 		change_column :password_lengths, :self, :"ECAyNjBv"
+   
+		remove_columns :password_lengths,  :film_songs, :password_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateDescriptionRoles < ActiveRecord::Migration
+  def up
+	  create_table :description_roles do |t|
+t.datetime :not, :default => DateTime.new(2000,5,14,12,26,12), limit: 1
+		t.tinyint(1) :END, :default => false, limit: 1
+		t.datetimeoffset :rescue, :default => Date.new(2009,9,15), limit: 83
+		t.datetime :module, :default => DateTime.new(2011,6,6,11,47,14), limit: 2
+		  end
+  change_table :description_roles do |t|
+		t.belongs_to :rescue, polymorphic: true
+ 		t.change_default :module,DateTime.new(2011,6,6,11,47,14)
+  end
+ 		change_column :description_roles, :rescue, :"iKZhmamL"
+   
+	def down
+		change_table :description_roles do |t|
+		t.change_default :module, DateTime.new(2014,11,20,8,7,22)
+  end
+ 		change_column :description_roles, :rescue, :"VRsTdUwF"
+   
+		remove_columns :description_roles,  :address_lengths, :description_countries, :name_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateDescriptionRoles < ActiveRecord::Migration
+  def up
+	  create_table :description_roles do |t|
+t.datetime :not, :default => DateTime.new(2000,5,14,12,26,12), limit: 1
+		t.tinyint(1) :END, :default => false, limit: 1
+		t.datetimeoffset :rescue, :default => Date.new(2009,9,15), limit: 83
+		t.datetime :module, :default => DateTime.new(2011,6,6,11,47,14), limit: 2
+		  end
+  change_table :description_roles do |t|
+		t.belongs_to :rescue, polymorphic: true
+ 		t.change_default :module,DateTime.new(2011,6,6,11,47,14)
+  end
+ 		change_column :description_roles, :rescue, :"iKZhmamL"
+   
+	def down
+		change_table :description_roles do |t|
+		t.change_default :module, DateTime.new(2014,11,20,8,7,22)
+  end
+ 		change_column :description_roles, :rescue, :"VRsTdUwF"
+   
+		remove_columns :description_roles,  :address_lengths, :description_countries, :name_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateDescriptionRoles < ActiveRecord::Migration
+  def up
+	  create_table :description_roles do |t|
+t.time :firstname_artists, :default => Time.new(2010, 10, 10, 9,15,58), array: false
+		t.text :country_musics, :default => :country_artists, limit: 138
+		t.integer :name_lengths, :default => 85, limit: 8
+		t.integer :song_firstnames, :default => 22, limit: 1
+		  end
+  change_table :description_roles do |t|
+		t.belongs_to :name_lengths, polymorphic: true
+ 		t.change_default :song_firstnames,22
+  end
+ 		change_column :description_roles, :name_lengths, :integer
+   
+	def down
+		change_table :description_roles do |t|
+		t.change_default :song_firstnames, 108
+  end
+ 		change_column :description_roles, :name_lengths, :time
+   
+		remove_columns :description_roles,  :country_musics, :song_firstnames, :firstname_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateDescriptionRoles < ActiveRecord::Migration
+  def up
+	  create_table :description_roles do |t|
+t.datetime :not, :default => DateTime.new(2000,5,14,12,26,12), limit: 1
+		t.tinyint(1) :END, :default => false, limit: 1
+		t.datetimeoffset :rescue, :default => Date.new(2009,9,15), limit: 83
+		t.datetime :module, :default => DateTime.new(2011,6,6,11,47,14), limit: 2
+		  end
+  change_table :description_roles do |t|
+		t.belongs_to :rescue, polymorphic: true
+ 		t.change_default :module,DateTime.new(2011,6,6,11,47,14)
+  end
+ 		change_column :description_roles, :rescue, :"iKZhmamL"
+   
+	def down
+		change_table :description_roles do |t|
+		t.change_default :module, DateTime.new(2014,11,20,8,7,22)
+  end
+ 		change_column :description_roles, :rescue, :"VRsTdUwF"
+   
+		remove_columns :description_roles,  :address_lengths, :description_countries, :name_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateAddressNames < ActiveRecord::Migration
+  def up
+	  create_table :address_names do |t|
+t.datetime :super, :default => DateTime.new(2010,0,30,20,33,35), limit: 2
+		t.char :and, :default => "vHETCKVl", precision: 7, scale: 3
+		t.char :nil, :default => "ZhgcAwWu", limit: 5
+		t.char :undef, :default => "jXuvEbDR", limit: 9
+		t.tinyint(1) :do, :default => true, precision: 8, scale: 3
+		t.tinyint(1) :case, :default => true, precision: 6, scale: 1
+		  end
+  change_table :address_names do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :case,true
+  end
+ 		change_column :address_names, :do, :"XFZxlWMd"
+   
+	def down
+		change_table :address_names do |t|
+		t.change_default :case, true
+  end
+ 		change_column :address_names, :do, :"AzLcKwoL"
+   
+		remove_columns :address_names,  :role_films, :firstname_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateAddressNames < ActiveRecord::Migration
+  def up
+	  create_table :address_names do |t|
+t.decimal :artist_songs, :default => 4.669354265163756, null: false
+		t.boolean :email_songs, :default => true
+		t.float :firstname_artists, :default => 5.8864079595304775, null: true
+		t.timestamp :music_addresses, :default => DateTime.new(2004,7,17,23,17,28), null: true
+		  end
+  change_table :address_names do |t|
+		t.belongs_to :firstname_artists, polymorphic: true
+ 		t.change_default :music_addresses,DateTime.new(2004,7,17,23,17,28)
+  end
+ 		change_column :address_names, :firstname_artists, :float
+   
+	def down
+		change_table :address_names do |t|
+		t.change_default :music_addresses, DateTime.new(2013,8,24,0,47,44)
+  end
+ 		change_column :address_names, :firstname_artists, :string
+   
+		remove_columns :address_names,  :email_songs, :artist_songs, :music_addresses 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateAddressNames < ActiveRecord::Migration
+  def up
+	  create_table :address_names do |t|
+t.datetime :super, :default => DateTime.new(2010,0,30,20,33,35), limit: 2
+		t.char :and, :default => "vHETCKVl", precision: 7, scale: 3
+		t.char :nil, :default => "ZhgcAwWu", limit: 5
+		t.char :undef, :default => "jXuvEbDR", limit: 9
+		t.tinyint(1) :do, :default => true, precision: 8, scale: 3
+		t.tinyint(1) :case, :default => true, precision: 6, scale: 1
+		  end
+  change_table :address_names do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :case,true
+  end
+ 		change_column :address_names, :do, :"XFZxlWMd"
+   
+	def down
+		change_table :address_names do |t|
+		t.change_default :case, true
+  end
+ 		change_column :address_names, :do, :"AzLcKwoL"
+   
+		remove_columns :address_names,  :role_films, :firstname_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateAddressNames < ActiveRecord::Migration
+  def up
+	  create_table :address_names do |t|
+t.datetime :super, :default => DateTime.new(2010,0,30,20,33,35), limit: 2
+		t.char :and, :default => "vHETCKVl", precision: 7, scale: 3
+		t.char :nil, :default => "ZhgcAwWu", limit: 5
+		t.char :undef, :default => "jXuvEbDR", limit: 9
+		t.tinyint(1) :do, :default => true, precision: 8, scale: 3
+		t.tinyint(1) :case, :default => true, precision: 6, scale: 1
+		  end
+  change_table :address_names do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :case,true
+  end
+ 		change_column :address_names, :do, :"XFZxlWMd"
+   
+	def down
+		change_table :address_names do |t|
+		t.change_default :case, true
+  end
+ 		change_column :address_names, :do, :"AzLcKwoL"
+   
+		remove_columns :address_names,  :role_films, :firstname_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateSongCountries < ActiveRecord::Migration
+  def up
+	  create_table :song_countries do |t|
+t.tinyint(1) :BEGIN, :default => false, limit: 8
+		t.int(11) :while, :default => 197, limit: 3
+		t.blob :undef, :default => 63, precision: 7, scale: 5
+		t.datetime :class, :default => DateTime.new(2005,9,10,17,43,45), limit: 1
+		t.tinyint(1) :retry, :default => true, precision: 7, scale: 3
+		  end
+  change_table :song_countries do |t|
+		t.belongs_to :undef, polymorphic: true
+ 		t.change_default :retry,true
+  end
+ 		change_column :song_countries, :class, :127
+   
+	def down
+		change_table :song_countries do |t|
+		t.change_default :retry, false
+  end
+ 		change_column :song_countries, :class, :122
+   
+		remove_columns :song_countries,  :name_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongCountries < ActiveRecord::Migration
+  def up
+	  create_table :song_countries do |t|
+t.tinyint(1) :BEGIN, :default => false, limit: 8
+		t.int(11) :while, :default => 197, limit: 3
+		t.blob :undef, :default => 63, precision: 7, scale: 5
+		t.datetime :class, :default => DateTime.new(2005,9,10,17,43,45), limit: 1
+		t.tinyint(1) :retry, :default => true, precision: 7, scale: 3
+		  end
+  change_table :song_countries do |t|
+		t.belongs_to :undef, polymorphic: true
+ 		t.change_default :retry,true
+  end
+ 		change_column :song_countries, :class, :127
+   
+	def down
+		change_table :song_countries do |t|
+		t.change_default :retry, false
+  end
+ 		change_column :song_countries, :class, :122
+   
+		remove_columns :song_countries,  :name_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongCountries < ActiveRecord::Migration
+  def up
+	  create_table :song_countries do |t|
+t.tinyint(1) :BEGIN, :default => false, limit: 8
+		t.int(11) :while, :default => 197, limit: 3
+		t.blob :undef, :default => 63, precision: 7, scale: 5
+		t.datetime :class, :default => DateTime.new(2005,9,10,17,43,45), limit: 1
+		t.tinyint(1) :retry, :default => true, precision: 7, scale: 3
+		  end
+  change_table :song_countries do |t|
+		t.belongs_to :undef, polymorphic: true
+ 		t.change_default :retry,true
+  end
+ 		change_column :song_countries, :class, :127
+   
+	def down
+		change_table :song_countries do |t|
+		t.change_default :retry, false
+  end
+ 		change_column :song_countries, :class, :122
+   
+		remove_columns :song_countries,  :name_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateSongCountries < ActiveRecord::Migration
+  def up
+	  create_table :song_countries do |t|
+t.decimal :country_countries, :default => 1.349864782613163, array: false
+		t.integer :length_emails, :default => 149, limit: 5
+		t.timestamp :film_roles, :default => DateTime.new(2012,4,3,19,50,55), null: true
+		t.string :firstname_films, :default => "IFqRRJXu", limit: 128
+		t.timestamp :name_names, :default => DateTime.new(2012,9,15,15,56,47), array: false
+		t.timestamp :firstname_emails, :default => DateTime.new(2012,2,14,16,53,48), null: false
+		  end
+  change_table :song_countries do |t|
+		t.belongs_to :name_names, polymorphic: true
+ 		t.change_default :firstname_emails,DateTime.new(2012,2,14,16,53,48)
+  end
+ 		change_column :song_countries, :name_names, :timestamp
+   
+	def down
+		change_table :song_countries do |t|
+		t.change_default :firstname_emails, DateTime.new(2013,4,27,13,37,52)
+  end
+ 		change_column :song_countries, :name_names, :float
+   
+		remove_columns :song_countries,  :firstname_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateMusicPasswords < ActiveRecord::Migration
+  def up
+	  create_table :music_passwords do |t|
+t.datetime :BEGIN, :default => DateTime.new(2008,11,23,8,56,42), limit: 4
+		t.char :yield, :default => "nbdXbzmt", precision: 10, scale: 3
+		t.tinyint(1) :elsif, :default => false, precision: 4, scale: 2
+		t.char :elsif, :default => "yDYFGMMf", precision: 4, scale: 1
+		  end
+  change_table :music_passwords do |t|
+		t.belongs_to :yield, polymorphic: true
+ 		t.change_default :elsif,"yDYFGMMf"
+  end
+ 		change_column :music_passwords, :elsif, :152
+   
+	def down
+		change_table :music_passwords do |t|
+		t.change_default :elsif, "PZDQDAxR"
+  end
+ 		change_column :music_passwords, :elsif, :82
+   
+		remove_columns :music_passwords,  :length_countries, :film_addresses, :length_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateMusicPasswords < ActiveRecord::Migration
+  def up
+	  create_table :music_passwords do |t|
+t.timestamp :email_firstnames, :default => DateTime.new(2002,2,7,23,40,34), null: true
+		t.integer :song_lengths, :default => 237, limit: 7
+		t.time :film_musics, :default => Time.new(2010, 10, 10, 0,18,41), array: false
+		t.timestamp :length_roles, :default => DateTime.new(2007,8,15,6,2,6), array: false
+		  end
+  change_table :music_passwords do |t|
+		t.belongs_to :song_lengths, polymorphic: true
+ 		t.change_default :length_roles,DateTime.new(2007,8,15,6,2,6)
+  end
+ 		change_column :music_passwords, :film_musics, :time
+   
+	def down
+		change_table :music_passwords do |t|
+		t.change_default :length_roles, DateTime.new(2003,2,8,5,30,41)
+  end
+ 		change_column :music_passwords, :film_musics, :string
+   
+		remove_columns :music_passwords,  :film_musics, :email_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicPasswords < ActiveRecord::Migration
+  def up
+	  create_table :music_passwords do |t|
+t.datetime :BEGIN, :default => DateTime.new(2008,11,23,8,56,42), limit: 4
+		t.char :yield, :default => "nbdXbzmt", precision: 10, scale: 3
+		t.tinyint(1) :elsif, :default => false, precision: 4, scale: 2
+		t.char :elsif, :default => "yDYFGMMf", precision: 4, scale: 1
+		  end
+  change_table :music_passwords do |t|
+		t.belongs_to :yield, polymorphic: true
+ 		t.change_default :elsif,"yDYFGMMf"
+  end
+ 		change_column :music_passwords, :elsif, :152
+   
+	def down
+		change_table :music_passwords do |t|
+		t.change_default :elsif, "PZDQDAxR"
+  end
+ 		change_column :music_passwords, :elsif, :82
+   
+		remove_columns :music_passwords,  :length_countries, :film_addresses, :length_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicPasswords < ActiveRecord::Migration
+  def up
+	  create_table :music_passwords do |t|
+t.datetime :BEGIN, :default => DateTime.new(2008,11,23,8,56,42), limit: 4
+		t.char :yield, :default => "nbdXbzmt", precision: 10, scale: 3
+		t.tinyint(1) :elsif, :default => false, precision: 4, scale: 2
+		t.char :elsif, :default => "yDYFGMMf", precision: 4, scale: 1
+		  end
+  change_table :music_passwords do |t|
+		t.belongs_to :yield, polymorphic: true
+ 		t.change_default :elsif,"yDYFGMMf"
+  end
+ 		change_column :music_passwords, :elsif, :152
+   
+	def down
+		change_table :music_passwords do |t|
+		t.change_default :elsif, "PZDQDAxR"
+  end
+ 		change_column :music_passwords, :elsif, :82
+   
+		remove_columns :music_passwords,  :length_countries, :film_addresses, :length_musics 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateLengthNames < ActiveRecord::Migration
+  def up
+	  create_table :length_names do |t|
+t.blob :self, :default => 182, precision: 8, scale: 5
+		t.datetimeoffset :end, :default => Date.new(2006,1,28), limit: 1
+		t.char :super, :default => "SPhKguyz", precision: 9, scale: 3
+		t.tinyint(1) :elsif, :default => true, precision: 9, scale: 4
+		t.datetime :do, :default => DateTime.new(2003,4,10,2,0,50), limit: 45
+		  end
+  change_table :length_names do |t|
+		t.belongs_to :do, polymorphic: true
+ 		t.change_default :do,DateTime.new(2003,4,10,2,0,50)
+  end
+ 		change_column :length_names, :elsif, :9
+   
+	def down
+		change_table :length_names do |t|
+		t.change_default :do, DateTime.new(2001,0,1,17,26,58)
+  end
+ 		change_column :length_names, :elsif, :"bCfWpjSp"
+   
+		remove_columns :length_names,  :role_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateLengthNames < ActiveRecord::Migration
+  def up
+	  create_table :length_names do |t|
+t.integer :password_films, :default => 51, limit: 7
+		t.integer :password_artists, :default => 200, null: true
+		t.integer :role_roles, :default => 122, array: false
+		t.string :length_lengths, :default => "WkPEJTJF", array: false
+		  end
+  change_table :length_names do |t|
+		t.change_default :length_lengths,"WkPEJTJF"
+  end
+ 		change_column :length_names, :role_roles, :integer
+   
+		change_column_null :length_names, :password_artists,  true
+	def down
+		change_table :length_names do |t|
+		t.change_default :length_lengths, "fKqbPbVp"
+  end
+ 		change_column :length_names, :role_roles, :boolean
+   
+		change_column_null :length_names, :password_artists, true
+ 		remove_columns :length_names,  :role_roles, :password_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthNames < ActiveRecord::Migration
+  def up
+	  create_table :length_names do |t|
+t.blob :self, :default => 182, precision: 8, scale: 5
+		t.datetimeoffset :end, :default => Date.new(2006,1,28), limit: 1
+		t.char :super, :default => "SPhKguyz", precision: 9, scale: 3
+		t.tinyint(1) :elsif, :default => true, precision: 9, scale: 4
+		t.datetime :do, :default => DateTime.new(2003,4,10,2,0,50), limit: 45
+		  end
+  change_table :length_names do |t|
+		t.belongs_to :do, polymorphic: true
+ 		t.change_default :do,DateTime.new(2003,4,10,2,0,50)
+  end
+ 		change_column :length_names, :elsif, :9
+   
+	def down
+		change_table :length_names do |t|
+		t.change_default :do, DateTime.new(2001,0,1,17,26,58)
+  end
+ 		change_column :length_names, :elsif, :"bCfWpjSp"
+   
+		remove_columns :length_names,  :role_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateLengthNames < ActiveRecord::Migration
+  def up
+	  create_table :length_names do |t|
+t.blob :self, :default => 182, precision: 8, scale: 5
+		t.datetimeoffset :end, :default => Date.new(2006,1,28), limit: 1
+		t.char :super, :default => "SPhKguyz", precision: 9, scale: 3
+		t.tinyint(1) :elsif, :default => true, precision: 9, scale: 4
+		t.datetime :do, :default => DateTime.new(2003,4,10,2,0,50), limit: 45
+		  end
+  change_table :length_names do |t|
+		t.belongs_to :do, polymorphic: true
+ 		t.change_default :do,DateTime.new(2003,4,10,2,0,50)
+  end
+ 		change_column :length_names, :elsif, :9
+   
+	def down
+		change_table :length_names do |t|
+		t.change_default :do, DateTime.new(2001,0,1,17,26,58)
+  end
+ 		change_column :length_names, :elsif, :"bCfWpjSp"
+   
+		remove_columns :length_names,  :role_roles 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateEmailDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :email_descriptions do |t|
+t.boolean :name_firstnames, :default => false
+		t.boolean :film_firstnames, :default => false
+		t.string :music_musics, :default => "BRLnArZn", null: true
+		t.float :length_names, :default => 0.6562624165633771, array: false
+		  end
+  change_table :email_descriptions do |t|
+		t.belongs_to :film_firstnames, polymorphic: true
+ 		t.change_default :length_names,0.6562624165633771
+  end
+ 		change_column :email_descriptions, :music_musics, :string
+   
+	def down
+		change_table :email_descriptions do |t|
+		t.change_default :length_names, 8.912358466976338
+  end
+ 		change_column :email_descriptions, :music_musics, :float
+   
+		remove_columns :email_descriptions,  :name_firstnames, :length_names, :film_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :email_descriptions do |t|
+t.datetime :END, :default => DateTime.new(2002,0,15,18,47,51), limit: 1
+		t.char :defined?, :default => "mQiqbiqF", precision: 8, scale: 1
+		t.datetime :until, :default => DateTime.new(2004,3,2,10,18,57), precision: 7, scale: 3
+		t.tinyint(1) :begin, :default => false, precision: 6, scale: 4
+		  end
+  change_table :email_descriptions do |t|
+		t.belongs_to :begin, polymorphic: true
+ 		t.change_default :begin,false
+  end
+ 		change_column :email_descriptions, :until, :240
+   
+	def down
+		change_table :email_descriptions do |t|
+		t.change_default :begin, false
+  end
+ 		change_column :email_descriptions, :until, :"SBlDcRkL"
+   
+		remove_columns :email_descriptions,  :length_firstnames, :song_names, :length_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :email_descriptions do |t|
+t.datetime :END, :default => DateTime.new(2002,0,15,18,47,51), limit: 1
+		t.char :defined?, :default => "mQiqbiqF", precision: 8, scale: 1
+		t.datetime :until, :default => DateTime.new(2004,3,2,10,18,57), precision: 7, scale: 3
+		t.tinyint(1) :begin, :default => false, precision: 6, scale: 4
+		  end
+  change_table :email_descriptions do |t|
+		t.belongs_to :begin, polymorphic: true
+ 		t.change_default :begin,false
+  end
+ 		change_column :email_descriptions, :until, :240
+   
+	def down
+		change_table :email_descriptions do |t|
+		t.change_default :begin, false
+  end
+ 		change_column :email_descriptions, :until, :"SBlDcRkL"
+   
+		remove_columns :email_descriptions,  :length_firstnames, :song_names, :length_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateEmailDescriptions < ActiveRecord::Migration
+  def up
+	  create_table :email_descriptions do |t|
+t.datetime :END, :default => DateTime.new(2002,0,15,18,47,51), limit: 1
+		t.char :defined?, :default => "mQiqbiqF", precision: 8, scale: 1
+		t.datetime :until, :default => DateTime.new(2004,3,2,10,18,57), precision: 7, scale: 3
+		t.tinyint(1) :begin, :default => false, precision: 6, scale: 4
+		  end
+  change_table :email_descriptions do |t|
+		t.belongs_to :begin, polymorphic: true
+ 		t.change_default :begin,false
+  end
+ 		change_column :email_descriptions, :until, :240
+   
+	def down
+		change_table :email_descriptions do |t|
+		t.change_default :begin, false
+  end
+ 		change_column :email_descriptions, :until, :"SBlDcRkL"
+   
+		remove_columns :email_descriptions,  :length_firstnames, :song_names, :length_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateSongArtists < ActiveRecord::Migration
+  def up
+	  create_table :song_artists do |t|
+t.datetimeoffset :alias, :default => Date.new(2012,10,6), precision: 3, scale: 1
+		t.char :next, :default => "vxSxJiQS", precision: 7, scale: 5
+		t.tinyint(1) :unless, :default => true, precision: 11, scale: 5
+		t.datetime :not, :default => DateTime.new(2012,0,4,0,11,54), limit: 160
+		t.blob :module, :default => 240, precision: 4, scale: 2
+		  end
+  change_table :song_artists do |t|
+		t.belongs_to :unless, polymorphic: true
+ 		t.change_default :module,240
+  end
+ 		change_column :song_artists, :not, :"JBOvmEiX"
+   
+	def down
+		change_table :song_artists do |t|
+		t.change_default :module, 142
+  end
+ 		change_column :song_artists, :not, :161
+   
+		remove_columns :song_artists,  :song_musics, :description_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongArtists < ActiveRecord::Migration
+  def up
+	  create_table :song_artists do |t|
+t.datetimeoffset :alias, :default => Date.new(2012,10,6), precision: 3, scale: 1
+		t.char :next, :default => "vxSxJiQS", precision: 7, scale: 5
+		t.tinyint(1) :unless, :default => true, precision: 11, scale: 5
+		t.datetime :not, :default => DateTime.new(2012,0,4,0,11,54), limit: 160
+		t.blob :module, :default => 240, precision: 4, scale: 2
+		  end
+  change_table :song_artists do |t|
+		t.belongs_to :unless, polymorphic: true
+ 		t.change_default :module,240
+  end
+ 		change_column :song_artists, :not, :"JBOvmEiX"
+   
+	def down
+		change_table :song_artists do |t|
+		t.change_default :module, 142
+  end
+ 		change_column :song_artists, :not, :161
+   
+		remove_columns :song_artists,  :song_musics, :description_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongArtists < ActiveRecord::Migration
+  def up
+	  create_table :song_artists do |t|
+t.datetimeoffset :alias, :default => Date.new(2012,10,6), precision: 3, scale: 1
+		t.char :next, :default => "vxSxJiQS", precision: 7, scale: 5
+		t.tinyint(1) :unless, :default => true, precision: 11, scale: 5
+		t.datetime :not, :default => DateTime.new(2012,0,4,0,11,54), limit: 160
+		t.blob :module, :default => 240, precision: 4, scale: 2
+		  end
+  change_table :song_artists do |t|
+		t.belongs_to :unless, polymorphic: true
+ 		t.change_default :module,240
+  end
+ 		change_column :song_artists, :not, :"JBOvmEiX"
+   
+	def down
+		change_table :song_artists do |t|
+		t.change_default :module, 142
+  end
+ 		change_column :song_artists, :not, :161
+   
+		remove_columns :song_artists,  :song_musics, :description_names 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateSongArtists < ActiveRecord::Migration
+  def up
+	  create_table :song_artists do |t|
+t.timestamp :song_films, :default => DateTime.new(2010,7,26,8,9,48), null: false
+		t.text :description_songs, :default => :artist_names, null: true
+		t.timestamp :music_emails, :default => DateTime.new(2013,4,27,16,0,16), array: false
+		t.string :description_songs, :default => "oVdvIRLK", array: false
+		  end
+  change_table :song_artists do |t|
+		t.change_default :description_songs,"oVdvIRLK"
+  end
+ 		change_column :song_artists, :music_emails, :timestamp
+   
+		change_column_null :song_artists, :description_songs,  true
+	def down
+		change_table :song_artists do |t|
+		t.change_default :description_songs, "xKvRuSmT"
+  end
+ 		change_column :song_artists, :music_emails, :timestamp
+   
+		change_column_null :song_artists, :description_songs, false
+ 		remove_columns :song_artists,  :song_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateMusicNames < ActiveRecord::Migration
+  def up
+	  create_table :music_names do |t|
+t.text :address_roles, :default => :firstname_roles, limit: 1
+		t.timestamp :name_emails, :default => DateTime.new(2002,5,26,18,30,37), array: false
+		t.integer :artist_firstnames, :default => 56, array: false
+		t.decimal :role_songs, :default => 3.5074635277140733, precision: 7, scale: 2
+		  end
+  change_table :music_names do |t|
+		t.belongs_to :artist_firstnames, polymorphic: true
+ 		t.change_default :role_songs,3.5074635277140733
+  end
+ 		change_column :music_names, :artist_firstnames, :integer
+   
+	def down
+		change_table :music_names do |t|
+		t.change_default :role_songs, 2.4249897045032203
+  end
+ 		change_column :music_names, :artist_firstnames, :text
+   
+		remove_columns :music_names,  :role_songs, :address_roles, :name_emails 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicNames < ActiveRecord::Migration
+  def up
+	  create_table :music_names do |t|
+t.blob :next, :default => 242, precision: 7, scale: 1
+		t.char :unless, :default => "dTZTcpxD", precision: 8, scale: 2
+		t.tinyint(1) :break, :default => false, precision: 4, scale: 2
+		t.tinyint(1) :undef, :default => false, limit: 1
+		t.char :then, :default => "CcxGMNcj", precision: 7, scale: 3
+		  end
+  change_table :music_names do |t|
+		t.belongs_to :break, polymorphic: true
+ 		t.change_default :then,"CcxGMNcj"
+  end
+ 		change_column :music_names, :undef, :181
+   
+	def down
+		change_table :music_names do |t|
+		t.change_default :then, "FWslESdT"
+  end
+ 		change_column :music_names, :undef, :85
+   
+		remove_columns :music_names,  :address_roles, :firstname_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicNames < ActiveRecord::Migration
+  def up
+	  create_table :music_names do |t|
+t.blob :next, :default => 242, precision: 7, scale: 1
+		t.char :unless, :default => "dTZTcpxD", precision: 8, scale: 2
+		t.tinyint(1) :break, :default => false, precision: 4, scale: 2
+		t.tinyint(1) :undef, :default => false, limit: 1
+		t.char :then, :default => "CcxGMNcj", precision: 7, scale: 3
+		  end
+  change_table :music_names do |t|
+		t.belongs_to :break, polymorphic: true
+ 		t.change_default :then,"CcxGMNcj"
+  end
+ 		change_column :music_names, :undef, :181
+   
+	def down
+		change_table :music_names do |t|
+		t.change_default :then, "FWslESdT"
+  end
+ 		change_column :music_names, :undef, :85
+   
+		remove_columns :music_names,  :address_roles, :firstname_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateMusicNames < ActiveRecord::Migration
+  def up
+	  create_table :music_names do |t|
+t.blob :next, :default => 242, precision: 7, scale: 1
+		t.char :unless, :default => "dTZTcpxD", precision: 8, scale: 2
+		t.tinyint(1) :break, :default => false, precision: 4, scale: 2
+		t.tinyint(1) :undef, :default => false, limit: 1
+		t.char :then, :default => "CcxGMNcj", precision: 7, scale: 3
+		  end
+  change_table :music_names do |t|
+		t.belongs_to :break, polymorphic: true
+ 		t.change_default :then,"CcxGMNcj"
+  end
+ 		change_column :music_names, :undef, :181
+   
+	def down
+		change_table :music_names do |t|
+		t.change_default :then, "FWslESdT"
+  end
+ 		change_column :music_names, :undef, :85
+   
+		remove_columns :music_names,  :address_roles, :firstname_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreateFilmFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :film_firstnames do |t|
+t.time :length_addresses, :default => Time.new(2010, 10, 10, 7,30,1), array: false
+		t.integer :country_addresses, :default => 240, limit: 6
+		t.decimal :length_songs, :default => 1.324614833378758, precision: 3, scale: 1
+		t.decimal :artist_films, :default => 4.048274005433606, null: true
+		t.decimal :address_firstnames, :default => 5.574208220838215, array: false
+		  end
+  change_table :film_firstnames do |t|
+		t.belongs_to :length_songs, polymorphic: true
+ 		t.change_default :address_firstnames,5.574208220838215
+  end
+ 		change_column :film_firstnames, :artist_films, :decimal
+   
+	def down
+		change_table :film_firstnames do |t|
+		t.change_default :address_firstnames, 5.66480781840329
+  end
+ 		change_column :film_firstnames, :artist_films, :float
+   
+		remove_columns :film_firstnames,  :artist_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFilmFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :film_firstnames do |t|
+t.datetimeoffset :true, :default => Date.new(2003,9,13), precision: 8, scale: 3
+		t.int(11) :break, :default => 77, precision: 12, scale: 5
+		t.char :unless, :default => "MrGWBemx", precision: 8, scale: 4
+		t.tinyint(1) :ensure, :default => false, limit: 251
+		  end
+  change_table :film_firstnames do |t|
+		t.belongs_to :break, polymorphic: true
+ 		t.change_default :ensure,false
+  end
+ 		change_column :film_firstnames, :unless, :"pbNnSpTP"
+   
+	def down
+		change_table :film_firstnames do |t|
+		t.change_default :ensure, true
+  end
+ 		change_column :film_firstnames, :unless, :"MCBklbFE"
+   
+		remove_columns :film_firstnames,  :address_descriptions, :name_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFilmFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :film_firstnames do |t|
+t.datetimeoffset :true, :default => Date.new(2003,9,13), precision: 8, scale: 3
+		t.int(11) :break, :default => 77, precision: 12, scale: 5
+		t.char :unless, :default => "MrGWBemx", precision: 8, scale: 4
+		t.tinyint(1) :ensure, :default => false, limit: 251
+		  end
+  change_table :film_firstnames do |t|
+		t.belongs_to :break, polymorphic: true
+ 		t.change_default :ensure,false
+  end
+ 		change_column :film_firstnames, :unless, :"pbNnSpTP"
+   
+	def down
+		change_table :film_firstnames do |t|
+		t.change_default :ensure, true
+  end
+ 		change_column :film_firstnames, :unless, :"MCBklbFE"
+   
+		remove_columns :film_firstnames,  :address_descriptions, :name_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFilmFirstnames < ActiveRecord::Migration
+  def up
+	  create_table :film_firstnames do |t|
+t.datetimeoffset :true, :default => Date.new(2003,9,13), precision: 8, scale: 3
+		t.int(11) :break, :default => 77, precision: 12, scale: 5
+		t.char :unless, :default => "MrGWBemx", precision: 8, scale: 4
+		t.tinyint(1) :ensure, :default => false, limit: 251
+		  end
+  change_table :film_firstnames do |t|
+		t.belongs_to :break, polymorphic: true
+ 		t.change_default :ensure,false
+  end
+ 		change_column :film_firstnames, :unless, :"pbNnSpTP"
+   
+	def down
+		change_table :film_firstnames do |t|
+		t.change_default :ensure, true
+  end
+ 		change_column :film_firstnames, :unless, :"MCBklbFE"
+   
+		remove_columns :film_firstnames,  :address_descriptions, :name_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateRoleMusics < ActiveRecord::Migration
+  def up
+	  create_table :role_musics do |t|
+t.tinyint(1) :else, :default => true, precision: 11, scale: 5
+		t.datetimeoffset :nil, :default => Date.new(2001,4,11), precision: 10, scale: 5
+		t.blob :case, :default => 114, precision: 3, scale: 1
+		t.datetime :case, :default => DateTime.new(1999,9,14,12,46,49), limit: 1
+		  end
+  change_table :role_musics do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :case,DateTime.new(1999,9,14,12,46,49)
+  end
+ 		change_column :role_musics, :case, :"iNRyyUuq"
+   
+	def down
+		change_table :role_musics do |t|
+		t.change_default :case, DateTime.new(2013,10,30,8,2,42)
+  end
+ 		change_column :role_musics, :case, :242
+   
+		remove_columns :role_musics,  :description_names, :address_artists, :music_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateRoleMusics < ActiveRecord::Migration
+  def up
+	  create_table :role_musics do |t|
+t.tinyint(1) :else, :default => true, precision: 11, scale: 5
+		t.datetimeoffset :nil, :default => Date.new(2001,4,11), precision: 10, scale: 5
+		t.blob :case, :default => 114, precision: 3, scale: 1
+		t.datetime :case, :default => DateTime.new(1999,9,14,12,46,49), limit: 1
+		  end
+  change_table :role_musics do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :case,DateTime.new(1999,9,14,12,46,49)
+  end
+ 		change_column :role_musics, :case, :"iNRyyUuq"
+   
+	def down
+		change_table :role_musics do |t|
+		t.change_default :case, DateTime.new(2013,10,30,8,2,42)
+  end
+ 		change_column :role_musics, :case, :242
+   
+		remove_columns :role_musics,  :description_names, :address_artists, :music_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateRoleMusics < ActiveRecord::Migration
+  def up
+	  create_table :role_musics do |t|
+t.tinyint(1) :else, :default => true, precision: 11, scale: 5
+		t.datetimeoffset :nil, :default => Date.new(2001,4,11), precision: 10, scale: 5
+		t.blob :case, :default => 114, precision: 3, scale: 1
+		t.datetime :case, :default => DateTime.new(1999,9,14,12,46,49), limit: 1
+		  end
+  change_table :role_musics do |t|
+		t.belongs_to :case, polymorphic: true
+ 		t.change_default :case,DateTime.new(1999,9,14,12,46,49)
+  end
+ 		change_column :role_musics, :case, :"iNRyyUuq"
+   
+	def down
+		change_table :role_musics do |t|
+		t.change_default :case, DateTime.new(2013,10,30,8,2,42)
+  end
+ 		change_column :role_musics, :case, :242
+   
+		remove_columns :role_musics,  :description_names, :address_artists, :music_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateRoleMusics < ActiveRecord::Migration
+  def up
+	  create_table :role_musics do |t|
+t.decimal :description_songs, :default => 4.08077199108069, array: false
+		t.float :address_passwords, :default => 3.046293252044692, null: true
+		t.float :music_roles, :default => 3.018880502650706, array: false
+		t.time :country_descriptions, :default => Time.new(2010, 10, 10, 0,35,35), null: false
+		t.float :length_firstnames, :default => 8.706835237963062, array: false
+		  end
+  change_table :role_musics do |t|
+		t.belongs_to :length_firstnames, polymorphic: true
+ 		t.change_default :length_firstnames,8.706835237963062
+  end
+ 		change_column :role_musics, :country_descriptions, :time
+   
+	def down
+		change_table :role_musics do |t|
+		t.change_default :length_firstnames, 6.786454374349168
+  end
+ 		change_column :role_musics, :country_descriptions, :integer
+   
+		remove_columns :role_musics,  :address_passwords, :length_firstnames, :country_descriptions 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateArtistMusics < ActiveRecord::Migration
+  def up
+	  create_table :artist_musics do |t|
+t.int(11) :self, :default => 141, limit: 1
+		t.tinyint(1) :defined?, :default => true, precision: 11, scale: 5
+		t.int(11) :while, :default => 80, precision: 4, scale: 2
+		t.datetime :defined?, :default => DateTime.new(2002,5,29,3,53,16), precision: 4, scale: 2
+		t.datetime :false, :default => DateTime.new(2008,8,18,19,15,24), limit: 92
+		  end
+  change_table :artist_musics do |t|
+		t.belongs_to :defined?, polymorphic: true
+ 		t.change_default :false,DateTime.new(2008,8,18,19,15,24)
+  end
+ 		change_column :artist_musics, :defined?, :"nKiWTpWo"
+   
+	def down
+		change_table :artist_musics do |t|
+		t.change_default :false, DateTime.new(2005,0,23,1,17,4)
+  end
+ 		change_column :artist_musics, :defined?, :"niRCcOnQ"
+   
+		remove_columns :artist_musics,  :address_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateArtistMusics < ActiveRecord::Migration
+  def up
+	  create_table :artist_musics do |t|
+t.int(11) :self, :default => 141, limit: 1
+		t.tinyint(1) :defined?, :default => true, precision: 11, scale: 5
+		t.int(11) :while, :default => 80, precision: 4, scale: 2
+		t.datetime :defined?, :default => DateTime.new(2002,5,29,3,53,16), precision: 4, scale: 2
+		t.datetime :false, :default => DateTime.new(2008,8,18,19,15,24), limit: 92
+		  end
+  change_table :artist_musics do |t|
+		t.belongs_to :defined?, polymorphic: true
+ 		t.change_default :false,DateTime.new(2008,8,18,19,15,24)
+  end
+ 		change_column :artist_musics, :defined?, :"nKiWTpWo"
+   
+	def down
+		change_table :artist_musics do |t|
+		t.change_default :false, DateTime.new(2005,0,23,1,17,4)
+  end
+ 		change_column :artist_musics, :defined?, :"niRCcOnQ"
+   
+		remove_columns :artist_musics,  :address_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateArtistMusics < ActiveRecord::Migration
+  def up
+	  create_table :artist_musics do |t|
+t.int(11) :self, :default => 141, limit: 1
+		t.tinyint(1) :defined?, :default => true, precision: 11, scale: 5
+		t.int(11) :while, :default => 80, precision: 4, scale: 2
+		t.datetime :defined?, :default => DateTime.new(2002,5,29,3,53,16), precision: 4, scale: 2
+		t.datetime :false, :default => DateTime.new(2008,8,18,19,15,24), limit: 92
+		  end
+  change_table :artist_musics do |t|
+		t.belongs_to :defined?, polymorphic: true
+ 		t.change_default :false,DateTime.new(2008,8,18,19,15,24)
+  end
+ 		change_column :artist_musics, :defined?, :"nKiWTpWo"
+   
+	def down
+		change_table :artist_musics do |t|
+		t.change_default :false, DateTime.new(2005,0,23,1,17,4)
+  end
+ 		change_column :artist_musics, :defined?, :"niRCcOnQ"
+   
+		remove_columns :artist_musics,  :address_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateArtistMusics < ActiveRecord::Migration
+  def up
+	  create_table :artist_musics do |t|
+t.timestamp :country_firstnames, :default => DateTime.new(2003,3,18,6,37,2), array: false
+		t.boolean :description_countries, :default => true
+		t.text :length_musics, :default => :music_songs, array: false
+		t.string :address_firstnames, :default => "nswnLevj", limit: 1
+		  end
+  change_table :artist_musics do |t|
+		t.belongs_to :length_musics, polymorphic: true
+ 		t.change_default :address_firstnames,"nswnLevj"
+  end
+ 		change_column :artist_musics, :length_musics, :text
+   
+	def down
+		change_table :artist_musics do |t|
+		t.change_default :address_firstnames, "ayYPPNIe"
+  end
+ 		change_column :artist_musics, :length_musics, :decimal
+   
+		remove_columns :artist_musics,  :address_firstnames, :country_firstnames 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+T
+\begin{verbatim}
+class CreatePasswordArtists < ActiveRecord::Migration
+  def up
+	  create_table :password_artists do |t|
+t.float :length_addresses, :default => 4.047041137938412, null: true
+		t.timestamp :address_countries, :default => DateTime.new(2003,6,7,17,34,53), null: false
+		t.time :artist_emails, :default => Time.new(2010, 10, 10, 19,2,1), array: false
+		t.float :role_films, :default => 4.414753102949633, array: false
+		t.integer :name_musics, :default => 124, array: false
+		t.decimal :address_roles, :default => 1.052050200849366, precision: 7, scale: 5
+		  end
+  change_table :password_artists do |t|
+		t.belongs_to :address_roles, polymorphic: true
+ 		t.change_default :address_roles,1.052050200849366
+  end
+ 		change_column :password_artists, :name_musics, :integer
+   
+	def down
+		change_table :password_artists do |t|
+		t.change_default :address_roles, 1.7259898287067728
+  end
+ 		change_column :password_artists, :name_musics, :string
+   
+		remove_columns :password_artists,  :role_films 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordArtists < ActiveRecord::Migration
+  def up
+	  create_table :password_artists do |t|
+t.int(11) :until, :default => 24, limit: 137
+		t.tinyint(1) :false, :default => true, limit: 1
+		t.blob :rescue, :default => 54, precision: 8, scale: 3
+		t.char :for, :default => "dhooYlxx", precision: 6, scale: 1
+		  end
+  change_table :password_artists do |t|
+		t.belongs_to :false, polymorphic: true
+ 		t.change_default :for,"dhooYlxx"
+  end
+ 		change_column :password_artists, :rescue, :"TlSITTxx"
+   
+	def down
+		change_table :password_artists do |t|
+		t.change_default :for, "bBRcRqJF"
+  end
+ 		change_column :password_artists, :rescue, :"YgpvnHRa"
+   
+		remove_columns :password_artists,  :email_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordArtists < ActiveRecord::Migration
+  def up
+	  create_table :password_artists do |t|
+t.int(11) :until, :default => 24, limit: 137
+		t.tinyint(1) :false, :default => true, limit: 1
+		t.blob :rescue, :default => 54, precision: 8, scale: 3
+		t.char :for, :default => "dhooYlxx", precision: 6, scale: 1
+		  end
+  change_table :password_artists do |t|
+		t.belongs_to :false, polymorphic: true
+ 		t.change_default :for,"dhooYlxx"
+  end
+ 		change_column :password_artists, :rescue, :"TlSITTxx"
+   
+	def down
+		change_table :password_artists do |t|
+		t.change_default :for, "bBRcRqJF"
+  end
+ 		change_column :password_artists, :rescue, :"YgpvnHRa"
+   
+		remove_columns :password_artists,  :email_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreatePasswordArtists < ActiveRecord::Migration
+  def up
+	  create_table :password_artists do |t|
+t.int(11) :until, :default => 24, limit: 137
+		t.tinyint(1) :false, :default => true, limit: 1
+		t.blob :rescue, :default => 54, precision: 8, scale: 3
+		t.char :for, :default => "dhooYlxx", precision: 6, scale: 1
+		  end
+  change_table :password_artists do |t|
+		t.belongs_to :false, polymorphic: true
+ 		t.change_default :for,"dhooYlxx"
+  end
+ 		change_column :password_artists, :rescue, :"TlSITTxx"
+   
+	def down
+		change_table :password_artists do |t|
+		t.change_default :for, "bBRcRqJF"
+  end
+ 		change_column :password_artists, :rescue, :"YgpvnHRa"
+   
+		remove_columns :password_artists,  :email_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateSongSongs < ActiveRecord::Migration
+  def up
+	  create_table :song_songs do |t|
+t.blob :alias, :default => 141, precision: 10, scale: 3
+		t.tinyint(1) :self, :default => false, limit: 3
+		t.datetime :def, :default => DateTime.new(2002,8,17,7,21,3), precision: 9, scale: 3
+		t.char :class, :default => "kkoWGvyW", precision: 8, scale: 3
+		t.int(11) :until, :default => 25, limit: 10
+		  end
+  change_table :song_songs do |t|
+		t.belongs_to :until, polymorphic: true
+ 		t.change_default :until,25
+  end
+ 		change_column :song_songs, :class, :"ERovNkXG"
+   
+	def down
+		change_table :song_songs do |t|
+		t.change_default :until, 203
+  end
+ 		change_column :song_songs, :class, :228
+   
+		remove_columns :song_songs,  :description_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongSongs < ActiveRecord::Migration
+  def up
+	  create_table :song_songs do |t|
+t.blob :alias, :default => 141, precision: 10, scale: 3
+		t.tinyint(1) :self, :default => false, limit: 3
+		t.datetime :def, :default => DateTime.new(2002,8,17,7,21,3), precision: 9, scale: 3
+		t.char :class, :default => "kkoWGvyW", precision: 8, scale: 3
+		t.int(11) :until, :default => 25, limit: 10
+		  end
+  change_table :song_songs do |t|
+		t.belongs_to :until, polymorphic: true
+ 		t.change_default :until,25
+  end
+ 		change_column :song_songs, :class, :"ERovNkXG"
+   
+	def down
+		change_table :song_songs do |t|
+		t.change_default :until, 203
+  end
+ 		change_column :song_songs, :class, :228
+   
+		remove_columns :song_songs,  :description_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateSongSongs < ActiveRecord::Migration
+  def up
+	  create_table :song_songs do |t|
+t.float :email_artists, :default => 7.4020997938833135, null: false
+		t.float :email_names, :default => 0.553819656912142, array: false
+		t.decimal :length_roles, :default => 4.965182420684889, array: false
+		t.integer :song_films, :default => 174, null: true
+		  end
+  change_table :song_songs do |t|
+		t.belongs_to :email_names, polymorphic: true
+ 		t.change_default :song_films,174
+  end
+ 		change_column :song_songs, :length_roles, :decimal
+   
+	def down
+		change_table :song_songs do |t|
+		t.change_default :song_films, 47
+  end
+ 		change_column :song_songs, :length_roles, :string
+   
+		remove_columns :song_songs,  :length_roles, :song_films, :email_artists 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateSongSongs < ActiveRecord::Migration
+  def up
+	  create_table :song_songs do |t|
+t.blob :alias, :default => 141, precision: 10, scale: 3
+		t.tinyint(1) :self, :default => false, limit: 3
+		t.datetime :def, :default => DateTime.new(2002,8,17,7,21,3), precision: 9, scale: 3
+		t.char :class, :default => "kkoWGvyW", precision: 8, scale: 3
+		t.int(11) :until, :default => 25, limit: 10
+		  end
+  change_table :song_songs do |t|
+		t.belongs_to :until, polymorphic: true
+ 		t.change_default :until,25
+  end
+ 		change_column :song_songs, :class, :"ERovNkXG"
+   
+	def down
+		change_table :song_songs do |t|
+		t.change_default :until, 203
+  end
+ 		change_column :song_songs, :class, :228
+   
+		remove_columns :song_songs,  :description_countries 
+    end 
+  end
+end
+
+\end{verbatim}
+
+Q
+Выберите синтаксически правильно составленный вариант миграции:
+
+F
+\begin{verbatim}
+class CreateFirstnameEmails < ActiveRecord::Migration
+  def up
+	  create_table :firstname_emails do |t|
+t.int(11) :END, :default => 62, precision: 11, scale: 4
+		t.blob :class, :default => 166, precision: 4, scale: 1
+		t.datetimeoffset :false, :default => Date.new(2007,3,10), limit: 254
+		t.tinyint(1) :do, :default => true, limit: 1
+		t.datetime :module, :default => DateTime.new(1999,6,24,2,25,14), precision: 12, scale: 5
+		  end
+  change_table :firstname_emails do |t|
+		t.belongs_to :module, polymorphic: true
+ 		t.change_default :module,DateTime.new(1999,6,24,2,25,14)
+  end
+ 		change_column :firstname_emails, :do, :205
+   
+	def down
+		change_table :firstname_emails do |t|
+		t.change_default :module, DateTime.new(2006,9,7,14,51,37)
+  end
+ 		change_column :firstname_emails, :do, :"AAAPZYYT"
+   
+		remove_columns :firstname_emails,  :password_roles, :artist_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFirstnameEmails < ActiveRecord::Migration
+  def up
+	  create_table :firstname_emails do |t|
+t.int(11) :END, :default => 62, precision: 11, scale: 4
+		t.blob :class, :default => 166, precision: 4, scale: 1
+		t.datetimeoffset :false, :default => Date.new(2007,3,10), limit: 254
+		t.tinyint(1) :do, :default => true, limit: 1
+		t.datetime :module, :default => DateTime.new(1999,6,24,2,25,14), precision: 12, scale: 5
+		  end
+  change_table :firstname_emails do |t|
+		t.belongs_to :module, polymorphic: true
+ 		t.change_default :module,DateTime.new(1999,6,24,2,25,14)
+  end
+ 		change_column :firstname_emails, :do, :205
+   
+	def down
+		change_table :firstname_emails do |t|
+		t.change_default :module, DateTime.new(2006,9,7,14,51,37)
+  end
+ 		change_column :firstname_emails, :do, :"AAAPZYYT"
+   
+		remove_columns :firstname_emails,  :password_roles, :artist_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+F
+\begin{verbatim}
+class CreateFirstnameEmails < ActiveRecord::Migration
+  def up
+	  create_table :firstname_emails do |t|
+t.int(11) :END, :default => 62, precision: 11, scale: 4
+		t.blob :class, :default => 166, precision: 4, scale: 1
+		t.datetimeoffset :false, :default => Date.new(2007,3,10), limit: 254
+		t.tinyint(1) :do, :default => true, limit: 1
+		t.datetime :module, :default => DateTime.new(1999,6,24,2,25,14), precision: 12, scale: 5
+		  end
+  change_table :firstname_emails do |t|
+		t.belongs_to :module, polymorphic: true
+ 		t.change_default :module,DateTime.new(1999,6,24,2,25,14)
+  end
+ 		change_column :firstname_emails, :do, :205
+   
+	def down
+		change_table :firstname_emails do |t|
+		t.change_default :module, DateTime.new(2006,9,7,14,51,37)
+  end
+ 		change_column :firstname_emails, :do, :"AAAPZYYT"
+   
+		remove_columns :firstname_emails,  :password_roles, :artist_lengths 
+    end 
+  end
+end
+
+\end{verbatim}
+
+T
+\begin{verbatim}
+class CreateFirstnameEmails < ActiveRecord::Migration
+  def up
+	  create_table :firstname_emails do |t|
+t.text :length_films, :default => :firstname_emails, array: false
+		t.integer :country_roles, :default => 201, limit: 1
+		t.timestamp :length_passwords, :default => DateTime.new(2013,7,30,13,27,8), null: false
+		t.decimal :description_musics, :default => 0.5665904902449365, precision: 5, scale: 2
+		  end
+  change_table :firstname_emails do |t|
+		t.belongs_to :length_passwords, polymorphic: true
+ 		t.change_default :description_musics,0.5665904902449365
+  end
+ 		change_column :firstname_emails, :length_passwords, :timestamp
+   
+	def down
+		change_table :firstname_emails do |t|
+		t.change_default :description_musics, 2.6076771185835605
+  end
+ 		change_column :firstname_emails, :length_passwords, :decimal
+   
+		remove_columns :firstname_emails,  :length_passwords, :description_musics, :length_films 
+    end 
+  end
+end
+
+\end{verbatim}

@@ -17,31 +17,31 @@ end
 def column(name, method, rand_field, data_type)
 
 	if data_type == "string"+
-    t = "t.#{data_type} :#{name}, :default"  + " => " +(method ).to_s + ", #{rand_field}\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => " +(method ).to_s + ", #{rand_field}\n\t\t"
     t.gsub(/(:default => "[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "text"
-    t = "t.#{data_type} :#{name}, :default"  + " => :" +(method ).to_s + ", #{rand_field}\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => :" +(method ).to_s + ", #{rand_field}\n\t\t"
     t.gsub(/(:default => :[^\f\t\n\r]+), (array: true)/, '\\2')
   elsif data_type == "boolean"
-    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + "\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + "\n\t\t"
   else
-    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + ", #{rand_field}\n   "
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(method ).to_s + ", #{rand_field}\n\t\t"
   	t.gsub(/(:default => [^\f\t\n\r]+), (array: true)/, '\\2')
   end
 end
 
 def index(table, correct=true, default)
-  "\t\tt.change_default :#{table},#{default}\n       end\n"
+  "\t\tt.change_default :#{table},#{default}\n  end\n"
 end
 def change_default(table, correct=true, change_default)
 
-  "\t\tt.change_default :#{table}, #{change_default}\n     end\n"
+  "\t\tt.change_default :#{table}, #{change_default}\n  end\n"
 end
 def change_column_up(table, name, data_type, correct = false)
-"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n      \n"
+"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n   \n"
 end
 def change_column_down(table, name, data_type, correct = false)
-"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n       \n"
+"\t\tchange_column :#{table}, :#{name}, :#{data_type}\n   \n"
 end
 def change_column_null(table, name, null)
 "\t\tchange_column_null :#{table}, :#{name}, #{null}\n"
@@ -52,8 +52,8 @@ def random_migration(correct=false , correct_index=true, app)
 indicate = correct ? "F" : "T"	
 str = <<-END
 class Create#{app.camelize} < ActiveRecord::Migration
-	 def change
-	   create_table :#{app} do |t|
+  def change
+	  create_table :#{app} do |t|
 END
 
   # add columns
@@ -85,9 +85,9 @@ END
 	
   end
 
-	str << <<-END
-		end
-	END
+str << <<-END
+  end
+END
   # add indexes
   array = []
 	change_default = []
@@ -140,7 +140,7 @@ finder = finder.scan(/integer|decimal|boolean|timestamp|string|date|time|time|te
 	arr = arr[0..rand(1..3)].join(" ")
 	
 	arr = correct ? [" :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"," :#{random_column_name},"].shuffle : [" :#{column_name},"," :#{column_name2},"," :#{column_name3},"," :#{column_name4},"].shuffle
-  rem = correct ? "\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\t\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
+  rem = correct ? "\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n" : "\t\tremove_columns :#{app}, #{arr[1..rand(1..4)].join("")}\n"
    if rem[-2] == ","
 	  rem[-2] = " "
 	  change_null_down << rem
@@ -162,7 +162,7 @@ reversible do |dir|
   str << <<-END
   dir.down do
 		change_table :#{app} do |t|
-  END
+END
 	str << change_default.join(" ")
 	str << change_null_down.join(" ")
   
@@ -173,6 +173,6 @@ reversible do |dir|
     end 
   end
 end
-  END
+END
 end
 

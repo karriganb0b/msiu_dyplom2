@@ -70,21 +70,21 @@ END
 str_true = <<-END
 T
 \\begin{verbatim}
-		#{text}
-\\end{verbatim|
+#{text}
+\\end{verbatim}
 END
 	
 str_false = <<-END
 F
 \\begin{verbatim}
-		#{random_migration(true, app)}
+#{random_migration(true, app)}
 \\end{verbatim}
 END
 	
 	res << str_true
 	3.times{ res << str_false }
-	file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts vopros}
-  file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
+	file = File.open("words/test_migration/test_true/revers.tex", 'a'){ |file| file.puts vopros}
+  file = File.open("words/test_migration/test_true/revers.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
 end
 
 

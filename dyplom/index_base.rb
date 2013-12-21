@@ -72,19 +72,19 @@ END
 str_true = <<-END
 T
 \\begin{verbatim}
-		#{text}
-\\end{verbatim|
+#{text}
+\\end{verbatim}
 END
 	
 str_false = <<-END
 F
 \\begin{verbatim}
-		#{random_migration(false, false, app)}
+#{random_migration(false, false, app)}
 \\end{verbatim}
 END
 	
 	res << str_true
 	3.times{ res << str_false }
-	file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts vopros}
-  file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
+	file = File.open("words/test_migration/test_true/index.tex", 'a'){ |file| file.puts vopros}
+  file = File.open("words/test_migration/test_true/index.tex", 'a'){ |file| file.puts res.shuffle.join("\n")}
 end

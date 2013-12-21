@@ -84,6 +84,11 @@ T
 #{array}
 \\end{verbatim}
 END
+txt = <<-END
+\\begin{verbatim}
+#{txt}
+\\end{verbatim}
+END
 
 mres << str_true
 3.times{
@@ -98,8 +103,8 @@ af[-1] = "\\end{verbatim}"
 mres << af
 f+=3
 }
-	file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts vopros}
-	file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts txt}
-  file = File.open("words/test_migration/test_true/rubezh.tex", 'a'){ |file| file.puts mres.shuffle.join("\n")}
+	file = File.open("words/test_migration/test_true/block2.tex", 'a'){ |file| file.puts vopros}
+	file = File.open("words/test_migration/test_true/block2.tex", 'a'){ |file| file.puts txt}
+  file = File.open("words/test_migration/test_true/block2.tex", 'a'){ |file| file.puts mres.shuffle.join("\n")}
 
 end

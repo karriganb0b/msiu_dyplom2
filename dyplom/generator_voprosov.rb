@@ -4,6 +4,7 @@ require 'yaml'
 require './reversible'
 require './reversible_for_up_and_down'
 require './generator_false'
+require './teo_tester'
 
 mas_str_1 = ["1. Синтаксис функции create_table.change","2. Синтаксис метода create_table.reversible","3. Синтаксис функций up и down","4. Синтаксис вспомогательных функций", "5.Синтаксис метода add_index", "6. Интегрирование данных миграции в файл schema.rb"].join("\n")
 tema = ["ActiveRecord migration"]
@@ -30,6 +31,9 @@ system('ruby migration_tester2.rb')}
 elsif b==3
 size.times{
 system('ruby up_down_base.rb')}
+elsif b==4
+size.times{
+system('ruby teo_tester.rb')}
 elsif b==5
 size.times{
 system('ruby index_base.rb')}

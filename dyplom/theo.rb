@@ -1,6 +1,34 @@
-require 'faker'
-require 'active_support/all'
+#encoding: UTF-8
+require 'rubygems'
+require 'yaml'
 require './uniibrut'
+require './genereator'
+require './helper'
+require 'active_support/all'
+require 'faker'
+
+def number(digits)
+  rand(digits ** 10 - 1).to_s.center(digits, rand(9).to_s)
+ end
+
+
+def column(hash, name)
+  data_type = hash.keys.shuffle.first
+  method = hash[data_type]
+  rand_field = rand_mod(data_type) 
+	if data_type == "string"+
+    t = "t.#{data_type} :#{name}, :default"  + " => " +(send method ).to_s + ", #{rand_field}\n"
+    t.gsub(/(:default => "[^\f\t\n\r]+), (array: true)/, '\\2')
+  elsif data_type == "text"
+    t = "t.#{data_type} :#{name}, :default"  + " => :" +(send method ).to_s + ", #{rand_field}\n"
+    t.gsub(/(:default => :[^\f\t\n\r]+), (array: true)/, '\\2')
+  elsif data_type == "boolean"
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + "\n"
+  else
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + ", #{rand_field}\n"
+  	t.gsub(/(:default => [^\f\t\n\r]+), (array: true)/, '\\2')
+  end
+end
 
 def number(digits)
   rand(digits ** 10 - 1).to_s.center(digits, rand(9).to_s)
@@ -109,6 +137,7 @@ class AddTimestamps < MigrationTimestamps
                 super args
         end
 
+
         def reverse
           RemoveTimestamps.new({
                         table_name: @table_name, 
@@ -192,31 +221,58 @@ class Migration
     @table_name = "#{@ins+"_"+@ins2}"
     @classname = "#{@ins.capitalize}" +"#{@ins2.capitalize}"
   end
-  
-  def methods(correct = true)
+
+  def methods(correct = true, names = nil)
    @migrations ||= @column_names.map do |column_name|
    type = METHOD_TYPES.shuffle.first
-                
       args = case type
       when :add
         # TODO: random data type
-      correct ? {table_name: @table_name, type: type, column_name: column_name, data_type: random_data_type, rest: "null => false"} : {table_name: "asdf", type: type, column_name: "asdf", data_type: random_data_type, rest: "null => false"}
+      correct ? {table_name: @table_name, type: type, column_name: column_name, data_type: random_data_type, rest: "null => false"} : {table_name: @table_name, type: type, column_name: "asdf", data_type: random_data_type, rest: "null => false"}
       when :remove
-      correct ?  {table_name: @table_name, type: type, column_name: column_name} : {table_name: random_false_column, type: type, column_name: "228"}
+			  column_name = names.shuffle.first unless names.nil?
+      correct ?  {table_name: @table_name, type: type, column_name: column_name} : {table_name: random_false_column, type: type, column_name: column_name}
       when :rename
+				column_name = names.shuffle.first unless names.nil?
+		
        correct ? {table_name: @table_name, type: type, column_name: column_name, old_column_name: Faker::Lorem.word} : {table_name: @table_name, type: type, column_name: "falssssse", old_column_name: Faker::Lorem.word}
-      end
+			end
     
       Object.const_get("#{type.to_s.capitalize}Method").new(args)
     end
   end
     
   def up_methods(correct = true)
+	nnames = []
+	files_with_types = correct ?  'qq.yaml' : 'words/falsedatatype.yaml'
+  hash1 = YAML::load(open(files_with_types))
+  str_h =  ""+
+	(0..rand(4..6)).map do |x|
+	  data_type = hash1.keys.shuffle.first
+	  method = hash1[data_type]
+	  rand_field = rand_mod(data_type)
+
+	  name = correct ?  (random_column_name).to_s : (random_false_column).to_s
+		nnames << name
+	if data_type == "string"+
+    t = "t.#{data_type} :#{name}, :default"  + " => " +(send method ).to_s + ", #{rand_field}\n"
+    t.gsub(/(:default => "[^\f\t\n\r]+), (array: true)/, '\\2')
+  elsif data_type == "text"
+    t = "t.#{data_type} :#{name}, :default"  + " => :" +(send method ).to_s + ", #{rand_field}\n"
+    t.gsub(/(:default => :[^\f\t\n\r]+), (array: true)/, '\\2')
+  elsif data_type == "boolean"
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + "\n"
+  else
+    t = "t.#{data_type} :#{name}, :default"  + " => "+(send method ).to_s + ", #{rand_field}\n"
+  	t.gsub(/(:default => [^\f\t\n\r]+), (array: true)/, '\\2')
+  end
+  end.join("   ")
+
    k = "#{name}_#{name2.pluralize}"
    column_name = @column_names.shuffle.first
-   hash = correct ? {"create_table :#{@table_name} do |t|\n end" => "drop_table :#{@table_name}"} : 
-	  {"create_table :#{@table_name}s do |t|" => "drop_column :#{@table_name}s", 
-	  "create_table :#{@table_name}s do |t|" => "rename_column :#{@table_name}s"	}	
+   hash = correct ? {"create_table :#{@table_name} do |t|\n #{str_h}\n end" => "drop_table :#{@table_name}"} : 
+	  {"create_table :#{@table_name}s do |t| \n #{str_h}" => "drop_column :#{@table_name}s", 
+	  "create_table :#{@table_name}s do |t| \n #{str_h}" => "rename_column :#{@table_name}s"	}	
 	  indicatore = correct ? "T" : "F"
     method_up_table = hash.keys.shuffle.first
     method_down_table = hash[method_up_table] 
@@ -242,7 +298,7 @@ class Migration
 class AddHashTo#{@classname} < ActiveRecord::Migration
   def up
     #{method_up_table}
-#{correct ? methods(true).map {|m| "#{m}"}.join("\n") : methods(false).map {|m| "#{m}"}.join("\n")}
+#{correct ? methods(true, nnames).map {|m| "#{m}"}.join("\n") : methods(false, nnames).map {|m| "#{m}"}.join("\n")}
 #{test_array.map {|m| "#{m}"}.join("\n")}
    end
   def down
@@ -261,7 +317,6 @@ def gene
 migration = Migration.new()
 text = migration.up_methods(true)
 end
-
 def genef
 migration = Migration.new()
 text = migration.up_methods(false)
